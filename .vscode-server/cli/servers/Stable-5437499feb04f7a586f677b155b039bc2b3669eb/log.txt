@@ -1,0 +1,51 @@
+*
+* Visual Studio Code Server
+*
+* By using the software, you agree to
+* the Visual Studio Code Server License Terms (https://aka.ms/vscode-server-license) and
+* the Microsoft Privacy Statement (https://privacy.microsoft.com/en-US/privacystatement).
+*
+Server bound to /tmp/code-b0c6bc37-decd-42ae-a30d-4c4449fcd3f4
+Extension host agent listening on /tmp/code-b0c6bc37-decd-42ae-a30d-4c4449fcd3f4
+
+[08:35:13] 
+
+
+
+
+[08:35:13] Extension host agent started.
+[08:35:13] Started initializing default profile extensions in extensions installation folder. file:///home/khatun.avetisyan/.vscode-server/extensions
+[08:35:13] Completed initializing default profile extensions in extensions installation folder. file:///home/khatun.avetisyan/.vscode-server/extensions
+[08:35:13] [<unknown>][0da69ae8][ManagementConnection] New connection established.
+[08:35:13] [<unknown>][eb4ec2bb][ExtensionHostConnection] New connection established.
+[08:35:13] [<unknown>][eb4ec2bb][ExtensionHostConnection] <2991> Launched Extension Host Process.
+[08:35:22] [<unknown>][89d5f039][ExtensionHostConnection] New connection established.
+[08:35:22] [<unknown>][bfa9b124][ManagementConnection] New connection established.
+[08:35:22] [<unknown>][89d5f039][ExtensionHostConnection] <3037> Launched Extension Host Process.
+New EH opened, aborting shutdown
+[08:40:13] New EH opened, aborting shutdown
+[08:40:22] [<unknown>][eb4ec2bb][ExtensionHostConnection] <2991> Extension Host Process exited with code: 0, signal: null.
+[08:40:47] Getting Manifest... ms-python.python
+[08:40:47] Installing extension: ms-python.python file:///home/khatun.avetisyan/.vscode-server/extensions/extensions.json
+[08:40:48] Getting Manifest... ms-python.vscode-pylance
+[08:40:48] Getting Manifest... ms-python.debugpy
+[08:40:48] Installing extension: ms-python.vscode-pylance file:///home/khatun.avetisyan/.vscode-server/extensions/extensions.json
+[08:40:48] Installing extension: ms-python.debugpy file:///home/khatun.avetisyan/.vscode-server/extensions/extensions.json
+[08:40:50] Extension signature verification result for ms-python.python: Success. Executed: true. Duration: 1338ms.
+[08:40:50] Extension signature verification result for ms-python.debugpy: Success. Executed: true. Duration: 1328ms.
+[08:40:51] Extension signature verification result for ms-python.vscode-pylance: Success. Executed: true. Duration: 1467ms.
+[08:40:51] Extracted extension to file:///home/khatun.avetisyan/.vscode-server/extensions/ms-python.debugpy-2024.8.0-linux-x64: ms-python.debugpy
+[08:40:51] Renamed to /home/khatun.avetisyan/.vscode-server/extensions/ms-python.debugpy-2024.8.0-linux-x64
+[08:40:52] Extracted extension to file:///home/khatun.avetisyan/.vscode-server/extensions/ms-python.python-2024.10.0-linux-x64: ms-python.python
+[08:40:52] Renamed to /home/khatun.avetisyan/.vscode-server/extensions/ms-python.python-2024.10.0-linux-x64
+[08:40:57] Extracted extension to file:///home/khatun.avetisyan/.vscode-server/extensions/ms-python.vscode-pylance-2024.7.1: ms-python.vscode-pylance
+[08:40:57] Renamed to /home/khatun.avetisyan/.vscode-server/extensions/ms-python.vscode-pylance-2024.7.1
+[08:40:57] Extension installed successfully: ms-python.debugpy file:///home/khatun.avetisyan/.vscode-server/extensions/extensions.json
+[08:40:57] Extension installed successfully: ms-python.python file:///home/khatun.avetisyan/.vscode-server/extensions/extensions.json
+[08:40:57] Extension installed successfully: ms-python.vscode-pylance file:///home/khatun.avetisyan/.vscode-server/extensions/extensions.json
+[09:45:09] [<unknown>][309b0dc0][ManagementConnection] New connection established.
+[09:45:09] [<unknown>][ddf595b2][ExtensionHostConnection] New connection established.
+[09:45:09] [<unknown>][ddf595b2][ExtensionHostConnection] <22409> Launched Extension Host Process.
+[09:45:26] [<unknown>][d0728ffd][ManagementConnection] New connection established.
+[09:45:26] [<unknown>][8a90f3de][ExtensionHostConnection] New connection established.
+[09:45:26] [<unknown>][8a90f3de][ExtensionHostConnection] <22444> Launched Extension Host Process.

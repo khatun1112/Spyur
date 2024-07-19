@@ -1,0 +1,46 @@
+2024-07-19 09:45:27.095 [info] Extension host with pid 22444 started
+2024-07-19 09:45:27.095 [error] Error: EEXIST: file already exists, open '/home/khatun.avetisyan/.vscode-server/data/User/workspaceStorage/8c5b103509bb1ecaca7ccbb21d3d9da1/vscode.lock'
+2024-07-19 09:45:27.098 [info] Lock '/home/khatun.avetisyan/.vscode-server/data/User/workspaceStorage/8c5b103509bb1ecaca7ccbb21d3d9da1/vscode.lock': Could not acquire lock, checking if the file is stale.
+2024-07-19 09:45:27.105 [info] Lock '/home/khatun.avetisyan/.vscode-server/data/User/workspaceStorage/8c5b103509bb1ecaca7ccbb21d3d9da1/vscode.lock': The lock does not look stale, elapsed: 359 ms, giving up.
+2024-07-19 09:45:27.117 [info] Lock '/home/khatun.avetisyan/.vscode-server/data/User/workspaceStorage/8c5b103509bb1ecaca7ccbb21d3d9da1-1/vscode.lock': Lock acquired.
+2024-07-19 09:45:27.257 [info] ExtensionService#_doActivateExtension ms-python.python, startup: false, activationEvent: 'onLanguage:python', root cause: ms-python.debugpy
+2024-07-19 09:45:27.258 [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onLanguage'
+2024-07-19 09:45:28.261 [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*', root cause: vscode.git
+2024-07-19 09:45:28.340 [info] ExtensionService#_doActivateExtension vscode.git, startup: true, activationEvent: '*'
+2024-07-19 09:45:28.341 [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+2024-07-19 09:45:28.494 [info] ExtensionService#_doActivateExtension ms-python.debugpy, startup: false, activationEvent: 'onLanguage:python'
+2024-07-19 09:45:28.495 [info] ExtensionService#_doActivateExtension ms-python.vscode-pylance, startup: false, activationEvent: 'onLanguage:python'
+2024-07-19 09:45:28.925 [info] Eager extensions activated
+2024-07-19 09:45:28.926 [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: false, activationEvent: 'onStartupFinished'
+2024-07-19 09:45:28.926 [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+2024-07-19 10:27:00.443 [info] ExtensionService#_doActivateExtension vscode.npm, startup: false, activationEvent: 'onTerminalQuickFixRequest:ms-vscode.npm-command'
+2024-07-19 13:17:08.790 [info] Extension host with pid 38558 started
+2024-07-19 13:17:08.804 [info] Lock '/home/khatun.avetisyan/.vscode-server/data/User/workspaceStorage/8c5b103509bb1ecaca7ccbb21d3d9da1/vscode.lock': Lock acquired.
+2024-07-19 13:17:08.894 [info] ExtensionService#_doActivateExtension ms-python.python, startup: false, activationEvent: 'onLanguage:python', root cause: ms-python.debugpy
+2024-07-19 13:17:08.895 [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onLanguage'
+2024-07-19 13:17:08.895 [info] ExtensionService#_doActivateExtension vscode.npm, startup: false, activationEvent: 'onTerminalQuickFixRequest:ms-vscode.npm-command'
+2024-07-19 13:17:09.490 [info] ExtensionService#_doActivateExtension ms-python.debugpy, startup: false, activationEvent: 'onLanguage:python'
+2024-07-19 13:17:09.491 [info] ExtensionService#_doActivateExtension ms-python.vscode-pylance, startup: false, activationEvent: 'onLanguage:python'
+2024-07-19 13:17:09.897 [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*', root cause: vscode.git
+2024-07-19 13:17:09.971 [info] ExtensionService#_doActivateExtension vscode.git, startup: true, activationEvent: '*'
+2024-07-19 13:17:09.972 [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+2024-07-19 13:17:10.179 [info] Eager extensions activated
+2024-07-19 13:17:10.179 [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: false, activationEvent: 'onStartupFinished'
+2024-07-19 13:17:10.179 [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+2024-07-19 13:22:07.864 [info] Extension host terminating: renderer disconnected for too long (2)
+2024-07-19 13:22:07.864 [info] Lock '/home/khatun.avetisyan/.vscode-server/data/User/workspaceStorage/8c5b103509bb1ecaca7ccbb21d3d9da1-1/vscode.lock': Marking the lockfile as scheduled to be released in 6000 ms.
+2024-07-19 13:22:07.882 [error] Canceled: Canceled
+	at Object.S [as $6] (/home/khatun.avetisyan/.vscode-server/cli/servers/Stable-5437499feb04f7a586f677b155b039bc2b3669eb/server/out/vs/workbench/api/node/extensionHostProcess.js:10:967)
+	at /home/khatun.avetisyan/.vscode-server/cli/servers/Stable-5437499feb04f7a586f677b155b039bc2b3669eb/server/out/vs/workbench/api/node/extensionHostProcess.js:152:2390
+	at Array.forEach (<anonymous>)
+	at E.dispose (/home/khatun.avetisyan/.vscode-server/cli/servers/Stable-5437499feb04f7a586f677b155b039bc2b3669eb/server/out/vs/workbench/api/node/extensionHostProcess.js:152:2328)
+	at u.terminate (/home/khatun.avetisyan/.vscode-server/cli/servers/Stable-5437499feb04f7a586f677b155b039bc2b3669eb/server/out/vs/workbench/api/node/extensionHostProcess.js:161:8103)
+	at f.terminate (/home/khatun.avetisyan/.vscode-server/cli/servers/Stable-5437499feb04f7a586f677b155b039bc2b3669eb/server/out/vs/workbench/api/node/extensionHostProcess.js:165:1513)
+	at t (/home/khatun.avetisyan/.vscode-server/cli/servers/Stable-5437499feb04f7a586f677b155b039bc2b3669eb/server/out/vs/workbench/api/node/extensionHostProcess.js:178:10459)
+	at M.a (/home/khatun.avetisyan/.vscode-server/cli/servers/Stable-5437499feb04f7a586f677b155b039bc2b3669eb/server/out/vs/workbench/api/node/extensionHostProcess.js:178:7151)
+	at M.h (/home/khatun.avetisyan/.vscode-server/cli/servers/Stable-5437499feb04f7a586f677b155b039bc2b3669eb/server/out/vs/workbench/api/node/extensionHostProcess.js:99:21182)
+	at listOnTimeout (node:internal/timers:573:17)
+	at process.processTimers (node:internal/timers:514:7) setContext undefined
+2024-07-19 13:22:07.886 [info] Extension host with pid 22444 exiting with code 0
+2024-07-19 14:25:40.133 [error] Error: read ECONNRESET
+	at TLSWrap.onStreamRead (node:internal/stream_base_commons:217:20)

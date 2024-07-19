@@ -1,0 +1,53 @@
+2024-07-19 09:45:30.652 [info] (Client) Pylance async client (2024.7.1) started with python extension (2024.10.0)
+2024-07-19 09:45:31.116 [info] [Info  - 9:45:31 AM] (22730) Pylance language server 2024.7.1 (pyright version 1.1.369, commit 1168be71) starting
+2024-07-19 09:45:31.116 [info] [Info  - 9:45:31 AM] (22730) Server root directory: file:///home/khatun.avetisyan/.vscode-server/extensions/ms-python.vscode-pylance-2024.7.1/dist
+2024-07-19 09:45:31.116 [info] [Info  - 9:45:31 AM] (22730) Starting service instance "khatun.avetisyan"
+2024-07-19 09:45:31.155 [info] [Info  - 9:45:31 AM] (22730) Setting pythonPath for service "khatun.avetisyan": "/home/khatun.avetisyan/.venv/bin/python"
+2024-07-19 09:45:31.155 [info] [Info  - 9:45:31 AM] (22730) Setting environmentName for service "khatun.avetisyan": "3.8.10 (.venv venv)"
+2024-07-19 09:45:31.156 [info] [Info  - 9:45:31 AM] (22730) No include entries specified; assuming /home/khatun.avetisyan
+2024-07-19 09:45:31.157 [info] [Info  - 9:45:31 AM] (22730) Auto-excluding **/node_modules
+2024-07-19 09:45:31.157 [info] [Info  - 9:45:31 AM] (22730) Auto-excluding **/__pycache__
+2024-07-19 09:45:31.157 [info] [Info  - 9:45:31 AM] (22730) Auto-excluding **/.*
+2024-07-19 09:45:31.180 [info] [Info  - 9:45:31 AM] (22730) Assuming Python version 3.8.10.final.0
+2024-07-19 09:45:31.258 [info] [Info  - 9:45:31 AM] (22730) Found 3 source files
+2024-07-19 09:45:31.756 [info] [Info  - 9:45:31 AM] (22730) Background analysis(1) root directory: file:///home/khatun.avetisyan/.vscode-server/extensions/ms-python.vscode-pylance-2024.7.1/dist
+2024-07-19 09:45:31.757 [info] [Info  - 9:45:31 AM] (22730) Background analysis(1) started
+2024-07-19 09:45:31.889 [info] [Info  - 9:45:31 AM] (22730) Indexer background runner(2) root directory: file:///home/khatun.avetisyan/.vscode-server/extensions/ms-python.vscode-pylance-2024.7.1/dist (index)
+2024-07-19 09:45:31.889 [info] [Info  - 9:45:31 AM] (22730) Indexing(2) started
+2024-07-19 09:45:32.455 [info] [Info  - 9:45:32 AM] (22730) scanned(2) 40 files over 1 exec env
+2024-07-19 09:45:33.424 [info] [Info  - 9:45:33 AM] (22730) indexed(2) 30 files over 1 exec env
+2024-07-19 09:45:33.481 [info] [Info  - 9:45:33 AM] (22730) Indexing finished(2).
+2024-07-19 10:05:05.235 [info] [Info  - 10:05:05 AM] (22730) Indexer background runner(3) root directory: file:///home/khatun.avetisyan/.vscode-server/extensions/ms-python.vscode-pylance-2024.7.1/dist (refresh)
+2024-07-19 10:05:05.236 [info] [Info  - 10:05:05 AM] (22730) Indexing(3) started
+2024-07-19 10:05:05.755 [info] [Info  - 10:05:05 AM] (22730) scanned(3) 41 files over 1 exec env
+2024-07-19 10:05:06.084 [info] [Info  - 10:05:06 AM] (22730) indexed(3) 30 files over 1 exec env
+2024-07-19 10:05:06.119 [info] [Info  - 10:05:06 AM] (22730) Indexing finished(3).
+2024-07-19 10:26:21.923 [info] [Info  - 10:26:21 AM] (22730) Indexer background runner(4) root directory: file:///home/khatun.avetisyan/.vscode-server/extensions/ms-python.vscode-pylance-2024.7.1/dist (refresh)
+2024-07-19 10:26:21.923 [info] [Info  - 10:26:21 AM] (22730) Indexing(4) started
+2024-07-19 10:26:22.424 [info] [Info  - 10:26:22 AM] (22730) scanned(4) 44 files over 1 exec env
+2024-07-19 10:26:23.282 [info] [Info  - 10:26:23 AM] (22730) indexed(4) 33 files over 1 exec env
+2024-07-19 10:26:23.323 [info] [Info  - 10:26:23 AM] (22730) Indexing finished(4).
+2024-07-19 11:00:37.837 [info] [Info  - 11:00:37 AM] (22730) Indexer background runner(5) root directory: file:///home/khatun.avetisyan/.vscode-server/extensions/ms-python.vscode-pylance-2024.7.1/dist (refresh)
+2024-07-19 11:00:37.838 [info] [Info  - 11:00:37 AM] (22730) Indexing(5) started
+2024-07-19 11:00:38.353 [info] [Info  - 11:00:38 AM] (22730) scanned(5) 47 files over 1 exec env
+2024-07-19 11:00:38.997 [info] [Info  - 11:00:38 AM] (22730) indexed(5) 36 files over 1 exec env
+2024-07-19 11:00:39.025 [info] [Info  - 11:00:39 AM] (22730) Indexing finished(5).
+2024-07-19 13:17:10.904 [info] (Client) Pylance async client (2024.7.1) started with python extension (2024.10.0)
+2024-07-19 13:17:11.340 [info] [Info  - 1:17:11 PM] (38773) Pylance language server 2024.7.1 (pyright version 1.1.369, commit 1168be71) starting
+2024-07-19 13:17:11.341 [info] [Info  - 1:17:11 PM] (38773) Server root directory: file:///home/khatun.avetisyan/.vscode-server/extensions/ms-python.vscode-pylance-2024.7.1/dist
+2024-07-19 13:17:11.342 [info] [Info  - 1:17:11 PM] (38773) Starting service instance "khatun.avetisyan"
+2024-07-19 13:17:11.428 [info] [Info  - 1:17:11 PM] (38773) Setting pythonPath for service "khatun.avetisyan": "/home/khatun.avetisyan/.venv/bin/python"
+2024-07-19 13:17:11.429 [info] [Info  - 1:17:11 PM] (38773) Setting environmentName for service "khatun.avetisyan": "3.8.10 (.venv venv)"
+2024-07-19 13:17:11.429 [info] [Info  - 1:17:11 PM] (38773) No include entries specified; assuming /home/khatun.avetisyan
+2024-07-19 13:17:11.431 [info] [Info  - 1:17:11 PM] (38773) Auto-excluding **/node_modules
+2024-07-19 13:17:11.431 [info] [Info  - 1:17:11 PM] (38773) Auto-excluding **/__pycache__
+2024-07-19 13:17:11.431 [info] [Info  - 1:17:11 PM] (38773) Auto-excluding **/.*
+2024-07-19 13:17:11.454 [info] [Info  - 1:17:11 PM] (38773) Assuming Python version 3.8.10.final.0
+2024-07-19 13:17:11.521 [info] [Info  - 1:17:11 PM] (38773) Found 3 source files
+2024-07-19 13:17:11.843 [info] [Info  - 1:17:11 PM] (38773) Background analysis(1) root directory: file:///home/khatun.avetisyan/.vscode-server/extensions/ms-python.vscode-pylance-2024.7.1/dist
+2024-07-19 13:17:11.846 [info] [Info  - 1:17:11 PM] (38773) Background analysis(1) started
+2024-07-19 13:17:12.089 [info] [Info  - 1:17:12 PM] (38773) Indexer background runner(2) root directory: file:///home/khatun.avetisyan/.vscode-server/extensions/ms-python.vscode-pylance-2024.7.1/dist (index)
+2024-07-19 13:17:12.089 [info] [Info  - 1:17:12 PM] (38773) Indexing(2) started
+2024-07-19 13:17:12.649 [info] [Info  - 1:17:12 PM] (38773) scanned(2) 47 files over 1 exec env
+2024-07-19 13:17:12.997 [info] [Info  - 1:17:12 PM] (38773) indexed(2) 36 files over 1 exec env
+2024-07-19 13:17:13.055 [info] [Info  - 1:17:13 PM] (38773) Indexing finished(2).

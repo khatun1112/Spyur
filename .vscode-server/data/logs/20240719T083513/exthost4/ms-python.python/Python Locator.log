@@ -1,0 +1,38 @@
+2024-07-19 09:45:28.954 [info] Starting Python Locator /home/khatun.avetisyan/.vscode-server/extensions/ms-python.python-2024.10.0-linux-x64/python-env-tools/bin/pet server
+2024-07-19 09:45:28.954 [info] Started Refreshing Environments
+2024-07-19 09:45:28.954 [info] Discovered env: /home/khatun.avetisyan/.venv/bin/python
+2024-07-19 09:45:28.954 [info] Discovered env: /usr/bin/python3
+2024-07-19 09:45:28.954 [info] Discovered env: /bin/python3
+2024-07-19 09:45:28.954 [info] Locator Conda took 62.49808ms
+2024-07-19 09:45:28.954 [info] Locator Homebrew took 84.92µs
+2024-07-19 09:45:28.954 [info] Locator LinuxGlobalPython took 82.872449ms
+2024-07-19 09:45:28.954 [info] Locator PipEnv took 8.81µs
+2024-07-19 09:45:28.954 [info] Locator Poetry took 83.24µs
+2024-07-19 09:45:28.954 [info] Locator PyEnv took 2.63667ms
+2024-07-19 09:45:28.954 [info] Locator Venv took 6.9µs
+2024-07-19 09:45:28.954 [info] Locator VirtualEnv took 670ns
+2024-07-19 09:45:28.954 [info] Locator VirtualEnvWrapper took 180ns
+2024-07-19 09:45:28.954 [info] Environments found using locators in 89.488199ms
+2024-07-19 09:45:28.954 [info] Environments in PATH found in 203.253198ms
+2024-07-19 09:45:28.954 [info] Environments in global virtual env paths found in 68.191µs
+2024-07-19 09:45:28.954 [info] Environments in custom search paths found in 42.87056ms
+2024-07-19 09:45:28.954 [info] Refresh completed in 203ms
+2024-07-19 13:17:09.411 [info] Starting Python Locator /home/khatun.avetisyan/.vscode-server/extensions/ms-python.python-2024.10.0-linux-x64/python-env-tools/bin/pet server
+2024-07-19 13:17:09.411 [info] Started Refreshing Environments
+2024-07-19 13:17:09.411 [info] Discovered env: /home/khatun.avetisyan/.venv/bin/python
+2024-07-19 13:17:09.412 [info] Discovered env: /bin/python3
+2024-07-19 13:17:09.412 [info] Discovered env: /usr/bin/python3
+2024-07-19 13:17:09.862 [info] Locator Conda took 41.197469ms
+2024-07-19 13:17:09.863 [info] Locator Homebrew took 291.759µs
+2024-07-19 13:17:09.864 [info] Locator LinuxGlobalPython took 72.183209ms
+2024-07-19 13:17:09.864 [info] Locator PipEnv took 156.78µs
+2024-07-19 13:17:09.865 [info] Locator Poetry took 354.33µs
+2024-07-19 13:17:09.894 [info] Locator PyEnv took 661.74µs
+2024-07-19 13:17:09.895 [info] Locator Venv took 631ns
+2024-07-19 13:17:09.895 [info] Locator VirtualEnv took 320ns
+2024-07-19 13:17:09.895 [info] Locator VirtualEnvWrapper took 290ns
+2024-07-19 13:17:09.895 [info] Environments found using locators in 73.835179ms
+2024-07-19 13:17:09.896 [info] Environments in PATH found in 188.275908ms
+2024-07-19 13:17:09.896 [info] Environments in global virtual env paths found in 472.23µs
+2024-07-19 13:17:09.902 [info] Environments in custom search paths found in 30.61183ms
+2024-07-19 13:17:09.903 [info] Refresh completed in 188ms

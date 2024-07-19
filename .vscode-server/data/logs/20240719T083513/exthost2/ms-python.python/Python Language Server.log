@@ -1,0 +1,128 @@
+2024-07-19 08:41:02.231 [info] (Client) Pylance async client (2024.7.1) started with python extension (2024.10.0)
+2024-07-19 08:41:02.655 [info] [Info  - 8:41:02 AM] (3787) Pylance language server 2024.7.1 (pyright version 1.1.369, commit 1168be71) starting
+2024-07-19 08:41:02.655 [info] [Info  - 8:41:02 AM] (3787) Server root directory: file:///home/khatun.avetisyan/.vscode-server/extensions/ms-python.vscode-pylance-2024.7.1/dist
+2024-07-19 08:41:02.655 [info] [Info  - 8:41:02 AM] (3787) Starting service instance "khatun.avetisyan"
+2024-07-19 08:41:02.716 [info] [Info  - 8:41:02 AM] (3787) Setting environmentName for service "khatun.avetisyan": "/home/khatun.avetisyan/.venv/bin/python"
+2024-07-19 08:41:02.716 [info] [Info  - 8:41:02 AM] (3787) No include entries specified; assuming /home/khatun.avetisyan
+2024-07-19 08:41:02.717 [info] [Info  - 8:41:02 AM] (3787) Auto-excluding **/node_modules
+2024-07-19 08:41:02.718 [info] [Info  - 8:41:02 AM] (3787) Auto-excluding **/__pycache__
+2024-07-19 08:41:02.718 [info] [Info  - 8:41:02 AM] (3787) Auto-excluding **/.*
+2024-07-19 08:41:02.803 [info] [Info  - 8:41:02 AM] (3787) Found 3 source files
+2024-07-19 08:41:03.123 [info] [Info  - 8:41:03 AM] (3787) Background analysis(1) root directory: file:///home/khatun.avetisyan/.vscode-server/extensions/ms-python.vscode-pylance-2024.7.1/dist
+2024-07-19 08:41:03.126 [info] [Info  - 8:41:03 AM] (3787) Background analysis(1) started
+2024-07-19 08:41:03.299 [info] [Info  - 8:41:03 AM] (3787) Indexer background runner(2) root directory: file:///home/khatun.avetisyan/.vscode-server/extensions/ms-python.vscode-pylance-2024.7.1/dist (index)
+2024-07-19 08:41:03.299 [info] [Info  - 8:41:03 AM] (3787) Indexing(2) started
+2024-07-19 08:41:03.986 [info] [Info  - 8:41:03 AM] (3787) scanned(2) 76 files over 1 exec env
+2024-07-19 08:41:05.038 [info] [Info  - 8:41:05 AM] (3787) indexed(2) 35 files over 1 exec env
+2024-07-19 08:41:05.073 [info] [Info  - 8:41:05 AM] (3787) Indexing finished(2).
+2024-07-19 08:41:14.143 [info] [Info  - 8:41:14 AM] (3787) Setting pythonPath for service "khatun.avetisyan": "/usr/bin/python3"
+2024-07-19 08:41:14.143 [info] [Info  - 8:41:14 AM] (3787) Setting environmentName for service "khatun.avetisyan": "3.8.10 (global)"
+2024-07-19 08:41:14.144 [info] [Info  - 8:41:14 AM] (3787) No include entries specified; assuming /home/khatun.avetisyan
+2024-07-19 08:41:14.144 [info] [Info  - 8:41:14 AM] (3787) Auto-excluding **/node_modules
+2024-07-19 08:41:14.144 [info] [Info  - 8:41:14 AM] (3787) Auto-excluding **/__pycache__
+2024-07-19 08:41:14.144 [info] [Info  - 8:41:14 AM] (3787) Auto-excluding **/.*
+2024-07-19 08:41:14.167 [info] [Info  - 8:41:14 AM] (3787) Assuming Python version 3.8.10.final.0
+2024-07-19 08:41:14.237 [info] [Info  - 8:41:14 AM] (3787) Found 3 source files
+2024-07-19 08:41:14.743 [info] [Info  - 8:41:14 AM] (3787) Indexer background runner(3) root directory: file:///home/khatun.avetisyan/.vscode-server/extensions/ms-python.vscode-pylance-2024.7.1/dist (index)
+2024-07-19 08:41:14.743 [info] [Info  - 8:41:14 AM] (3787) Indexing(3) started
+2024-07-19 08:41:15.208 [info] [Info  - 8:41:15 AM] (3787) scanned(3) 76 files over 1 exec env
+2024-07-19 08:41:15.468 [info] [Info  - 8:41:15 AM] (3787) indexed(3) 35 files over 1 exec env
+2024-07-19 08:41:15.493 [info] [Info  - 8:41:15 AM] (3787) Indexing finished(3).
+2024-07-19 08:41:32.920 [info] [Info  - 8:41:32 AM] (3787) Setting pythonPath for service "khatun.avetisyan": "/home/khatun.avetisyan/.venv/bin/python"
+2024-07-19 08:41:32.920 [info] [Info  - 8:41:32 AM] (3787) Setting environmentName for service "khatun.avetisyan": "3.8.10 (.venv venv)"
+2024-07-19 08:41:32.920 [info] [Info  - 8:41:32 AM] (3787) No include entries specified; assuming /home/khatun.avetisyan
+2024-07-19 08:41:32.920 [info] [Info  - 8:41:32 AM] (3787) Auto-excluding **/node_modules
+2024-07-19 08:41:32.920 [info] [Info  - 8:41:32 AM] (3787) Auto-excluding **/__pycache__
+2024-07-19 08:41:32.920 [info] [Info  - 8:41:32 AM] (3787) Auto-excluding **/.*
+2024-07-19 08:41:32.942 [info] [Info  - 8:41:32 AM] (3787) Assuming Python version 3.8.10.final.0
+2024-07-19 08:41:32.998 [info] [Info  - 8:41:32 AM] (3787) Found 3 source files
+2024-07-19 08:41:33.508 [info] [Info  - 8:41:33 AM] (3787) Indexer background runner(4) root directory: file:///home/khatun.avetisyan/.vscode-server/extensions/ms-python.vscode-pylance-2024.7.1/dist (index)
+2024-07-19 08:41:33.508 [info] [Info  - 8:41:33 AM] (3787) Indexing(4) started
+2024-07-19 08:41:33.895 [info] [Info  - 8:41:33 AM] (3787) scanned(4) 28 files over 1 exec env
+2024-07-19 08:41:34.435 [info] [Info  - 8:41:34 AM] (3787) indexed(4) 19 files over 1 exec env
+2024-07-19 08:41:34.463 [info] [Info  - 8:41:34 AM] (3787) Indexing finished(4).
+2024-07-19 09:29:18.622 [info] [Info  - 9:29:18 AM] (3787) Indexer background runner(5) root directory: file:///home/khatun.avetisyan/.vscode-server/extensions/ms-python.vscode-pylance-2024.7.1/dist (refresh)
+2024-07-19 09:29:18.623 [info] [Info  - 9:29:18 AM] (3787) Indexing(5) started
+2024-07-19 09:29:19.185 [info] [Info  - 9:29:19 AM] (3787) scanned(5) 1 files over 1 exec env
+2024-07-19 09:29:19.652 [info] [Info  - 9:29:19 AM] (3787) indexed(5) 1 files over 1 exec env
+2024-07-19 09:29:19.663 [info] [Info  - 9:29:19 AM] (3787) Indexing finished(5).
+2024-07-19 09:29:25.368 [info] [Info  - 9:29:25 AM] (3787) Indexer background runner(6) root directory: file:///home/khatun.avetisyan/.vscode-server/extensions/ms-python.vscode-pylance-2024.7.1/dist (refresh)
+2024-07-19 09:29:25.369 [info] [Info  - 9:29:25 AM] (3787) Indexing(6) started
+2024-07-19 09:29:25.855 [info] [Info  - 9:29:25 AM] (3787) scanned(6) 1 files over 1 exec env
+2024-07-19 09:29:26.172 [info] [Info  - 9:29:26 AM] (3787) indexed(6) 1 files over 1 exec env
+2024-07-19 09:29:26.179 [info] [Info  - 9:29:26 AM] (3787) Indexing finished(6).
+2024-07-19 09:30:47.597 [info] [Info  - 9:30:47 AM] (3787) Starting service instance "<default>"
+2024-07-19 09:30:47.628 [info] [Info  - 9:30:47 AM] (3787) Setting pythonPath for service "<default>": "/home/khatun.avetisyan/.venv/bin/python"
+2024-07-19 09:30:47.629 [info] [Info  - 9:30:47 AM] (3787) Setting environmentName for service "<default>": "3.8.10 (.venv venv)"
+2024-07-19 09:30:47.630 [info] [Info  - 9:30:47 AM] (3787) No include entries specified; assuming /<default workspace root>
+2024-07-19 09:30:47.630 [info] [Info  - 9:30:47 AM] (3787) Auto-excluding **/node_modules
+2024-07-19 09:30:47.631 [info] [Info  - 9:30:47 AM] (3787) Auto-excluding **/__pycache__
+2024-07-19 09:30:47.631 [info] [Info  - 9:30:47 AM] (3787) Auto-excluding **/.*
+2024-07-19 09:30:47.679 [info] [Error - 9:30:47 AM] (3787) File or directory "/<default workspace root>" does not exist.
+2024-07-19 09:30:47.680 [info] [Info  - 9:30:47 AM] (3787) No source files found.
+2024-07-19 09:30:48.167 [info] [Info  - 9:30:48 AM] (3787) Background analysis(7) root directory: file:///home/khatun.avetisyan/.vscode-server/extensions/ms-python.vscode-pylance-2024.7.1/dist
+2024-07-19 09:30:48.169 [info] [Info  - 9:30:48 AM] (3787) Background analysis(7) started
+2024-07-19 09:32:53.713 [info] [Info  - 9:32:53 AM] (3787) Setting pythonPath for service "khatun.avetisyan": "/home/khatun.avetisyan/.venv/bin/python"
+2024-07-19 09:32:53.713 [info] [Info  - 9:32:53 AM] (3787) Setting environmentName for service "khatun.avetisyan": "/home/khatun.avetisyan/.venv/bin/python"
+2024-07-19 09:32:53.713 [info] [Info  - 9:32:53 AM] (3787) No include entries specified; assuming /home/khatun.avetisyan
+2024-07-19 09:32:53.713 [info] [Info  - 9:32:53 AM] (3787) Auto-excluding **/node_modules
+2024-07-19 09:32:53.713 [info] [Info  - 9:32:53 AM] (3787) Auto-excluding **/__pycache__
+2024-07-19 09:32:53.714 [info] [Info  - 9:32:53 AM] (3787) Auto-excluding **/.*
+2024-07-19 09:32:53.748 [info] [Info  - 9:32:53 AM] (3787) Found 3 source files
+2024-07-19 09:32:53.757 [info] [Info  - 9:32:53 AM] (3787) Setting pythonPath for service "<default>": "/home/khatun.avetisyan/.venv/bin/python"
+2024-07-19 09:32:53.757 [info] [Info  - 9:32:53 AM] (3787) Setting environmentName for service "<default>": "/home/khatun.avetisyan/.venv/bin/python"
+2024-07-19 09:32:53.757 [info] [Info  - 9:32:53 AM] (3787) No include entries specified; assuming /<default workspace root>
+2024-07-19 09:32:53.757 [info] [Info  - 9:32:53 AM] (3787) Auto-excluding **/node_modules
+2024-07-19 09:32:53.758 [info] [Info  - 9:32:53 AM] (3787) Auto-excluding **/__pycache__
+2024-07-19 09:32:53.758 [info] [Info  - 9:32:53 AM] (3787) Auto-excluding **/.*
+2024-07-19 09:32:53.791 [info] [Error - 9:32:53 AM] (3787) File or directory "/<default workspace root>" does not exist.
+2024-07-19 09:32:53.791 [info] [Info  - 9:32:53 AM] (3787) No source files found.
+2024-07-19 09:32:54.681 [info] [Info  - 9:32:54 AM] (3787) Indexer background runner(8) root directory: file:///home/khatun.avetisyan/.vscode-server/extensions/ms-python.vscode-pylance-2024.7.1/dist (index)
+2024-07-19 09:32:54.681 [info] [Info  - 9:32:54 AM] (3787) Indexing(8) started
+2024-07-19 09:32:55.032 [info] [Info  - 9:32:55 AM] (3787) scanned(8) 1 files over 1 exec env
+2024-07-19 09:32:55.222 [info] [Info  - 9:32:55 AM] (3787) indexed(8) 1 files over 1 exec env
+2024-07-19 09:32:55.241 [info] [Info  - 9:32:55 AM] (3787) Indexing finished(8).
+2024-07-19 09:36:58.337 [info] [Info  - 9:36:58 AM] (3787) Setting pythonPath for service "khatun.avetisyan": "/usr/bin/python3"
+2024-07-19 09:36:58.337 [info] [Info  - 9:36:58 AM] (3787) Setting environmentName for service "khatun.avetisyan": "3.8.10 (global)"
+2024-07-19 09:36:58.337 [info] [Info  - 9:36:58 AM] (3787) No include entries specified; assuming /home/khatun.avetisyan
+2024-07-19 09:36:58.338 [info] [Info  - 9:36:58 AM] (3787) Auto-excluding **/node_modules
+2024-07-19 09:36:58.338 [info] [Info  - 9:36:58 AM] (3787) Auto-excluding **/__pycache__
+2024-07-19 09:36:58.338 [info] [Info  - 9:36:58 AM] (3787) Auto-excluding **/.*
+2024-07-19 09:36:58.364 [info] [Info  - 9:36:58 AM] (3787) Assuming Python version 3.8.10.final.0
+2024-07-19 09:36:58.420 [info] [Info  - 9:36:58 AM] (3787) Found 3 source files
+2024-07-19 09:36:58.531 [info] [Info  - 9:36:58 AM] (3787) Setting pythonPath for service "<default>": "/usr/bin/python3"
+2024-07-19 09:36:58.531 [info] [Info  - 9:36:58 AM] (3787) Setting environmentName for service "<default>": "3.8.10 (global)"
+2024-07-19 09:36:58.531 [info] [Info  - 9:36:58 AM] (3787) No include entries specified; assuming /<default workspace root>
+2024-07-19 09:36:58.531 [info] [Info  - 9:36:58 AM] (3787) Auto-excluding **/node_modules
+2024-07-19 09:36:58.531 [info] [Info  - 9:36:58 AM] (3787) Auto-excluding **/__pycache__
+2024-07-19 09:36:58.531 [info] [Info  - 9:36:58 AM] (3787) Auto-excluding **/.*
+2024-07-19 09:36:58.567 [info] [Info  - 9:36:58 AM] (3787) Assuming Python version 3.8.10.final.0
+2024-07-19 09:36:58.660 [info] [Error - 9:36:58 AM] (3787) File or directory "/<default workspace root>" does not exist.
+2024-07-19 09:36:58.660 [info] [Info  - 9:36:58 AM] (3787) No source files found.
+2024-07-19 09:36:59.141 [info] [Info  - 9:36:59 AM] (3787) Indexer background runner(9) root directory: file:///home/khatun.avetisyan/.vscode-server/extensions/ms-python.vscode-pylance-2024.7.1/dist (index)
+2024-07-19 09:36:59.142 [info] [Info  - 9:36:59 AM] (3787) Indexing(9) started
+2024-07-19 09:36:59.750 [info] [Info  - 9:36:59 AM] (3787) scanned(9) 85 files over 1 exec env
+2024-07-19 09:37:00.884 [info] [Info  - 9:37:00 AM] (3787) indexed(9) 41 files over 1 exec env
+2024-07-19 09:37:00.928 [info] [Info  - 9:37:00 AM] (3787) Indexing finished(9).
+2024-07-19 09:37:06.005 [info] [Info  - 9:37:06 AM] (3787) Setting pythonPath for service "khatun.avetisyan": "/home/khatun.avetisyan/.venv/bin/python"
+2024-07-19 09:37:06.005 [info] [Info  - 9:37:06 AM] (3787) Setting environmentName for service "khatun.avetisyan": "3.8.10 (.venv venv)"
+2024-07-19 09:37:06.005 [info] [Info  - 9:37:06 AM] (3787) No include entries specified; assuming /home/khatun.avetisyan
+2024-07-19 09:37:06.005 [info] [Info  - 9:37:06 AM] (3787) Auto-excluding **/node_modules
+2024-07-19 09:37:06.005 [info] [Info  - 9:37:06 AM] (3787) Auto-excluding **/__pycache__
+2024-07-19 09:37:06.005 [info] [Info  - 9:37:06 AM] (3787) Auto-excluding **/.*
+2024-07-19 09:37:06.030 [info] [Info  - 9:37:06 AM] (3787) Assuming Python version 3.8.10.final.0
+2024-07-19 09:37:06.084 [info] [Info  - 9:37:06 AM] (3787) Found 3 source files
+2024-07-19 09:37:06.154 [info] [Info  - 9:37:06 AM] (3787) Setting pythonPath for service "<default>": "/home/khatun.avetisyan/.venv/bin/python"
+2024-07-19 09:37:06.155 [info] [Info  - 9:37:06 AM] (3787) Setting environmentName for service "<default>": "3.8.10 (.venv venv)"
+2024-07-19 09:37:06.155 [info] [Info  - 9:37:06 AM] (3787) No include entries specified; assuming /<default workspace root>
+2024-07-19 09:37:06.155 [info] [Info  - 9:37:06 AM] (3787) Auto-excluding **/node_modules
+2024-07-19 09:37:06.156 [info] [Info  - 9:37:06 AM] (3787) Auto-excluding **/__pycache__
+2024-07-19 09:37:06.156 [info] [Info  - 9:37:06 AM] (3787) Auto-excluding **/.*
+2024-07-19 09:37:06.189 [info] [Info  - 9:37:06 AM] (3787) Assuming Python version 3.8.10.final.0
+2024-07-19 09:37:06.262 [info] [Error - 9:37:06 AM] (3787) File or directory "/<default workspace root>" does not exist.
+2024-07-19 09:37:06.263 [info] [Info  - 9:37:06 AM] (3787) No source files found.
+2024-07-19 09:37:06.660 [info] [Info  - 9:37:06 AM] (3787) Indexer background runner(10) root directory: file:///home/khatun.avetisyan/.vscode-server/extensions/ms-python.vscode-pylance-2024.7.1/dist (index)
+2024-07-19 09:37:06.660 [info] [Info  - 9:37:06 AM] (3787) Indexing(10) started
+2024-07-19 09:37:07.014 [info] [Info  - 9:37:07 AM] (3787) scanned(10) 1 files over 1 exec env
+2024-07-19 09:37:07.219 [info] [Info  - 9:37:07 AM] (3787) indexed(10) 1 files over 1 exec env
+2024-07-19 09:37:07.378 [info] [Info  - 9:37:07 AM] (3787) Indexing finished(10).
