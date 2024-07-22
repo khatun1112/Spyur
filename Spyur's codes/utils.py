@@ -3,14 +3,13 @@ from bs4 import BeautifulSoup
 import pandas as pd
 import hashlib
 import logging
-import mysql.connector
-from mysql.connector import Error
+
 
 # Configure logging
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s',
                     handlers=[
                         logging.StreamHandler(),
-                        logging.FileHandler('company_info.log', mode='w')
+                        logging.FileHandler('info.log', mode='w')
                     ])
 
 # Define the proxy settings
@@ -126,6 +125,7 @@ def get_company_info(urls):
                         'executive': executive if executive else "N/A"
                     })
 
+
                 contacts_data.append({
                     'company_name': company_name,
                     'phone_numbers': phone_number,
@@ -197,47 +197,46 @@ def get_company_products(urls):
                         for product in product_ul.find_all('a'):
                             product_name = product.get_text(strip=True)
                             prod_data.append({
-                                'product_name_id': generate_id(product_name),
                                 'product_name': product_name,
                                 'first_level_cluster': first_level_text,
                                 'second_level_cluster': second_level_text
                             })
-
                             company_prod_data.append({
-                                'company_product_id': generate_id(company_name + product_name),
-                                'product_name_id': generate_id(product_name),
                                 'company_name': company_name,
                                 'product_name': product_name
                             })
             else:
                 logging.error(f"Failed to retrieve product data from {url}, status code: {response.status_code}")
         except Exception as e:
-            logging.error(f"An error occurred while processing {url}: {e}")
+            logging.error(f"An error occurred while processing product data from {url}: {e}")
 
     if company_prod_data and prod_data:
         company_product_table = pd.DataFrame(company_prod_data)
         product_table = pd.DataFrame(prod_data)
 
+        company_product_table['company_product_id'] = company_product_table['company_name'].apply(generate_id)
+        company_product_table['product_name_id'] = company_product_table['product_name'].apply(generate_id)
+        product_table['product_name_id'] = product_table['product_name'].apply(generate_id)
+
         return company_product_table, product_table
     else:
         logging.error("No product data could be scraped from the provided URLs.")
         return None, None
-
+    
 def get_company_activities(urls, product_table):
     """
     Scrape company activity information from a list of URLs.
 
     Args:
         urls (list): A list of URLs to scrape.
-        product_table (DataFrame): DataFrame containing product information.
 
     Returns:
         tuple: A tuple containing two pandas DataFrames:
             - company_activity_table: Contains company and activity information.
             - activity_table: Contains detailed activity information.
     """
-    company_act_data = []
     act_data = []
+    comp_act_data = []
 
     for url in urls:
         try:
@@ -247,118 +246,74 @@ def get_company_activities(urls, product_table):
                 content = BeautifulSoup(response.content, 'html.parser')
 
                 company_name_tag = content.find('h1', class_="page_title")
-                company_name = company_name_tag.get_text(strip=True).replace("\"", "") if company_name_tag else "Unknown" 
-
-                act_content = content.find('ul', 'multilevel_list')
-                if not act_content:
-                    continue
-
-                for first_level in act_content.find_all('div', class_='first_level_info'):
+                company_name = company_name_tag.get_text(strip=True).replace("\"", "") if company_name_tag else "N/A"
+                
+                first_levels = content.find_all('div', class_='first_level_info')
+                for first_level in first_levels:
                     first_level_text = first_level.get_text(strip=True)
-                    second_level_ul = first_level.find_next_sibling('ul')
-
-                    if not second_level_ul:
-                        continue
-
-                    for second_level in second_level_ul.find_all('div', class_='second_level_info'):
+                    second_levels = first_level.find_next_sibling('ul').find_all('div', class_='second_level_info')
+                    
+                    for second_level in second_levels:
                         second_level_text = second_level.get_text(strip=True)
-                        activity_ul = second_level.find_next_sibling('ul')
-
-                        if not activity_ul:
-                            continue
-
-                        for activity in activity_ul.find_all('a'):
-                            activity_name = activity.get_text(strip=True)
-                            activity_name_id = generate_id(activity_name)
+                        activity = second_level.find_next_sibling('ul').find_all('a', href=True)
+                        
+                        for link in activity:
+                            activity_text = link.get_text(strip=True)
                             act_data.append({
-                                'activity_name_id': activity_name_id,
-                                'activity_name': activity_name,
                                 'first_level': first_level_text,
-                                'second_level': second_level_text
-                            })
-
-                            company_act_data.append({
-                                'company_name_id': generate_id(company_name),
-                                'activity_name_id': activity_name_id
+                                'second_level': second_level_text,
+                                'activity_name': activity_text,
                             })
             else:
                 logging.error(f"Failed to retrieve activity data from {url}, status code: {response.status_code}")
         except Exception as e:
-            logging.error(f"An error occurred while processing {url}: {e}")
+            logging.error(f"An error occurred while processing activity data from {url}: {e}")
 
-    if company_act_data and act_data:
-        company_activity_table = pd.DataFrame(company_act_data)
-        activity_table = pd.DataFrame(act_data)
+    if act_data:
+        activity_table = pd.DataFrame(act_data)    
+        activity_table['product_name_id'] = activity_table['activity_name'].apply(generate_id)    
+        merged_df = activity_table.merge(product_table, on="product_name_id", how="left", indicator=True)
+        activity_table = merged_df[merged_df["_merge"] == "left_only"][['product_name_id', "activity_name", "first_level", "second_level"]]
+        activity_table.rename(columns={'product_name_id': 'activity_name_id'}, inplace=True)
+        activity_table.reset_index(drop=True, inplace=True)
+
+        for act in activity_table['activity_name']:
+            comp_act_data.append({
+                'activity_name': act,
+                'company_name': company_name
+            })
+        
+        company_activity_table = pd.DataFrame(comp_act_data)    
+        company_activity_table['company_name_id'] = company_activity_table['company_name'].apply(generate_id)
+        company_activity_table['activity_name_id'] = company_activity_table['activity_name'].apply(generate_id)
 
         return company_activity_table, activity_table
     else:
         logging.error("No activity data could be scraped from the provided URLs.")
-        return None, None
+        return None, None    
 
-# Function to establish a connection to the MySQL database
-def create_connection():
-    try:
-        connection = mysql.connector.connect(
-            host='localhost',  # e.g., 'localhost' or IP address
-            database='spyur_companies',
-            user='Khatun',
-            password='Khatun2004++'
-        )
-        if connection.is_connected():
-            print("Connected to MySQL database")
-            return connection
-    except Error as e:
-        print(f"Error: {e}")
-        return None
+from sqlalchemy import create_engine
 
-# Function to insert data into MySQL
-def insert_data_into_mysql(table_name, dataframe):
-    connection = create_connection()
-    if connection is None:
-        return
+def save_to_mysql(df, table_name):
+    """
+    Save a pandas DataFrame to a MySQL table.
 
-    cursor = connection.cursor()
+    Args:
+        df (pd.DataFrame): The DataFrame to save.
+        table_name (str): The name of the table to save the DataFrame to.
+    """
+    # Database connection details
+    user = 'Khatun'
+    password = 'Khatun2004++'
+    host = 'localhost'
+    port = '3306'
+    database = 'company_data'
+
+    # Create a connection to the database
+    engine = create_engine(f'mysql+pymysql://{user}:{password}@{host}:{port}/{database}')
     
-    # Define SQL insert statement based on the table
-    insert_sql = {
-        'company_info': """
-            INSERT INTO company_info (company_name_id, company_name, address, number_of_employees, form_of_ownership, year_established, date_of_information_update)
-            VALUES (%s, %s, %s, %s, %s, %s, %s)
-        """,
-        'executive_info': """
-            INSERT INTO executive_info (company_name_id, executive)
-            VALUES (%s, %s)
-        """,
-        'contacts_info': """
-            INSERT INTO contacts_info (company_name_id, phone_numbers, site_url, web_link)
-            VALUES (%s, %s, %s, %s)
-        """,
-        'company_products': """
-            INSERT INTO company_products (company_product_id, product_name_id, company_name, product_name)
-            VALUES (%s, %s, %s, %s)
-        """,
-        'products': """
-            INSERT INTO products (product_name_id, product_name, first_level_cluster, second_level_cluster)
-            VALUES (%s, %s, %s, %s)
-        """,
-        'activities': """
-            INSERT INTO activities (activity_name_id, activity_name, first_level, second_level)
-            VALUES (%s, %s, %s, %s)
-        """,
-        'company_activities': """
-            INSERT INTO company_activities (company_name_id, activity_name_id)
-            VALUES (%s, %s)
-        """
-    }.get(table_name, "")
-
-    if insert_sql:
-        for index, row in dataframe.iterrows():
-            values = tuple(row)
-            try:
-                cursor.execute(insert_sql, values)
-            except Error as e:
-                print(f"Error inserting data into {table_name}: {e}")
-
-    connection.commit()
-    cursor.close()
-    connection.close()
+    try:
+        df.to_sql(name=table_name, con=engine, if_exists='append', index=False)
+        logging.info(f"Data saved to {table_name} table successfully.")
+    except Exception as e:
+        logging.error(f"An error occurred while saving data to {table_name} table: {e}")
