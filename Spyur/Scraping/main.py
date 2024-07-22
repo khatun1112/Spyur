@@ -7,10 +7,10 @@ import logging
 
 if __name__ == "__main__":
     try:
-        with open("info.txt", "r") as file:
+        with open("company_link.txt", "r") as file:
             urls = file.readlines()
         urls = ['https://www.spyur.am' + url.strip() for url in urls]
-        url_chunks = list(chunk_list(urls, 100))
+        url_chunks = list(chunk_list(urls, 3))
 
         for chunk in url_chunks:
             logging.info(f"Fetching data from URLs...")
@@ -20,15 +20,15 @@ if __name__ == "__main__":
 
             if company_product_table is not None and product_table is not None:
                 logging.info(f"Data scraping for company products completed successfully.")
-                save_to_mysql(company_product_table, 'company_product_table')
                 save_to_mysql(product_table, 'product_table')
+                save_to_mysql(company_product_table, 'company_product_table')
             else:
                 logging.error("Data scraping company products failed for all URLs.")
 
             if company_activity_table is not None and activity_table is not None:
                 logging.info(f"Data scraping for company activities completed successfully.")
-                save_to_mysql(company_activity_table, 'company_activity_table')
                 save_to_mysql(activity_table, 'activity_table')
+                save_to_mysql(company_activity_table, 'company_activity_table')
             else:
                 logging.error("Data scraping for company activities failed for all URLs.")
                 
