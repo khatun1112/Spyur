@@ -14,9 +14,9 @@ if __name__ == "__main__":
 
         for chunk in url_chunks:
             logging.info(f"Fetching data from URLs...")
-            company_product_table, product_table = get_company_products(urls)
-            company_activity_table, activity_table = get_company_activities(urls, product_table)
-            company_table, executive_table, contacts_table = get_company_info(urls)
+            company_product_table, product_table = get_company_products(chunk)
+            company_activity_table, activity_table = get_company_activities(chunk, product_table)
+            company_table, executive_table, contacts_table = get_company_info(chunk)
 
             if company_product_table is not None and product_table is not None:
                 logging.info(f"Data scraping for company products completed successfully.")

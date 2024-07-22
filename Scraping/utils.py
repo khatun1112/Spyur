@@ -215,7 +215,7 @@ def get_company_products(urls):
         company_product_table = pd.DataFrame(company_prod_data)
         product_table = pd.DataFrame(prod_data)
 
-        company_product_table['company_product_id'] = company_product_table['company_name'].apply(generate_id)
+        company_product_table['company_name_id'] = company_product_table['company_name'].apply(generate_id)
         company_product_table['product_name_id'] = company_product_table['product_name'].apply(generate_id)
         product_table['product_name_id'] = product_table['product_name'].apply(generate_id)
 
@@ -294,6 +294,15 @@ def get_company_activities(urls, product_table):
         return None, None    
 
 def chunk_list(lst, chunk_size):
-    """Yield successive chunks from list."""
+    """
+    Split a list into chunks of specified size.
+
+    Args:
+        lst (list): The list to be split.
+        chunk_size (int): The size of each chunk.
+
+    Returns:
+        list: A list of chunks, where each chunk is a list of items.
+    """
     for i in range(0, len(lst), chunk_size):
         yield lst[i:i + chunk_size]
