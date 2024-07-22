@@ -1,10 +1,8 @@
 #Libraries
 import pandas as pd
 import streamlit as st 
-import matplotlib.pyplot as plt
 import folium
 from streamlit_folium import st_folium
-import plotly.express as px
 import plotly.graph_objects as go
 import folium.plugins as plugins
 
