@@ -7,7 +7,8 @@ import plotly.graph_objects as go
 import folium.plugins as plugins
 
 
-spyur_df = pd.read_pickle('spyur_df.pkl')
+with open('spyur_df.pkl', 'rb') as f:
+    spyur_df = pd.read_pickle(f)
 
 st.title('Gender Roles in Workplace')
 st.subheader('Gender Distribution')
