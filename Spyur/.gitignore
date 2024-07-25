@@ -6,3 +6,7 @@ __pycache__/
 .vscode-server/
 .python_history
 .wget-hsts
+clusters.json
+final_activities.json
+lemmed_activities.json
+SPYUR.company_info.json
