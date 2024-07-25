@@ -1,0 +1,10 @@
+folium == 0.17.0
+pandas == 2.0.3
+streamlit == 1.36.0
+streamlit_folium == 0.22.0
+plotly == 5.23.0
+geopy == 2.4.1
+tqdm == 4.66.4
+bs4 == 0.0.2
+requests == 2.32.3
+PyMySQL == 1.1.1
