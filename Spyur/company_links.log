@@ -39649,3 +39649,861 @@
 2024-07-25 10:27:41,409 - INFO - Activity data scraping completed successfully.
 2024-07-25 10:27:41,416 - INFO - Data appended to activity_table table successfully.
 2024-07-25 10:27:41,417 - INFO - Fetching data from: https://www.spyur.am/en/companies/yerevan-nursery-and-kindergarten--129/86386
+2024-07-25 10:27:43,617 - INFO - Processing data from: https://www.spyur.am/en/companies/yerevan-nursery-and-kindergarten--129/86386
+2024-07-25 10:27:43,618 - INFO - Fetching company information from https://www.spyur.am/en/companies/yerevan-nursery-and-kindergarten--129/86386
+2024-07-25 10:27:43,624 - INFO - Fetching product information from https://www.spyur.am/en/companies/yerevan-nursery-and-kindergarten--129/86386
+2024-07-25 10:27:43,627 - INFO - Fetching activity information from https://www.spyur.am/en/companies/yerevan-nursery-and-kindergarten--129/86386
+2024-07-25 10:27:43,629 - INFO - Company data scraping completed successfully.
+2024-07-25 10:27:43,637 - INFO - Data appended to company_table table successfully.
+2024-07-25 10:27:43,644 - INFO - Data appended to executive_table table successfully.
+2024-07-25 10:27:43,651 - INFO - Data appended to contacts_table table successfully.
+2024-07-25 10:27:43,653 - INFO - Product data scraping completed successfully.
+2024-07-25 10:27:43,660 - INFO - Data appended to product_table table successfully.
+2024-07-25 10:27:43,660 - INFO - Activity data scraping completed successfully.
+2024-07-25 10:27:43,667 - INFO - Data appended to activity_table table successfully.
+2024-07-25 10:27:43,668 - INFO - Fetching data from: https://www.spyur.am/en/companies/yerevan-nursery-and-kindergarten--5/86378
+2024-07-25 10:27:45,508 - INFO - Processing data from: https://www.spyur.am/en/companies/yerevan-nursery-and-kindergarten--5/86378
+2024-07-25 10:27:45,508 - INFO - Fetching company information from https://www.spyur.am/en/companies/yerevan-nursery-and-kindergarten--5/86378
+2024-07-25 10:27:45,516 - INFO - Fetching product information from https://www.spyur.am/en/companies/yerevan-nursery-and-kindergarten--5/86378
+2024-07-25 10:27:45,520 - INFO - Fetching activity information from https://www.spyur.am/en/companies/yerevan-nursery-and-kindergarten--5/86378
+2024-07-25 10:27:45,524 - INFO - Company data scraping completed successfully.
+2024-07-25 10:27:45,531 - INFO - Data appended to company_table table successfully.
+2024-07-25 10:27:45,537 - INFO - Data appended to executive_table table successfully.
+2024-07-25 10:27:45,544 - INFO - Data appended to contacts_table table successfully.
+2024-07-25 10:27:45,546 - INFO - Product data scraping completed successfully.
+2024-07-25 10:27:45,553 - INFO - Data appended to product_table table successfully.
+2024-07-25 10:27:45,554 - INFO - Activity data scraping completed successfully.
+2024-07-25 10:27:45,561 - INFO - Data appended to activity_table table successfully.
+2024-07-25 10:27:45,562 - INFO - Fetching data from: https://www.spyur.am/en/companies/yerevan-nursery-and-kindergarten--63/86379
+2024-07-25 10:27:47,224 - INFO - Processing data from: https://www.spyur.am/en/companies/yerevan-nursery-and-kindergarten--63/86379
+2024-07-25 10:27:47,225 - INFO - Fetching company information from https://www.spyur.am/en/companies/yerevan-nursery-and-kindergarten--63/86379
+2024-07-25 10:27:47,234 - INFO - Fetching product information from https://www.spyur.am/en/companies/yerevan-nursery-and-kindergarten--63/86379
+2024-07-25 10:27:47,238 - INFO - Fetching activity information from https://www.spyur.am/en/companies/yerevan-nursery-and-kindergarten--63/86379
+2024-07-25 10:27:47,241 - INFO - Company data scraping completed successfully.
+2024-07-25 10:27:47,249 - INFO - Data appended to company_table table successfully.
+2024-07-25 10:27:47,259 - INFO - Data appended to executive_table table successfully.
+2024-07-25 10:27:47,266 - INFO - Data appended to contacts_table table successfully.
+2024-07-25 10:27:47,267 - INFO - Product data scraping completed successfully.
+2024-07-25 10:27:47,272 - INFO - Data appended to product_table table successfully.
+2024-07-25 10:27:47,273 - INFO - Activity data scraping completed successfully.
+2024-07-25 10:27:47,278 - INFO - Data appended to activity_table table successfully.
+2024-07-25 10:27:47,279 - INFO - Fetching data from: https://www.spyur.am/en/companies/yerevan-nursery-and-kindergarten--12/86381
+2024-07-25 10:27:49,444 - INFO - Processing data from: https://www.spyur.am/en/companies/yerevan-nursery-and-kindergarten--12/86381
+2024-07-25 10:27:49,445 - INFO - Fetching company information from https://www.spyur.am/en/companies/yerevan-nursery-and-kindergarten--12/86381
+2024-07-25 10:27:49,452 - INFO - Fetching product information from https://www.spyur.am/en/companies/yerevan-nursery-and-kindergarten--12/86381
+2024-07-25 10:27:49,455 - INFO - Fetching activity information from https://www.spyur.am/en/companies/yerevan-nursery-and-kindergarten--12/86381
+2024-07-25 10:27:49,458 - INFO - Company data scraping completed successfully.
+2024-07-25 10:27:49,464 - INFO - Data appended to company_table table successfully.
+2024-07-25 10:27:49,470 - INFO - Data appended to executive_table table successfully.
+2024-07-25 10:27:49,477 - INFO - Data appended to contacts_table table successfully.
+2024-07-25 10:27:49,478 - INFO - Product data scraping completed successfully.
+2024-07-25 10:27:49,485 - INFO - Data appended to product_table table successfully.
+2024-07-25 10:27:49,486 - INFO - Activity data scraping completed successfully.
+2024-07-25 10:27:49,493 - INFO - Data appended to activity_table table successfully.
+2024-07-25 10:27:49,495 - INFO - Fetching data from: https://www.spyur.am/en/companies/yerevan-nursery-and-kindergarten--103/86382
+2024-07-25 10:27:51,992 - INFO - Processing data from: https://www.spyur.am/en/companies/yerevan-nursery-and-kindergarten--103/86382
+2024-07-25 10:27:51,993 - INFO - Fetching company information from https://www.spyur.am/en/companies/yerevan-nursery-and-kindergarten--103/86382
+2024-07-25 10:27:52,000 - INFO - Fetching product information from https://www.spyur.am/en/companies/yerevan-nursery-and-kindergarten--103/86382
+2024-07-25 10:27:52,004 - INFO - Fetching activity information from https://www.spyur.am/en/companies/yerevan-nursery-and-kindergarten--103/86382
+2024-07-25 10:27:52,007 - INFO - Company data scraping completed successfully.
+2024-07-25 10:27:52,015 - INFO - Data appended to company_table table successfully.
+2024-07-25 10:27:52,021 - INFO - Data appended to executive_table table successfully.
+2024-07-25 10:27:52,028 - INFO - Data appended to contacts_table table successfully.
+2024-07-25 10:27:52,029 - INFO - Product data scraping completed successfully.
+2024-07-25 10:27:52,036 - INFO - Data appended to product_table table successfully.
+2024-07-25 10:27:52,037 - INFO - Activity data scraping completed successfully.
+2024-07-25 10:27:52,045 - INFO - Data appended to activity_table table successfully.
+2024-07-25 10:27:52,046 - INFO - Fetching data from: https://www.spyur.am/en/companies/yerevan-nursery-and-kindergarten--67/86385
+2024-07-25 10:27:53,794 - INFO - Processing data from: https://www.spyur.am/en/companies/yerevan-nursery-and-kindergarten--67/86385
+2024-07-25 10:27:53,795 - INFO - Fetching company information from https://www.spyur.am/en/companies/yerevan-nursery-and-kindergarten--67/86385
+2024-07-25 10:27:53,802 - INFO - Fetching product information from https://www.spyur.am/en/companies/yerevan-nursery-and-kindergarten--67/86385
+2024-07-25 10:27:53,805 - INFO - Fetching activity information from https://www.spyur.am/en/companies/yerevan-nursery-and-kindergarten--67/86385
+2024-07-25 10:27:53,808 - INFO - Company data scraping completed successfully.
+2024-07-25 10:27:53,814 - INFO - Data appended to company_table table successfully.
+2024-07-25 10:27:53,820 - INFO - Data appended to executive_table table successfully.
+2024-07-25 10:27:53,825 - INFO - Data appended to contacts_table table successfully.
+2024-07-25 10:27:53,826 - INFO - Product data scraping completed successfully.
+2024-07-25 10:27:53,833 - INFO - Data appended to product_table table successfully.
+2024-07-25 10:27:53,834 - INFO - Activity data scraping completed successfully.
+2024-07-25 10:27:53,839 - INFO - Data appended to activity_table table successfully.
+2024-07-25 10:27:53,840 - INFO - Fetching data from: https://www.spyur.am/en/companies/womens-forum/4153
+2024-07-25 10:27:54,658 - INFO - Processing data from: https://www.spyur.am/en/companies/womens-forum/4153
+2024-07-25 10:27:54,659 - INFO - Fetching company information from https://www.spyur.am/en/companies/womens-forum/4153
+2024-07-25 10:27:54,670 - INFO - Fetching product information from https://www.spyur.am/en/companies/womens-forum/4153
+2024-07-25 10:27:54,677 - INFO - Fetching activity information from https://www.spyur.am/en/companies/womens-forum/4153
+2024-07-25 10:27:54,682 - INFO - Company data scraping completed successfully.
+2024-07-25 10:27:54,689 - INFO - Data appended to company_table table successfully.
+2024-07-25 10:27:54,695 - INFO - Data appended to executive_table table successfully.
+2024-07-25 10:27:54,701 - INFO - Data appended to contacts_table table successfully.
+2024-07-25 10:27:54,701 - INFO - Product data scraping completed successfully.
+2024-07-25 10:27:54,708 - INFO - Data appended to product_table table successfully.
+2024-07-25 10:27:54,709 - INFO - Activity data scraping completed successfully.
+2024-07-25 10:27:54,716 - INFO - Data appended to activity_table table successfully.
+2024-07-25 10:27:54,717 - INFO - Fetching data from: https://www.spyur.am/en/companies/yerevan-nursery-and-kindergarten--127/86384
+2024-07-25 10:27:55,510 - INFO - Processing data from: https://www.spyur.am/en/companies/yerevan-nursery-and-kindergarten--127/86384
+2024-07-25 10:27:55,511 - INFO - Fetching company information from https://www.spyur.am/en/companies/yerevan-nursery-and-kindergarten--127/86384
+2024-07-25 10:27:55,519 - INFO - Fetching product information from https://www.spyur.am/en/companies/yerevan-nursery-and-kindergarten--127/86384
+2024-07-25 10:27:55,522 - INFO - Fetching activity information from https://www.spyur.am/en/companies/yerevan-nursery-and-kindergarten--127/86384
+2024-07-25 10:27:55,525 - INFO - Company data scraping completed successfully.
+2024-07-25 10:27:55,533 - INFO - Data appended to company_table table successfully.
+2024-07-25 10:27:55,540 - INFO - Data appended to executive_table table successfully.
+2024-07-25 10:27:55,547 - INFO - Data appended to contacts_table table successfully.
+2024-07-25 10:27:55,548 - INFO - Product data scraping completed successfully.
+2024-07-25 10:27:55,557 - INFO - Data appended to product_table table successfully.
+2024-07-25 10:27:55,557 - INFO - Activity data scraping completed successfully.
+2024-07-25 10:27:55,564 - INFO - Data appended to activity_table table successfully.
+2024-07-25 10:27:55,565 - INFO - Fetching data from: https://www.spyur.am/en/companies/yerevan-nursery-and-kindergarten--70-lapterik/86406
+2024-07-25 10:27:59,528 - INFO - Processing data from: https://www.spyur.am/en/companies/yerevan-nursery-and-kindergarten--70-lapterik/86406
+2024-07-25 10:27:59,529 - INFO - Fetching company information from https://www.spyur.am/en/companies/yerevan-nursery-and-kindergarten--70-lapterik/86406
+2024-07-25 10:27:59,537 - INFO - Fetching product information from https://www.spyur.am/en/companies/yerevan-nursery-and-kindergarten--70-lapterik/86406
+2024-07-25 10:27:59,544 - INFO - Fetching activity information from https://www.spyur.am/en/companies/yerevan-nursery-and-kindergarten--70-lapterik/86406
+2024-07-25 10:27:59,548 - INFO - Company data scraping completed successfully.
+2024-07-25 10:27:59,554 - INFO - Data appended to company_table table successfully.
+2024-07-25 10:27:59,560 - INFO - Data appended to executive_table table successfully.
+2024-07-25 10:27:59,566 - INFO - Data appended to contacts_table table successfully.
+2024-07-25 10:27:59,567 - INFO - Product data scraping completed successfully.
+2024-07-25 10:27:59,573 - INFO - Data appended to product_table table successfully.
+2024-07-25 10:27:59,574 - INFO - Activity data scraping completed successfully.
+2024-07-25 10:27:59,581 - INFO - Data appended to activity_table table successfully.
+2024-07-25 10:27:59,582 - INFO - Fetching data from: https://www.spyur.am/en/companies/yerevan-nursery-and-kindergarten--142/80167
+2024-07-25 10:28:00,602 - INFO - Processing data from: https://www.spyur.am/en/companies/yerevan-nursery-and-kindergarten--142/80167
+2024-07-25 10:28:00,603 - INFO - Fetching company information from https://www.spyur.am/en/companies/yerevan-nursery-and-kindergarten--142/80167
+2024-07-25 10:28:00,611 - INFO - Fetching product information from https://www.spyur.am/en/companies/yerevan-nursery-and-kindergarten--142/80167
+2024-07-25 10:28:00,614 - INFO - Fetching activity information from https://www.spyur.am/en/companies/yerevan-nursery-and-kindergarten--142/80167
+2024-07-25 10:28:00,617 - INFO - Company data scraping completed successfully.
+2024-07-25 10:28:00,626 - INFO - Data appended to company_table table successfully.
+2024-07-25 10:28:00,634 - INFO - Data appended to executive_table table successfully.
+2024-07-25 10:28:00,640 - INFO - Data appended to contacts_table table successfully.
+2024-07-25 10:28:00,641 - INFO - Product data scraping completed successfully.
+2024-07-25 10:28:00,649 - INFO - Data appended to product_table table successfully.
+2024-07-25 10:28:00,651 - INFO - Activity data scraping completed successfully.
+2024-07-25 10:28:00,659 - INFO - Data appended to activity_table table successfully.
+2024-07-25 10:28:00,661 - INFO - Fetching data from: https://www.spyur.am/en/companies/yerevan-nursery-and-kindergarten--69/86407
+2024-07-25 10:28:02,372 - INFO - Processing data from: https://www.spyur.am/en/companies/yerevan-nursery-and-kindergarten--69/86407
+2024-07-25 10:28:02,374 - INFO - Fetching company information from https://www.spyur.am/en/companies/yerevan-nursery-and-kindergarten--69/86407
+2024-07-25 10:28:02,382 - INFO - Fetching product information from https://www.spyur.am/en/companies/yerevan-nursery-and-kindergarten--69/86407
+2024-07-25 10:28:02,389 - INFO - Fetching activity information from https://www.spyur.am/en/companies/yerevan-nursery-and-kindergarten--69/86407
+2024-07-25 10:28:02,393 - INFO - Company data scraping completed successfully.
+2024-07-25 10:28:02,403 - INFO - Data appended to company_table table successfully.
+2024-07-25 10:28:02,409 - INFO - Data appended to executive_table table successfully.
+2024-07-25 10:28:02,417 - INFO - Data appended to contacts_table table successfully.
+2024-07-25 10:28:02,418 - INFO - Product data scraping completed successfully.
+2024-07-25 10:28:02,426 - INFO - Data appended to product_table table successfully.
+2024-07-25 10:28:02,427 - INFO - Activity data scraping completed successfully.
+2024-07-25 10:28:02,433 - INFO - Data appended to activity_table table successfully.
+2024-07-25 10:28:02,434 - INFO - Fetching data from: https://www.spyur.am/en/companies/yerevan-nursery-and-kindergarten--72/86409
+2024-07-25 10:28:04,717 - INFO - Processing data from: https://www.spyur.am/en/companies/yerevan-nursery-and-kindergarten--72/86409
+2024-07-25 10:28:04,718 - INFO - Fetching company information from https://www.spyur.am/en/companies/yerevan-nursery-and-kindergarten--72/86409
+2024-07-25 10:28:04,727 - INFO - Fetching product information from https://www.spyur.am/en/companies/yerevan-nursery-and-kindergarten--72/86409
+2024-07-25 10:28:04,731 - INFO - Fetching activity information from https://www.spyur.am/en/companies/yerevan-nursery-and-kindergarten--72/86409
+2024-07-25 10:28:04,735 - INFO - Company data scraping completed successfully.
+2024-07-25 10:28:04,742 - INFO - Data appended to company_table table successfully.
+2024-07-25 10:28:04,748 - INFO - Data appended to executive_table table successfully.
+2024-07-25 10:28:04,752 - INFO - Data appended to contacts_table table successfully.
+2024-07-25 10:28:04,753 - INFO - Product data scraping completed successfully.
+2024-07-25 10:28:04,759 - INFO - Data appended to product_table table successfully.
+2024-07-25 10:28:04,760 - INFO - Activity data scraping completed successfully.
+2024-07-25 10:28:04,768 - INFO - Data appended to activity_table table successfully.
+2024-07-25 10:28:04,769 - INFO - Fetching data from: https://www.spyur.am/en/companies/yerevan-nursery-and-kindergarten--143/86412
+2024-07-25 10:28:06,717 - INFO - Processing data from: https://www.spyur.am/en/companies/yerevan-nursery-and-kindergarten--143/86412
+2024-07-25 10:28:06,717 - INFO - Fetching company information from https://www.spyur.am/en/companies/yerevan-nursery-and-kindergarten--143/86412
+2024-07-25 10:28:06,728 - INFO - Fetching product information from https://www.spyur.am/en/companies/yerevan-nursery-and-kindergarten--143/86412
+2024-07-25 10:28:06,732 - INFO - Fetching activity information from https://www.spyur.am/en/companies/yerevan-nursery-and-kindergarten--143/86412
+2024-07-25 10:28:06,736 - INFO - Company data scraping completed successfully.
+2024-07-25 10:28:06,750 - INFO - Data appended to company_table table successfully.
+2024-07-25 10:28:06,757 - INFO - Data appended to executive_table table successfully.
+2024-07-25 10:28:06,763 - INFO - Data appended to contacts_table table successfully.
+2024-07-25 10:28:06,764 - INFO - Product data scraping completed successfully.
+2024-07-25 10:28:06,770 - INFO - Data appended to product_table table successfully.
+2024-07-25 10:28:06,771 - INFO - Activity data scraping completed successfully.
+2024-07-25 10:28:06,777 - INFO - Data appended to activity_table table successfully.
+2024-07-25 10:28:06,778 - INFO - Fetching data from: https://www.spyur.am/en/companies/yerevan-nursery-and-kindergarten--141/86411
+2024-07-25 10:28:07,568 - INFO - Processing data from: https://www.spyur.am/en/companies/yerevan-nursery-and-kindergarten--141/86411
+2024-07-25 10:28:07,569 - INFO - Fetching company information from https://www.spyur.am/en/companies/yerevan-nursery-and-kindergarten--141/86411
+2024-07-25 10:28:07,576 - INFO - Fetching product information from https://www.spyur.am/en/companies/yerevan-nursery-and-kindergarten--141/86411
+2024-07-25 10:28:07,580 - INFO - Fetching activity information from https://www.spyur.am/en/companies/yerevan-nursery-and-kindergarten--141/86411
+2024-07-25 10:28:07,586 - INFO - Company data scraping completed successfully.
+2024-07-25 10:28:07,595 - INFO - Data appended to company_table table successfully.
+2024-07-25 10:28:07,601 - INFO - Data appended to executive_table table successfully.
+2024-07-25 10:28:07,609 - INFO - Data appended to contacts_table table successfully.
+2024-07-25 10:28:07,609 - INFO - Product data scraping completed successfully.
+2024-07-25 10:28:07,616 - INFO - Data appended to product_table table successfully.
+2024-07-25 10:28:07,617 - INFO - Activity data scraping completed successfully.
+2024-07-25 10:28:07,625 - INFO - Data appended to activity_table table successfully.
+2024-07-25 10:28:07,627 - INFO - Fetching data from: https://www.spyur.am/en/companies/yerevan-nursery-and-kindergarten--28/86383
+2024-07-25 10:28:09,766 - INFO - Processing data from: https://www.spyur.am/en/companies/yerevan-nursery-and-kindergarten--28/86383
+2024-07-25 10:28:09,767 - INFO - Fetching company information from https://www.spyur.am/en/companies/yerevan-nursery-and-kindergarten--28/86383
+2024-07-25 10:28:09,775 - INFO - Fetching product information from https://www.spyur.am/en/companies/yerevan-nursery-and-kindergarten--28/86383
+2024-07-25 10:28:09,777 - INFO - Fetching activity information from https://www.spyur.am/en/companies/yerevan-nursery-and-kindergarten--28/86383
+2024-07-25 10:28:09,784 - INFO - Company data scraping completed successfully.
+2024-07-25 10:28:09,794 - INFO - Data appended to company_table table successfully.
+2024-07-25 10:28:09,801 - INFO - Data appended to executive_table table successfully.
+2024-07-25 10:28:09,808 - INFO - Data appended to contacts_table table successfully.
+2024-07-25 10:28:09,809 - INFO - Product data scraping completed successfully.
+2024-07-25 10:28:09,815 - INFO - Data appended to product_table table successfully.
+2024-07-25 10:28:09,816 - INFO - Activity data scraping completed successfully.
+2024-07-25 10:28:09,824 - INFO - Data appended to activity_table table successfully.
+2024-07-25 10:28:09,826 - INFO - Fetching data from: https://www.spyur.am/en/companies/yerevan-nursery-and-kindergarten--101/84661
+2024-07-25 10:28:11,622 - INFO - Processing data from: https://www.spyur.am/en/companies/yerevan-nursery-and-kindergarten--101/84661
+2024-07-25 10:28:11,622 - INFO - Fetching company information from https://www.spyur.am/en/companies/yerevan-nursery-and-kindergarten--101/84661
+2024-07-25 10:28:11,630 - INFO - Fetching product information from https://www.spyur.am/en/companies/yerevan-nursery-and-kindergarten--101/84661
+2024-07-25 10:28:11,633 - INFO - Fetching activity information from https://www.spyur.am/en/companies/yerevan-nursery-and-kindergarten--101/84661
+2024-07-25 10:28:11,639 - INFO - Company data scraping completed successfully.
+2024-07-25 10:28:11,647 - INFO - Data appended to company_table table successfully.
+2024-07-25 10:28:11,655 - INFO - Data appended to executive_table table successfully.
+2024-07-25 10:28:11,663 - INFO - Data appended to contacts_table table successfully.
+2024-07-25 10:28:11,664 - INFO - Product data scraping completed successfully.
+2024-07-25 10:28:11,672 - INFO - Data appended to product_table table successfully.
+2024-07-25 10:28:11,673 - INFO - Activity data scraping completed successfully.
+2024-07-25 10:28:11,679 - INFO - Data appended to activity_table table successfully.
+2024-07-25 10:28:11,681 - INFO - Fetching data from: https://www.spyur.am/en/companies/yerevan-nursery-and-kindergarten--64/86410
+2024-07-25 10:28:12,727 - INFO - Processing data from: https://www.spyur.am/en/companies/yerevan-nursery-and-kindergarten--64/86410
+2024-07-25 10:28:12,728 - INFO - Fetching company information from https://www.spyur.am/en/companies/yerevan-nursery-and-kindergarten--64/86410
+2024-07-25 10:28:12,735 - INFO - Fetching product information from https://www.spyur.am/en/companies/yerevan-nursery-and-kindergarten--64/86410
+2024-07-25 10:28:12,738 - INFO - Fetching activity information from https://www.spyur.am/en/companies/yerevan-nursery-and-kindergarten--64/86410
+2024-07-25 10:28:12,740 - INFO - Company data scraping completed successfully.
+2024-07-25 10:28:12,747 - INFO - Data appended to company_table table successfully.
+2024-07-25 10:28:12,755 - INFO - Data appended to executive_table table successfully.
+2024-07-25 10:28:12,761 - INFO - Data appended to contacts_table table successfully.
+2024-07-25 10:28:12,761 - INFO - Product data scraping completed successfully.
+2024-07-25 10:28:12,767 - INFO - Data appended to product_table table successfully.
+2024-07-25 10:28:12,768 - INFO - Activity data scraping completed successfully.
+2024-07-25 10:28:12,775 - INFO - Data appended to activity_table table successfully.
+2024-07-25 10:28:12,777 - INFO - Fetching data from: https://www.spyur.am/en/companies/yerevan-nursery-and-kindergarten--134/86420
+2024-07-25 10:28:13,579 - INFO - Processing data from: https://www.spyur.am/en/companies/yerevan-nursery-and-kindergarten--134/86420
+2024-07-25 10:28:13,580 - INFO - Fetching company information from https://www.spyur.am/en/companies/yerevan-nursery-and-kindergarten--134/86420
+2024-07-25 10:28:13,588 - INFO - Fetching product information from https://www.spyur.am/en/companies/yerevan-nursery-and-kindergarten--134/86420
+2024-07-25 10:28:13,592 - INFO - Fetching activity information from https://www.spyur.am/en/companies/yerevan-nursery-and-kindergarten--134/86420
+2024-07-25 10:28:13,596 - INFO - Company data scraping completed successfully.
+2024-07-25 10:28:13,605 - INFO - Data appended to company_table table successfully.
+2024-07-25 10:28:13,613 - INFO - Data appended to executive_table table successfully.
+2024-07-25 10:28:13,620 - INFO - Data appended to contacts_table table successfully.
+2024-07-25 10:28:13,621 - INFO - Product data scraping completed successfully.
+2024-07-25 10:28:13,629 - INFO - Data appended to product_table table successfully.
+2024-07-25 10:28:13,630 - INFO - Activity data scraping completed successfully.
+2024-07-25 10:28:13,639 - INFO - Data appended to activity_table table successfully.
+2024-07-25 10:28:13,640 - INFO - Fetching data from: https://www.spyur.am/en/companies/yerevan-nursery-and-kindergarten--144/86418
+2024-07-25 10:28:14,574 - INFO - Processing data from: https://www.spyur.am/en/companies/yerevan-nursery-and-kindergarten--144/86418
+2024-07-25 10:28:14,575 - INFO - Fetching company information from https://www.spyur.am/en/companies/yerevan-nursery-and-kindergarten--144/86418
+2024-07-25 10:28:14,583 - INFO - Fetching product information from https://www.spyur.am/en/companies/yerevan-nursery-and-kindergarten--144/86418
+2024-07-25 10:28:14,587 - INFO - Fetching activity information from https://www.spyur.am/en/companies/yerevan-nursery-and-kindergarten--144/86418
+2024-07-25 10:28:14,591 - INFO - Company data scraping completed successfully.
+2024-07-25 10:28:14,600 - INFO - Data appended to company_table table successfully.
+2024-07-25 10:28:14,607 - INFO - Data appended to executive_table table successfully.
+2024-07-25 10:28:14,616 - INFO - Data appended to contacts_table table successfully.
+2024-07-25 10:28:14,617 - INFO - Product data scraping completed successfully.
+2024-07-25 10:28:14,625 - INFO - Data appended to product_table table successfully.
+2024-07-25 10:28:14,626 - INFO - Activity data scraping completed successfully.
+2024-07-25 10:28:14,634 - INFO - Data appended to activity_table table successfully.
+2024-07-25 10:28:14,636 - INFO - Fetching data from: https://www.spyur.am/en/companies/yerevan-nursery-and-kindergarten--147/86414
+2024-07-25 10:28:15,327 - INFO - Processing data from: https://www.spyur.am/en/companies/yerevan-nursery-and-kindergarten--147/86414
+2024-07-25 10:28:15,327 - INFO - Fetching company information from https://www.spyur.am/en/companies/yerevan-nursery-and-kindergarten--147/86414
+2024-07-25 10:28:15,336 - INFO - Fetching product information from https://www.spyur.am/en/companies/yerevan-nursery-and-kindergarten--147/86414
+2024-07-25 10:28:15,339 - INFO - Fetching activity information from https://www.spyur.am/en/companies/yerevan-nursery-and-kindergarten--147/86414
+2024-07-25 10:28:15,342 - INFO - Company data scraping completed successfully.
+2024-07-25 10:28:15,350 - INFO - Data appended to company_table table successfully.
+2024-07-25 10:28:15,358 - INFO - Data appended to executive_table table successfully.
+2024-07-25 10:28:15,366 - INFO - Data appended to contacts_table table successfully.
+2024-07-25 10:28:15,367 - INFO - Product data scraping completed successfully.
+2024-07-25 10:28:15,374 - INFO - Data appended to product_table table successfully.
+2024-07-25 10:28:15,376 - INFO - Activity data scraping completed successfully.
+2024-07-25 10:28:15,389 - INFO - Data appended to activity_table table successfully.
+2024-07-25 10:28:15,390 - INFO - Fetching data from: https://www.spyur.am/en/companies/yerevan-nursery-and-kindergarten--131/86419
+2024-07-25 10:28:16,154 - INFO - Processing data from: https://www.spyur.am/en/companies/yerevan-nursery-and-kindergarten--131/86419
+2024-07-25 10:28:16,155 - INFO - Fetching company information from https://www.spyur.am/en/companies/yerevan-nursery-and-kindergarten--131/86419
+2024-07-25 10:28:16,162 - INFO - Fetching product information from https://www.spyur.am/en/companies/yerevan-nursery-and-kindergarten--131/86419
+2024-07-25 10:28:16,165 - INFO - Fetching activity information from https://www.spyur.am/en/companies/yerevan-nursery-and-kindergarten--131/86419
+2024-07-25 10:28:16,168 - INFO - Company data scraping completed successfully.
+2024-07-25 10:28:16,176 - INFO - Data appended to company_table table successfully.
+2024-07-25 10:28:16,185 - INFO - Data appended to executive_table table successfully.
+2024-07-25 10:28:16,194 - INFO - Data appended to contacts_table table successfully.
+2024-07-25 10:28:16,195 - INFO - Product data scraping completed successfully.
+2024-07-25 10:28:16,202 - INFO - Data appended to product_table table successfully.
+2024-07-25 10:28:16,204 - INFO - Activity data scraping completed successfully.
+2024-07-25 10:28:16,212 - INFO - Data appended to activity_table table successfully.
+2024-07-25 10:28:16,214 - INFO - Fetching data from: https://www.spyur.am/en/companies/spitak-farmer-association-supporting-the-agriculture/86390
+2024-07-25 10:28:16,955 - INFO - Processing data from: https://www.spyur.am/en/companies/spitak-farmer-association-supporting-the-agriculture/86390
+2024-07-25 10:28:16,956 - INFO - Fetching company information from https://www.spyur.am/en/companies/spitak-farmer-association-supporting-the-agriculture/86390
+2024-07-25 10:28:16,963 - INFO - Fetching product information from https://www.spyur.am/en/companies/spitak-farmer-association-supporting-the-agriculture/86390
+2024-07-25 10:28:16,966 - INFO - Fetching activity information from https://www.spyur.am/en/companies/spitak-farmer-association-supporting-the-agriculture/86390
+2024-07-25 10:28:16,970 - INFO - Company data scraping completed successfully.
+2024-07-25 10:28:16,979 - INFO - Data appended to company_table table successfully.
+2024-07-25 10:28:16,986 - INFO - Data appended to executive_table table successfully.
+2024-07-25 10:28:16,992 - INFO - Data appended to contacts_table table successfully.
+2024-07-25 10:28:16,993 - INFO - Product data scraping completed successfully.
+2024-07-25 10:28:17,002 - INFO - Data appended to product_table table successfully.
+2024-07-25 10:28:17,003 - INFO - Activity data scraping completed successfully.
+2024-07-25 10:28:17,013 - INFO - Data appended to activity_table table successfully.
+2024-07-25 10:28:17,014 - INFO - Fetching data from: https://www.spyur.am/en/companies/confederation-of-trade-unions-of-armenia-republican-union-of-trade-organizations-of-armenia/4180
+2024-07-25 10:28:19,214 - INFO - Processing data from: https://www.spyur.am/en/companies/confederation-of-trade-unions-of-armenia-republican-union-of-trade-organizations-of-armenia/4180
+2024-07-25 10:28:19,215 - INFO - Fetching company information from https://www.spyur.am/en/companies/confederation-of-trade-unions-of-armenia-republican-union-of-trade-organizations-of-armenia/4180
+2024-07-25 10:28:19,226 - INFO - Fetching product information from https://www.spyur.am/en/companies/confederation-of-trade-unions-of-armenia-republican-union-of-trade-organizations-of-armenia/4180
+2024-07-25 10:28:19,231 - INFO - Fetching activity information from https://www.spyur.am/en/companies/confederation-of-trade-unions-of-armenia-republican-union-of-trade-organizations-of-armenia/4180
+2024-07-25 10:28:19,236 - INFO - Company data scraping completed successfully.
+2024-07-25 10:28:19,243 - INFO - Data appended to company_table table successfully.
+2024-07-25 10:28:19,249 - INFO - Data appended to executive_table table successfully.
+2024-07-25 10:28:19,256 - INFO - Data appended to contacts_table table successfully.
+2024-07-25 10:28:19,257 - INFO - Product data scraping completed successfully.
+2024-07-25 10:28:19,265 - INFO - Data appended to product_table table successfully.
+2024-07-25 10:28:19,266 - INFO - Activity data scraping completed successfully.
+2024-07-25 10:28:19,276 - INFO - Data appended to activity_table table successfully.
+2024-07-25 10:28:19,277 - INFO - Fetching data from: https://www.spyur.am/en/companies/olympus-educational-complex---high-school-of-yerevan/4192
+2024-07-25 10:28:21,642 - INFO - Processing data from: https://www.spyur.am/en/companies/olympus-educational-complex---high-school-of-yerevan/4192
+2024-07-25 10:28:21,642 - INFO - Fetching company information from https://www.spyur.am/en/companies/olympus-educational-complex---high-school-of-yerevan/4192
+2024-07-25 10:28:21,650 - INFO - Fetching product information from https://www.spyur.am/en/companies/olympus-educational-complex---high-school-of-yerevan/4192
+2024-07-25 10:28:21,653 - INFO - Fetching activity information from https://www.spyur.am/en/companies/olympus-educational-complex---high-school-of-yerevan/4192
+2024-07-25 10:28:21,657 - INFO - Company data scraping completed successfully.
+2024-07-25 10:28:21,665 - INFO - Data appended to company_table table successfully.
+2024-07-25 10:28:21,672 - INFO - Data appended to executive_table table successfully.
+2024-07-25 10:28:21,680 - INFO - Data appended to contacts_table table successfully.
+2024-07-25 10:28:21,681 - INFO - Product data scraping completed successfully.
+2024-07-25 10:28:21,688 - INFO - Data appended to product_table table successfully.
+2024-07-25 10:28:21,688 - INFO - Activity data scraping completed successfully.
+2024-07-25 10:28:21,695 - INFO - Data appended to activity_table table successfully.
+2024-07-25 10:28:21,696 - INFO - Fetching data from: https://www.spyur.am/en/companies/state-museum-of-nature-of-armenia/86457
+2024-07-25 10:28:22,509 - INFO - Processing data from: https://www.spyur.am/en/companies/state-museum-of-nature-of-armenia/86457
+2024-07-25 10:28:22,510 - INFO - Fetching company information from https://www.spyur.am/en/companies/state-museum-of-nature-of-armenia/86457
+2024-07-25 10:28:22,517 - INFO - Fetching product information from https://www.spyur.am/en/companies/state-museum-of-nature-of-armenia/86457
+2024-07-25 10:28:22,521 - INFO - Fetching activity information from https://www.spyur.am/en/companies/state-museum-of-nature-of-armenia/86457
+2024-07-25 10:28:22,525 - INFO - Company data scraping completed successfully.
+2024-07-25 10:28:22,533 - INFO - Data appended to company_table table successfully.
+2024-07-25 10:28:22,540 - INFO - Data appended to executive_table table successfully.
+2024-07-25 10:28:22,548 - INFO - Data appended to contacts_table table successfully.
+2024-07-25 10:28:22,548 - INFO - Product data scraping completed successfully.
+2024-07-25 10:28:22,556 - INFO - Data appended to product_table table successfully.
+2024-07-25 10:28:22,557 - INFO - Activity data scraping completed successfully.
+2024-07-25 10:28:22,563 - INFO - Data appended to activity_table table successfully.
+2024-07-25 10:28:22,565 - INFO - Fetching data from: https://www.spyur.am/en/companies/armenian-swimming-federation/86468
+2024-07-25 10:28:23,234 - INFO - Processing data from: https://www.spyur.am/en/companies/armenian-swimming-federation/86468
+2024-07-25 10:28:23,235 - INFO - Fetching company information from https://www.spyur.am/en/companies/armenian-swimming-federation/86468
+2024-07-25 10:28:23,242 - INFO - Fetching product information from https://www.spyur.am/en/companies/armenian-swimming-federation/86468
+2024-07-25 10:28:23,244 - INFO - Fetching activity information from https://www.spyur.am/en/companies/armenian-swimming-federation/86468
+2024-07-25 10:28:23,247 - INFO - Company data scraping completed successfully.
+2024-07-25 10:28:23,254 - INFO - Data appended to company_table table successfully.
+2024-07-25 10:28:23,262 - INFO - Data appended to executive_table table successfully.
+2024-07-25 10:28:23,268 - INFO - Data appended to contacts_table table successfully.
+2024-07-25 10:28:23,269 - INFO - Product data scraping completed successfully.
+2024-07-25 10:28:23,275 - INFO - Data appended to product_table table successfully.
+2024-07-25 10:28:23,275 - INFO - Activity data scraping completed successfully.
+2024-07-25 10:28:23,281 - INFO - Data appended to activity_table table successfully.
+2024-07-25 10:28:23,282 - INFO - Fetching data from: https://www.spyur.am/en/companies/synchronized-swimming-federation-of-armenia/86471
+2024-07-25 10:28:25,646 - INFO - Processing data from: https://www.spyur.am/en/companies/synchronized-swimming-federation-of-armenia/86471
+2024-07-25 10:28:25,646 - INFO - Fetching company information from https://www.spyur.am/en/companies/synchronized-swimming-federation-of-armenia/86471
+2024-07-25 10:28:25,655 - INFO - Fetching product information from https://www.spyur.am/en/companies/synchronized-swimming-federation-of-armenia/86471
+2024-07-25 10:28:25,659 - INFO - Fetching activity information from https://www.spyur.am/en/companies/synchronized-swimming-federation-of-armenia/86471
+2024-07-25 10:28:25,663 - INFO - Company data scraping completed successfully.
+2024-07-25 10:28:25,670 - INFO - Data appended to company_table table successfully.
+2024-07-25 10:28:25,675 - INFO - Data appended to executive_table table successfully.
+2024-07-25 10:28:25,681 - INFO - Data appended to contacts_table table successfully.
+2024-07-25 10:28:25,681 - INFO - Product data scraping completed successfully.
+2024-07-25 10:28:25,689 - INFO - Data appended to product_table table successfully.
+2024-07-25 10:28:25,690 - INFO - Activity data scraping completed successfully.
+2024-07-25 10:28:25,697 - INFO - Data appended to activity_table table successfully.
+2024-07-25 10:28:25,698 - INFO - Fetching data from: https://www.spyur.am/en/companies/water-polo-federation-of-armenia/86469
+2024-07-25 10:28:29,126 - INFO - Processing data from: https://www.spyur.am/en/companies/water-polo-federation-of-armenia/86469
+2024-07-25 10:28:29,127 - INFO - Fetching company information from https://www.spyur.am/en/companies/water-polo-federation-of-armenia/86469
+2024-07-25 10:28:29,136 - INFO - Fetching product information from https://www.spyur.am/en/companies/water-polo-federation-of-armenia/86469
+2024-07-25 10:28:29,139 - INFO - Fetching activity information from https://www.spyur.am/en/companies/water-polo-federation-of-armenia/86469
+2024-07-25 10:28:29,142 - INFO - Company data scraping completed successfully.
+2024-07-25 10:28:29,150 - INFO - Data appended to company_table table successfully.
+2024-07-25 10:28:29,157 - INFO - Data appended to executive_table table successfully.
+2024-07-25 10:28:29,164 - INFO - Data appended to contacts_table table successfully.
+2024-07-25 10:28:29,165 - INFO - Product data scraping completed successfully.
+2024-07-25 10:28:29,173 - INFO - Data appended to product_table table successfully.
+2024-07-25 10:28:29,174 - INFO - Activity data scraping completed successfully.
+2024-07-25 10:28:29,182 - INFO - Data appended to activity_table table successfully.
+2024-07-25 10:28:29,183 - INFO - Fetching data from: https://www.spyur.am/en/companies/armenian-draughts-federation/86474
+2024-07-25 10:28:30,919 - INFO - Processing data from: https://www.spyur.am/en/companies/armenian-draughts-federation/86474
+2024-07-25 10:28:30,919 - INFO - Fetching company information from https://www.spyur.am/en/companies/armenian-draughts-federation/86474
+2024-07-25 10:28:30,927 - INFO - Fetching product information from https://www.spyur.am/en/companies/armenian-draughts-federation/86474
+2024-07-25 10:28:30,930 - INFO - Fetching activity information from https://www.spyur.am/en/companies/armenian-draughts-federation/86474
+2024-07-25 10:28:30,933 - INFO - Company data scraping completed successfully.
+2024-07-25 10:28:30,940 - INFO - Data appended to company_table table successfully.
+2024-07-25 10:28:30,947 - INFO - Data appended to executive_table table successfully.
+2024-07-25 10:28:30,953 - INFO - Data appended to contacts_table table successfully.
+2024-07-25 10:28:30,954 - INFO - Product data scraping completed successfully.
+2024-07-25 10:28:30,961 - INFO - Data appended to product_table table successfully.
+2024-07-25 10:28:30,962 - INFO - Activity data scraping completed successfully.
+2024-07-25 10:28:30,969 - INFO - Data appended to activity_table table successfully.
+2024-07-25 10:28:30,970 - INFO - Fetching data from: https://www.spyur.am/en/companies/armenian-national-go-federation/86475
+2024-07-25 10:28:36,092 - INFO - Processing data from: https://www.spyur.am/en/companies/armenian-national-go-federation/86475
+2024-07-25 10:28:36,093 - INFO - Fetching company information from https://www.spyur.am/en/companies/armenian-national-go-federation/86475
+2024-07-25 10:28:36,102 - INFO - Fetching product information from https://www.spyur.am/en/companies/armenian-national-go-federation/86475
+2024-07-25 10:28:36,105 - INFO - Fetching activity information from https://www.spyur.am/en/companies/armenian-national-go-federation/86475
+2024-07-25 10:28:36,109 - INFO - Company data scraping completed successfully.
+2024-07-25 10:28:36,118 - INFO - Data appended to company_table table successfully.
+2024-07-25 10:28:36,124 - INFO - Data appended to executive_table table successfully.
+2024-07-25 10:28:36,133 - INFO - Data appended to contacts_table table successfully.
+2024-07-25 10:28:36,133 - INFO - Product data scraping completed successfully.
+2024-07-25 10:28:36,140 - INFO - Data appended to product_table table successfully.
+2024-07-25 10:28:36,141 - INFO - Activity data scraping completed successfully.
+2024-07-25 10:28:36,147 - INFO - Data appended to activity_table table successfully.
+2024-07-25 10:28:36,148 - INFO - Fetching data from: https://www.spyur.am/en/companies/sambo-federation-of-armenia/86476
+2024-07-25 10:28:37,942 - INFO - Processing data from: https://www.spyur.am/en/companies/sambo-federation-of-armenia/86476
+2024-07-25 10:28:37,943 - INFO - Fetching company information from https://www.spyur.am/en/companies/sambo-federation-of-armenia/86476
+2024-07-25 10:28:37,950 - INFO - Fetching product information from https://www.spyur.am/en/companies/sambo-federation-of-armenia/86476
+2024-07-25 10:28:37,954 - INFO - Fetching activity information from https://www.spyur.am/en/companies/sambo-federation-of-armenia/86476
+2024-07-25 10:28:37,958 - INFO - Company data scraping completed successfully.
+2024-07-25 10:28:37,966 - INFO - Data appended to company_table table successfully.
+2024-07-25 10:28:37,973 - INFO - Data appended to executive_table table successfully.
+2024-07-25 10:28:37,981 - INFO - Data appended to contacts_table table successfully.
+2024-07-25 10:28:37,981 - INFO - Product data scraping completed successfully.
+2024-07-25 10:28:37,989 - INFO - Data appended to product_table table successfully.
+2024-07-25 10:28:37,989 - INFO - Activity data scraping completed successfully.
+2024-07-25 10:28:37,996 - INFO - Data appended to activity_table table successfully.
+2024-07-25 10:28:37,998 - INFO - Fetching data from: https://www.spyur.am/en/companies/children-and-youth-olympic-sambo-and-judo-school/86477
+2024-07-25 10:28:43,322 - INFO - Processing data from: https://www.spyur.am/en/companies/children-and-youth-olympic-sambo-and-judo-school/86477
+2024-07-25 10:28:43,322 - INFO - Fetching company information from https://www.spyur.am/en/companies/children-and-youth-olympic-sambo-and-judo-school/86477
+2024-07-25 10:28:43,330 - INFO - Fetching product information from https://www.spyur.am/en/companies/children-and-youth-olympic-sambo-and-judo-school/86477
+2024-07-25 10:28:43,333 - INFO - Fetching activity information from https://www.spyur.am/en/companies/children-and-youth-olympic-sambo-and-judo-school/86477
+2024-07-25 10:28:43,336 - INFO - Company data scraping completed successfully.
+2024-07-25 10:28:43,343 - INFO - Data appended to company_table table successfully.
+2024-07-25 10:28:43,350 - INFO - Data appended to executive_table table successfully.
+2024-07-25 10:28:43,355 - INFO - Data appended to contacts_table table successfully.
+2024-07-25 10:28:43,356 - INFO - Product data scraping completed successfully.
+2024-07-25 10:28:43,362 - INFO - Data appended to product_table table successfully.
+2024-07-25 10:28:43,362 - INFO - Activity data scraping completed successfully.
+2024-07-25 10:28:43,368 - INFO - Data appended to activity_table table successfully.
+2024-07-25 10:28:43,369 - INFO - Fetching data from: https://www.spyur.am/en/companies/armenian-national-federation-of-renju/82238
+2024-07-25 10:28:45,360 - INFO - Processing data from: https://www.spyur.am/en/companies/armenian-national-federation-of-renju/82238
+2024-07-25 10:28:45,361 - INFO - Fetching company information from https://www.spyur.am/en/companies/armenian-national-federation-of-renju/82238
+2024-07-25 10:28:45,369 - INFO - Fetching product information from https://www.spyur.am/en/companies/armenian-national-federation-of-renju/82238
+2024-07-25 10:28:45,372 - INFO - Fetching activity information from https://www.spyur.am/en/companies/armenian-national-federation-of-renju/82238
+2024-07-25 10:28:45,376 - INFO - Company data scraping completed successfully.
+2024-07-25 10:28:45,384 - INFO - Data appended to company_table table successfully.
+2024-07-25 10:28:45,392 - INFO - Data appended to executive_table table successfully.
+2024-07-25 10:28:45,401 - INFO - Data appended to contacts_table table successfully.
+2024-07-25 10:28:45,402 - INFO - Product data scraping completed successfully.
+2024-07-25 10:28:45,410 - INFO - Data appended to product_table table successfully.
+2024-07-25 10:28:45,410 - INFO - Activity data scraping completed successfully.
+2024-07-25 10:28:45,419 - INFO - Data appended to activity_table table successfully.
+2024-07-25 10:28:45,419 - INFO - Fetching data from: https://www.spyur.am/en/companies/arev-condominium/86482
+2024-07-25 10:28:46,646 - INFO - Processing data from: https://www.spyur.am/en/companies/arev-condominium/86482
+2024-07-25 10:28:46,646 - INFO - Fetching company information from https://www.spyur.am/en/companies/arev-condominium/86482
+2024-07-25 10:28:46,658 - INFO - Fetching product information from https://www.spyur.am/en/companies/arev-condominium/86482
+2024-07-25 10:28:46,662 - INFO - Fetching activity information from https://www.spyur.am/en/companies/arev-condominium/86482
+2024-07-25 10:28:46,667 - INFO - Company data scraping completed successfully.
+2024-07-25 10:28:46,675 - INFO - Data appended to company_table table successfully.
+2024-07-25 10:28:46,682 - INFO - Data appended to executive_table table successfully.
+2024-07-25 10:28:46,688 - INFO - Data appended to contacts_table table successfully.
+2024-07-25 10:28:46,688 - INFO - Product data scraping completed successfully.
+2024-07-25 10:28:46,696 - INFO - Data appended to product_table table successfully.
+2024-07-25 10:28:46,696 - INFO - Activity data scraping completed successfully.
+2024-07-25 10:28:46,703 - INFO - Data appended to activity_table table successfully.
+2024-07-25 10:28:46,704 - INFO - Fetching data from: https://www.spyur.am/en/companies/children-and-youth-complex-sports-school-of-artashat/82255
+2024-07-25 10:28:51,951 - INFO - Processing data from: https://www.spyur.am/en/companies/children-and-youth-complex-sports-school-of-artashat/82255
+2024-07-25 10:28:51,952 - INFO - Fetching company information from https://www.spyur.am/en/companies/children-and-youth-complex-sports-school-of-artashat/82255
+2024-07-25 10:28:51,963 - INFO - Fetching product information from https://www.spyur.am/en/companies/children-and-youth-complex-sports-school-of-artashat/82255
+2024-07-25 10:28:51,967 - INFO - Fetching activity information from https://www.spyur.am/en/companies/children-and-youth-complex-sports-school-of-artashat/82255
+2024-07-25 10:28:51,971 - INFO - Company data scraping completed successfully.
+2024-07-25 10:28:51,979 - INFO - Data appended to company_table table successfully.
+2024-07-25 10:28:51,984 - INFO - Data appended to executive_table table successfully.
+2024-07-25 10:28:51,990 - INFO - Data appended to contacts_table table successfully.
+2024-07-25 10:28:51,990 - INFO - Product data scraping completed successfully.
+2024-07-25 10:28:51,996 - INFO - Data appended to product_table table successfully.
+2024-07-25 10:28:51,996 - INFO - Activity data scraping completed successfully.
+2024-07-25 10:28:52,002 - INFO - Data appended to activity_table table successfully.
+2024-07-25 10:28:52,003 - INFO - Fetching data from: https://www.spyur.am/en/companies/artsruni-90-condominium/86505
+2024-07-25 10:28:53,636 - INFO - Processing data from: https://www.spyur.am/en/companies/artsruni-90-condominium/86505
+2024-07-25 10:28:53,636 - INFO - Fetching company information from https://www.spyur.am/en/companies/artsruni-90-condominium/86505
+2024-07-25 10:28:53,643 - INFO - Fetching product information from https://www.spyur.am/en/companies/artsruni-90-condominium/86505
+2024-07-25 10:28:53,647 - INFO - Fetching activity information from https://www.spyur.am/en/companies/artsruni-90-condominium/86505
+2024-07-25 10:28:53,651 - INFO - Company data scraping completed successfully.
+2024-07-25 10:28:53,659 - INFO - Data appended to company_table table successfully.
+2024-07-25 10:28:53,667 - INFO - Data appended to executive_table table successfully.
+2024-07-25 10:28:53,673 - INFO - Data appended to contacts_table table successfully.
+2024-07-25 10:28:53,674 - INFO - Product data scraping completed successfully.
+2024-07-25 10:28:53,680 - INFO - Data appended to product_table table successfully.
+2024-07-25 10:28:53,681 - INFO - Activity data scraping completed successfully.
+2024-07-25 10:28:53,687 - INFO - Data appended to activity_table table successfully.
+2024-07-25 10:28:53,689 - INFO - Fetching data from: https://www.spyur.am/en/companies/erebuni-condominium/86514
+2024-07-25 10:28:57,512 - INFO - Processing data from: https://www.spyur.am/en/companies/erebuni-condominium/86514
+2024-07-25 10:28:57,512 - INFO - Fetching company information from https://www.spyur.am/en/companies/erebuni-condominium/86514
+2024-07-25 10:28:57,520 - INFO - Fetching product information from https://www.spyur.am/en/companies/erebuni-condominium/86514
+2024-07-25 10:28:57,523 - INFO - Fetching activity information from https://www.spyur.am/en/companies/erebuni-condominium/86514
+2024-07-25 10:28:57,526 - INFO - Company data scraping completed successfully.
+2024-07-25 10:28:57,533 - INFO - Data appended to company_table table successfully.
+2024-07-25 10:28:57,539 - INFO - Data appended to executive_table table successfully.
+2024-07-25 10:28:57,546 - INFO - Data appended to contacts_table table successfully.
+2024-07-25 10:28:57,546 - INFO - Product data scraping completed successfully.
+2024-07-25 10:28:57,553 - INFO - Data appended to product_table table successfully.
+2024-07-25 10:28:57,553 - INFO - Activity data scraping completed successfully.
+2024-07-25 10:28:57,560 - INFO - Data appended to activity_table table successfully.
+2024-07-25 10:28:57,561 - INFO - Fetching data from: https://www.spyur.am/en/companies/davtashen-11-condominium/86510
+2024-07-25 10:28:58,460 - INFO - Processing data from: https://www.spyur.am/en/companies/davtashen-11-condominium/86510
+2024-07-25 10:28:58,461 - INFO - Fetching company information from https://www.spyur.am/en/companies/davtashen-11-condominium/86510
+2024-07-25 10:28:58,468 - INFO - Fetching product information from https://www.spyur.am/en/companies/davtashen-11-condominium/86510
+2024-07-25 10:28:58,472 - INFO - Fetching activity information from https://www.spyur.am/en/companies/davtashen-11-condominium/86510
+2024-07-25 10:28:58,475 - INFO - Company data scraping completed successfully.
+2024-07-25 10:28:58,482 - INFO - Data appended to company_table table successfully.
+2024-07-25 10:28:58,495 - INFO - Data appended to executive_table table successfully.
+2024-07-25 10:28:58,503 - INFO - Data appended to contacts_table table successfully.
+2024-07-25 10:28:58,504 - INFO - Product data scraping completed successfully.
+2024-07-25 10:28:58,511 - INFO - Data appended to product_table table successfully.
+2024-07-25 10:28:58,512 - INFO - Activity data scraping completed successfully.
+2024-07-25 10:28:58,517 - INFO - Data appended to activity_table table successfully.
+2024-07-25 10:28:58,518 - INFO - Fetching data from: https://www.spyur.am/en/companies/davtashen-2l-1-condominium/86509
+2024-07-25 10:29:00,421 - INFO - Processing data from: https://www.spyur.am/en/companies/davtashen-2l-1-condominium/86509
+2024-07-25 10:29:00,422 - INFO - Fetching company information from https://www.spyur.am/en/companies/davtashen-2l-1-condominium/86509
+2024-07-25 10:29:00,433 - INFO - Fetching product information from https://www.spyur.am/en/companies/davtashen-2l-1-condominium/86509
+2024-07-25 10:29:00,438 - INFO - Fetching activity information from https://www.spyur.am/en/companies/davtashen-2l-1-condominium/86509
+2024-07-25 10:29:00,442 - INFO - Company data scraping completed successfully.
+2024-07-25 10:29:00,450 - INFO - Data appended to company_table table successfully.
+2024-07-25 10:29:00,456 - INFO - Data appended to executive_table table successfully.
+2024-07-25 10:29:00,463 - INFO - Data appended to contacts_table table successfully.
+2024-07-25 10:29:00,464 - INFO - Product data scraping completed successfully.
+2024-07-25 10:29:00,472 - INFO - Data appended to product_table table successfully.
+2024-07-25 10:29:00,472 - INFO - Activity data scraping completed successfully.
+2024-07-25 10:29:00,479 - INFO - Data appended to activity_table table successfully.
+2024-07-25 10:29:00,480 - INFO - Fetching data from: https://www.spyur.am/en/companies/sasuntsi-davit-11-condominium/86517
+2024-07-25 10:29:08,053 - INFO - Processing data from: https://www.spyur.am/en/companies/sasuntsi-davit-11-condominium/86517
+2024-07-25 10:29:08,054 - INFO - Fetching company information from https://www.spyur.am/en/companies/sasuntsi-davit-11-condominium/86517
+2024-07-25 10:29:08,063 - INFO - Fetching product information from https://www.spyur.am/en/companies/sasuntsi-davit-11-condominium/86517
+2024-07-25 10:29:08,067 - INFO - Fetching activity information from https://www.spyur.am/en/companies/sasuntsi-davit-11-condominium/86517
+2024-07-25 10:29:08,071 - INFO - Company data scraping completed successfully.
+2024-07-25 10:29:08,078 - INFO - Data appended to company_table table successfully.
+2024-07-25 10:29:08,084 - INFO - Data appended to executive_table table successfully.
+2024-07-25 10:29:08,094 - INFO - Data appended to contacts_table table successfully.
+2024-07-25 10:29:08,095 - INFO - Product data scraping completed successfully.
+2024-07-25 10:29:08,102 - INFO - Data appended to product_table table successfully.
+2024-07-25 10:29:08,102 - INFO - Activity data scraping completed successfully.
+2024-07-25 10:29:08,108 - INFO - Data appended to activity_table table successfully.
+2024-07-25 10:29:08,110 - INFO - Fetching data from: https://www.spyur.am/en/companies/nalbandyan-37-condominium/86528
+2024-07-25 10:29:08,834 - INFO - Processing data from: https://www.spyur.am/en/companies/nalbandyan-37-condominium/86528
+2024-07-25 10:29:08,835 - INFO - Fetching company information from https://www.spyur.am/en/companies/nalbandyan-37-condominium/86528
+2024-07-25 10:29:08,842 - INFO - Fetching product information from https://www.spyur.am/en/companies/nalbandyan-37-condominium/86528
+2024-07-25 10:29:08,845 - INFO - Fetching activity information from https://www.spyur.am/en/companies/nalbandyan-37-condominium/86528
+2024-07-25 10:29:08,848 - INFO - Company data scraping completed successfully.
+2024-07-25 10:29:08,856 - INFO - Data appended to company_table table successfully.
+2024-07-25 10:29:08,863 - INFO - Data appended to executive_table table successfully.
+2024-07-25 10:29:08,869 - INFO - Data appended to contacts_table table successfully.
+2024-07-25 10:29:08,870 - INFO - Product data scraping completed successfully.
+2024-07-25 10:29:08,876 - INFO - Data appended to product_table table successfully.
+2024-07-25 10:29:08,877 - INFO - Activity data scraping completed successfully.
+2024-07-25 10:29:08,885 - INFO - Data appended to activity_table table successfully.
+2024-07-25 10:29:08,886 - INFO - Fetching data from: https://www.spyur.am/en/companies/moskovyan-8-condominium/86524
+2024-07-25 10:29:10,934 - INFO - Processing data from: https://www.spyur.am/en/companies/moskovyan-8-condominium/86524
+2024-07-25 10:29:10,934 - INFO - Fetching company information from https://www.spyur.am/en/companies/moskovyan-8-condominium/86524
+2024-07-25 10:29:10,941 - INFO - Fetching product information from https://www.spyur.am/en/companies/moskovyan-8-condominium/86524
+2024-07-25 10:29:10,944 - INFO - Fetching activity information from https://www.spyur.am/en/companies/moskovyan-8-condominium/86524
+2024-07-25 10:29:10,947 - INFO - Company data scraping completed successfully.
+2024-07-25 10:29:10,955 - INFO - Data appended to company_table table successfully.
+2024-07-25 10:29:10,961 - INFO - Data appended to executive_table table successfully.
+2024-07-25 10:29:10,969 - INFO - Data appended to contacts_table table successfully.
+2024-07-25 10:29:10,969 - INFO - Product data scraping completed successfully.
+2024-07-25 10:29:10,976 - INFO - Data appended to product_table table successfully.
+2024-07-25 10:29:10,977 - INFO - Activity data scraping completed successfully.
+2024-07-25 10:29:10,984 - INFO - Data appended to activity_table table successfully.
+2024-07-25 10:29:10,986 - INFO - Fetching data from: https://www.spyur.am/en/companies/jrashat-condominium/86525
+2024-07-25 10:29:14,443 - INFO - Processing data from: https://www.spyur.am/en/companies/jrashat-condominium/86525
+2024-07-25 10:29:14,444 - INFO - Fetching company information from https://www.spyur.am/en/companies/jrashat-condominium/86525
+2024-07-25 10:29:14,450 - INFO - Fetching product information from https://www.spyur.am/en/companies/jrashat-condominium/86525
+2024-07-25 10:29:14,453 - INFO - Fetching activity information from https://www.spyur.am/en/companies/jrashat-condominium/86525
+2024-07-25 10:29:14,455 - INFO - Company data scraping completed successfully.
+2024-07-25 10:29:14,462 - INFO - Data appended to company_table table successfully.
+2024-07-25 10:29:14,469 - INFO - Data appended to executive_table table successfully.
+2024-07-25 10:29:14,476 - INFO - Data appended to contacts_table table successfully.
+2024-07-25 10:29:14,477 - INFO - Product data scraping completed successfully.
+2024-07-25 10:29:14,487 - INFO - Data appended to product_table table successfully.
+2024-07-25 10:29:14,488 - INFO - Activity data scraping completed successfully.
+2024-07-25 10:29:14,494 - INFO - Data appended to activity_table table successfully.
+2024-07-25 10:29:14,495 - INFO - Fetching data from: https://www.spyur.am/en/companies/aresh-condominium/86518
+2024-07-25 10:29:16,376 - INFO - Processing data from: https://www.spyur.am/en/companies/aresh-condominium/86518
+2024-07-25 10:29:16,377 - INFO - Fetching company information from https://www.spyur.am/en/companies/aresh-condominium/86518
+2024-07-25 10:29:16,384 - INFO - Fetching product information from https://www.spyur.am/en/companies/aresh-condominium/86518
+2024-07-25 10:29:16,387 - INFO - Fetching activity information from https://www.spyur.am/en/companies/aresh-condominium/86518
+2024-07-25 10:29:16,389 - INFO - Company data scraping completed successfully.
+2024-07-25 10:29:16,397 - INFO - Data appended to company_table table successfully.
+2024-07-25 10:29:16,405 - INFO - Data appended to executive_table table successfully.
+2024-07-25 10:29:16,414 - INFO - Data appended to contacts_table table successfully.
+2024-07-25 10:29:16,415 - INFO - Product data scraping completed successfully.
+2024-07-25 10:29:16,421 - INFO - Data appended to product_table table successfully.
+2024-07-25 10:29:16,422 - INFO - Activity data scraping completed successfully.
+2024-07-25 10:29:16,428 - INFO - Data appended to activity_table table successfully.
+2024-07-25 10:29:16,429 - INFO - Fetching data from: https://www.spyur.am/en/companies/hasmik-condominium/86553
+2024-07-25 10:29:17,194 - INFO - Processing data from: https://www.spyur.am/en/companies/hasmik-condominium/86553
+2024-07-25 10:29:17,195 - INFO - Fetching company information from https://www.spyur.am/en/companies/hasmik-condominium/86553
+2024-07-25 10:29:17,202 - INFO - Fetching product information from https://www.spyur.am/en/companies/hasmik-condominium/86553
+2024-07-25 10:29:17,205 - INFO - Fetching activity information from https://www.spyur.am/en/companies/hasmik-condominium/86553
+2024-07-25 10:29:17,208 - INFO - Company data scraping completed successfully.
+2024-07-25 10:29:17,216 - INFO - Data appended to company_table table successfully.
+2024-07-25 10:29:17,224 - INFO - Data appended to executive_table table successfully.
+2024-07-25 10:29:17,231 - INFO - Data appended to contacts_table table successfully.
+2024-07-25 10:29:17,232 - INFO - Product data scraping completed successfully.
+2024-07-25 10:29:17,242 - INFO - Data appended to product_table table successfully.
+2024-07-25 10:29:17,242 - INFO - Activity data scraping completed successfully.
+2024-07-25 10:29:17,250 - INFO - Data appended to activity_table table successfully.
+2024-07-25 10:29:17,251 - INFO - Fetching data from: https://www.spyur.am/en/companies/zeytun-98-condominium/86533
+2024-07-25 10:29:18,134 - INFO - Processing data from: https://www.spyur.am/en/companies/zeytun-98-condominium/86533
+2024-07-25 10:29:18,135 - INFO - Fetching company information from https://www.spyur.am/en/companies/zeytun-98-condominium/86533
+2024-07-25 10:29:18,145 - INFO - Fetching product information from https://www.spyur.am/en/companies/zeytun-98-condominium/86533
+2024-07-25 10:29:18,148 - INFO - Fetching activity information from https://www.spyur.am/en/companies/zeytun-98-condominium/86533
+2024-07-25 10:29:18,152 - INFO - Company data scraping completed successfully.
+2024-07-25 10:29:18,159 - INFO - Data appended to company_table table successfully.
+2024-07-25 10:29:18,165 - INFO - Data appended to executive_table table successfully.
+2024-07-25 10:29:18,172 - INFO - Data appended to contacts_table table successfully.
+2024-07-25 10:29:18,173 - INFO - Product data scraping completed successfully.
+2024-07-25 10:29:18,181 - INFO - Data appended to product_table table successfully.
+2024-07-25 10:29:18,182 - INFO - Activity data scraping completed successfully.
+2024-07-25 10:29:18,188 - INFO - Data appended to activity_table table successfully.
+2024-07-25 10:29:18,189 - INFO - Fetching data from: https://www.spyur.am/en/companies/isakovi-501-condominium/86532
+2024-07-25 10:29:19,001 - INFO - Processing data from: https://www.spyur.am/en/companies/isakovi-501-condominium/86532
+2024-07-25 10:29:19,001 - INFO - Fetching company information from https://www.spyur.am/en/companies/isakovi-501-condominium/86532
+2024-07-25 10:29:19,012 - INFO - Fetching product information from https://www.spyur.am/en/companies/isakovi-501-condominium/86532
+2024-07-25 10:29:19,016 - INFO - Fetching activity information from https://www.spyur.am/en/companies/isakovi-501-condominium/86532
+2024-07-25 10:29:19,020 - INFO - Company data scraping completed successfully.
+2024-07-25 10:29:19,028 - INFO - Data appended to company_table table successfully.
+2024-07-25 10:29:19,034 - INFO - Data appended to executive_table table successfully.
+2024-07-25 10:29:19,041 - INFO - Data appended to contacts_table table successfully.
+2024-07-25 10:29:19,041 - INFO - Product data scraping completed successfully.
+2024-07-25 10:29:19,048 - INFO - Data appended to product_table table successfully.
+2024-07-25 10:29:19,048 - INFO - Activity data scraping completed successfully.
+2024-07-25 10:29:19,054 - INFO - Data appended to activity_table table successfully.
+2024-07-25 10:29:19,055 - INFO - Fetching data from: https://www.spyur.am/en/companies/gayane-condominium/86554
+2024-07-25 10:29:20,260 - INFO - Processing data from: https://www.spyur.am/en/companies/gayane-condominium/86554
+2024-07-25 10:29:20,261 - INFO - Fetching company information from https://www.spyur.am/en/companies/gayane-condominium/86554
+2024-07-25 10:29:20,268 - INFO - Fetching product information from https://www.spyur.am/en/companies/gayane-condominium/86554
+2024-07-25 10:29:20,271 - INFO - Fetching activity information from https://www.spyur.am/en/companies/gayane-condominium/86554
+2024-07-25 10:29:20,274 - INFO - Company data scraping completed successfully.
+2024-07-25 10:29:20,280 - INFO - Data appended to company_table table successfully.
+2024-07-25 10:29:20,285 - INFO - Data appended to executive_table table successfully.
+2024-07-25 10:29:20,291 - INFO - Data appended to contacts_table table successfully.
+2024-07-25 10:29:20,291 - INFO - Product data scraping completed successfully.
+2024-07-25 10:29:20,297 - INFO - Data appended to product_table table successfully.
+2024-07-25 10:29:20,298 - INFO - Activity data scraping completed successfully.
+2024-07-25 10:29:20,302 - INFO - Data appended to activity_table table successfully.
+2024-07-25 10:29:20,303 - INFO - Fetching data from: https://www.spyur.am/en/companies/zoravar-vazgen-sargsyan-condominium/86557
+2024-07-25 10:29:21,641 - INFO - Processing data from: https://www.spyur.am/en/companies/zoravar-vazgen-sargsyan-condominium/86557
+2024-07-25 10:29:21,642 - INFO - Fetching company information from https://www.spyur.am/en/companies/zoravar-vazgen-sargsyan-condominium/86557
+2024-07-25 10:29:21,649 - INFO - Fetching product information from https://www.spyur.am/en/companies/zoravar-vazgen-sargsyan-condominium/86557
+2024-07-25 10:29:21,653 - INFO - Fetching activity information from https://www.spyur.am/en/companies/zoravar-vazgen-sargsyan-condominium/86557
+2024-07-25 10:29:21,656 - INFO - Company data scraping completed successfully.
+2024-07-25 10:29:21,663 - INFO - Data appended to company_table table successfully.
+2024-07-25 10:29:21,669 - INFO - Data appended to executive_table table successfully.
+2024-07-25 10:29:21,675 - INFO - Data appended to contacts_table table successfully.
+2024-07-25 10:29:21,676 - INFO - Product data scraping completed successfully.
+2024-07-25 10:29:21,682 - INFO - Data appended to product_table table successfully.
+2024-07-25 10:29:21,683 - INFO - Activity data scraping completed successfully.
+2024-07-25 10:29:21,690 - INFO - Data appended to activity_table table successfully.
+2024-07-25 10:29:21,691 - INFO - Fetching data from: https://www.spyur.am/en/companies/anahit-condominium/86558
+2024-07-25 10:29:22,681 - INFO - Processing data from: https://www.spyur.am/en/companies/anahit-condominium/86558
+2024-07-25 10:29:22,682 - INFO - Fetching company information from https://www.spyur.am/en/companies/anahit-condominium/86558
+2024-07-25 10:29:22,691 - INFO - Fetching product information from https://www.spyur.am/en/companies/anahit-condominium/86558
+2024-07-25 10:29:22,695 - INFO - Fetching activity information from https://www.spyur.am/en/companies/anahit-condominium/86558
+2024-07-25 10:29:22,698 - INFO - Company data scraping completed successfully.
+2024-07-25 10:29:22,705 - INFO - Data appended to company_table table successfully.
+2024-07-25 10:29:22,713 - INFO - Data appended to executive_table table successfully.
+2024-07-25 10:29:22,720 - INFO - Data appended to contacts_table table successfully.
+2024-07-25 10:29:22,720 - INFO - Product data scraping completed successfully.
+2024-07-25 10:29:22,727 - INFO - Data appended to product_table table successfully.
+2024-07-25 10:29:22,728 - INFO - Activity data scraping completed successfully.
+2024-07-25 10:29:22,736 - INFO - Data appended to activity_table table successfully.
+2024-07-25 10:29:22,737 - INFO - Fetching data from: https://www.spyur.am/en/companies/hayk-condominium/86534
+2024-07-25 10:29:23,454 - INFO - Processing data from: https://www.spyur.am/en/companies/hayk-condominium/86534
+2024-07-25 10:29:23,455 - INFO - Fetching company information from https://www.spyur.am/en/companies/hayk-condominium/86534
+2024-07-25 10:29:23,463 - INFO - Fetching product information from https://www.spyur.am/en/companies/hayk-condominium/86534
+2024-07-25 10:29:23,466 - INFO - Fetching activity information from https://www.spyur.am/en/companies/hayk-condominium/86534
+2024-07-25 10:29:23,469 - INFO - Company data scraping completed successfully.
+2024-07-25 10:29:23,476 - INFO - Data appended to company_table table successfully.
+2024-07-25 10:29:23,483 - INFO - Data appended to executive_table table successfully.
+2024-07-25 10:29:23,491 - INFO - Data appended to contacts_table table successfully.
+2024-07-25 10:29:23,492 - INFO - Product data scraping completed successfully.
+2024-07-25 10:29:23,497 - INFO - Data appended to product_table table successfully.
+2024-07-25 10:29:23,497 - INFO - Activity data scraping completed successfully.
+2024-07-25 10:29:23,503 - INFO - Data appended to activity_table table successfully.
+2024-07-25 10:29:23,504 - INFO - Fetching data from: https://www.spyur.am/en/companies/huys-condominium/86538
+2024-07-25 10:29:24,377 - INFO - Processing data from: https://www.spyur.am/en/companies/huys-condominium/86538
+2024-07-25 10:29:24,378 - INFO - Fetching company information from https://www.spyur.am/en/companies/huys-condominium/86538
+2024-07-25 10:29:24,388 - INFO - Fetching product information from https://www.spyur.am/en/companies/huys-condominium/86538
+2024-07-25 10:29:24,392 - INFO - Fetching activity information from https://www.spyur.am/en/companies/huys-condominium/86538
+2024-07-25 10:29:24,396 - INFO - Company data scraping completed successfully.
+2024-07-25 10:29:24,402 - INFO - Data appended to company_table table successfully.
+2024-07-25 10:29:24,408 - INFO - Data appended to executive_table table successfully.
+2024-07-25 10:29:24,413 - INFO - Data appended to contacts_table table successfully.
+2024-07-25 10:29:24,414 - INFO - Product data scraping completed successfully.
+2024-07-25 10:29:24,422 - INFO - Data appended to product_table table successfully.
+2024-07-25 10:29:24,423 - INFO - Activity data scraping completed successfully.
+2024-07-25 10:29:24,430 - INFO - Data appended to activity_table table successfully.
+2024-07-25 10:29:24,431 - INFO - Fetching data from: https://www.spyur.am/en/companies/lchap-condominium/86539
+2024-07-25 10:29:25,550 - INFO - Processing data from: https://www.spyur.am/en/companies/lchap-condominium/86539
+2024-07-25 10:29:25,551 - INFO - Fetching company information from https://www.spyur.am/en/companies/lchap-condominium/86539
+2024-07-25 10:29:25,558 - INFO - Fetching product information from https://www.spyur.am/en/companies/lchap-condominium/86539
+2024-07-25 10:29:25,561 - INFO - Fetching activity information from https://www.spyur.am/en/companies/lchap-condominium/86539
+2024-07-25 10:29:25,564 - INFO - Company data scraping completed successfully.
+2024-07-25 10:29:25,572 - INFO - Data appended to company_table table successfully.
+2024-07-25 10:29:25,580 - INFO - Data appended to executive_table table successfully.
+2024-07-25 10:29:25,587 - INFO - Data appended to contacts_table table successfully.
+2024-07-25 10:29:25,588 - INFO - Product data scraping completed successfully.
+2024-07-25 10:29:25,594 - INFO - Data appended to product_table table successfully.
+2024-07-25 10:29:25,595 - INFO - Activity data scraping completed successfully.
+2024-07-25 10:29:25,600 - INFO - Data appended to activity_table table successfully.
+2024-07-25 10:29:25,602 - INFO - Fetching data from: https://www.spyur.am/en/companies/tadevosyan-lane-2-condominium/86548
+2024-07-25 10:29:26,317 - INFO - Processing data from: https://www.spyur.am/en/companies/tadevosyan-lane-2-condominium/86548
+2024-07-25 10:29:26,318 - INFO - Fetching company information from https://www.spyur.am/en/companies/tadevosyan-lane-2-condominium/86548
+2024-07-25 10:29:26,325 - INFO - Fetching product information from https://www.spyur.am/en/companies/tadevosyan-lane-2-condominium/86548
+2024-07-25 10:29:26,328 - INFO - Fetching activity information from https://www.spyur.am/en/companies/tadevosyan-lane-2-condominium/86548
+2024-07-25 10:29:26,332 - INFO - Company data scraping completed successfully.
+2024-07-25 10:29:26,339 - INFO - Data appended to company_table table successfully.
+2024-07-25 10:29:26,346 - INFO - Data appended to executive_table table successfully.
+2024-07-25 10:29:26,352 - INFO - Data appended to contacts_table table successfully.
+2024-07-25 10:29:26,353 - INFO - Product data scraping completed successfully.
+2024-07-25 10:29:26,359 - INFO - Data appended to product_table table successfully.
+2024-07-25 10:29:26,360 - INFO - Activity data scraping completed successfully.
+2024-07-25 10:29:26,367 - INFO - Data appended to activity_table table successfully.
+2024-07-25 10:29:26,368 - INFO - Fetching data from: https://www.spyur.am/en/companies/gevorg-chaush-condominium/86540
+2024-07-25 10:29:31,244 - INFO - Processing data from: https://www.spyur.am/en/companies/gevorg-chaush-condominium/86540
+2024-07-25 10:29:31,245 - INFO - Fetching company information from https://www.spyur.am/en/companies/gevorg-chaush-condominium/86540
+2024-07-25 10:29:31,252 - INFO - Fetching product information from https://www.spyur.am/en/companies/gevorg-chaush-condominium/86540
+2024-07-25 10:29:31,255 - INFO - Fetching activity information from https://www.spyur.am/en/companies/gevorg-chaush-condominium/86540
+2024-07-25 10:29:31,258 - INFO - Company data scraping completed successfully.
+2024-07-25 10:29:31,265 - INFO - Data appended to company_table table successfully.
+2024-07-25 10:29:31,272 - INFO - Data appended to executive_table table successfully.
+2024-07-25 10:29:31,282 - INFO - Data appended to contacts_table table successfully.
+2024-07-25 10:29:31,283 - INFO - Product data scraping completed successfully.
+2024-07-25 10:29:31,288 - INFO - Data appended to product_table table successfully.
+2024-07-25 10:29:31,289 - INFO - Activity data scraping completed successfully.
+2024-07-25 10:29:31,296 - INFO - Data appended to activity_table table successfully.
+2024-07-25 10:29:31,297 - INFO - Fetching data from: https://www.spyur.am/en/companies/nor-nork-55-condominium/85882
+2024-07-25 10:29:32,881 - INFO - Processing data from: https://www.spyur.am/en/companies/nor-nork-55-condominium/85882
+2024-07-25 10:29:32,882 - INFO - Fetching company information from https://www.spyur.am/en/companies/nor-nork-55-condominium/85882
+2024-07-25 10:29:32,889 - INFO - Fetching product information from https://www.spyur.am/en/companies/nor-nork-55-condominium/85882
+2024-07-25 10:29:32,893 - INFO - Fetching activity information from https://www.spyur.am/en/companies/nor-nork-55-condominium/85882
+2024-07-25 10:29:32,896 - INFO - Company data scraping completed successfully.
+2024-07-25 10:29:32,905 - INFO - Data appended to company_table table successfully.
+2024-07-25 10:29:32,912 - INFO - Data appended to executive_table table successfully.
+2024-07-25 10:29:32,918 - INFO - Data appended to contacts_table table successfully.
+2024-07-25 10:29:32,919 - INFO - Product data scraping completed successfully.
+2024-07-25 10:29:32,925 - INFO - Data appended to product_table table successfully.
+2024-07-25 10:29:32,926 - INFO - Activity data scraping completed successfully.
+2024-07-25 10:29:32,932 - INFO - Data appended to activity_table table successfully.
+2024-07-25 10:29:32,933 - INFO - Fetching data from: https://www.spyur.am/en/companies/ajapnyak-1-condominium/86577
+2024-07-25 10:29:35,412 - INFO - Processing data from: https://www.spyur.am/en/companies/ajapnyak-1-condominium/86577
+2024-07-25 10:29:35,413 - INFO - Fetching company information from https://www.spyur.am/en/companies/ajapnyak-1-condominium/86577
+2024-07-25 10:29:35,421 - INFO - Fetching product information from https://www.spyur.am/en/companies/ajapnyak-1-condominium/86577
+2024-07-25 10:29:35,425 - INFO - Fetching activity information from https://www.spyur.am/en/companies/ajapnyak-1-condominium/86577
+2024-07-25 10:29:35,428 - INFO - Company data scraping completed successfully.
+2024-07-25 10:29:35,435 - INFO - Data appended to company_table table successfully.
+2024-07-25 10:29:35,442 - INFO - Data appended to executive_table table successfully.
+2024-07-25 10:29:35,448 - INFO - Data appended to contacts_table table successfully.
+2024-07-25 10:29:35,449 - INFO - Product data scraping completed successfully.
+2024-07-25 10:29:35,456 - INFO - Data appended to product_table table successfully.
+2024-07-25 10:29:35,457 - INFO - Activity data scraping completed successfully.
+2024-07-25 10:29:35,464 - INFO - Data appended to activity_table table successfully.
+2024-07-25 10:29:35,466 - INFO - Fetching data from: https://www.spyur.am/en/companies/jrashat-50-condominium/86591
+2024-07-25 10:29:45,287 - INFO - Processing data from: https://www.spyur.am/en/companies/jrashat-50-condominium/86591
+2024-07-25 10:29:45,287 - INFO - Fetching company information from https://www.spyur.am/en/companies/jrashat-50-condominium/86591
+2024-07-25 10:29:45,295 - INFO - Fetching product information from https://www.spyur.am/en/companies/jrashat-50-condominium/86591
+2024-07-25 10:29:45,298 - INFO - Fetching activity information from https://www.spyur.am/en/companies/jrashat-50-condominium/86591
+2024-07-25 10:29:45,301 - INFO - Company data scraping completed successfully.
+2024-07-25 10:29:45,308 - INFO - Data appended to company_table table successfully.
+2024-07-25 10:29:45,316 - INFO - Data appended to executive_table table successfully.
+2024-07-25 10:29:45,324 - INFO - Data appended to contacts_table table successfully.
+2024-07-25 10:29:45,325 - INFO - Product data scraping completed successfully.
+2024-07-25 10:29:45,333 - INFO - Data appended to product_table table successfully.
+2024-07-25 10:29:45,334 - INFO - Activity data scraping completed successfully.
+2024-07-25 10:29:45,342 - INFO - Data appended to activity_table table successfully.
+2024-07-25 10:29:45,343 - INFO - Fetching data from: https://www.spyur.am/en/companies/mets-hayk-condominium/86579
+2024-07-25 10:29:47,672 - INFO - Processing data from: https://www.spyur.am/en/companies/mets-hayk-condominium/86579
+2024-07-25 10:29:47,673 - INFO - Fetching company information from https://www.spyur.am/en/companies/mets-hayk-condominium/86579
+2024-07-25 10:29:47,680 - INFO - Fetching product information from https://www.spyur.am/en/companies/mets-hayk-condominium/86579
+2024-07-25 10:29:47,683 - INFO - Fetching activity information from https://www.spyur.am/en/companies/mets-hayk-condominium/86579
+2024-07-25 10:29:47,686 - INFO - Company data scraping completed successfully.
+2024-07-25 10:29:47,694 - INFO - Data appended to company_table table successfully.
+2024-07-25 10:29:47,700 - INFO - Data appended to executive_table table successfully.
+2024-07-25 10:29:47,708 - INFO - Data appended to contacts_table table successfully.
+2024-07-25 10:29:47,709 - INFO - Product data scraping completed successfully.
+2024-07-25 10:29:47,718 - INFO - Data appended to product_table table successfully.
+2024-07-25 10:29:47,719 - INFO - Activity data scraping completed successfully.
+2024-07-25 10:29:47,724 - INFO - Data appended to activity_table table successfully.
+2024-07-25 10:29:47,725 - INFO - Fetching data from: https://www.spyur.am/en/companies/gavar-condominium/86594
+2024-07-25 10:29:48,562 - INFO - Processing data from: https://www.spyur.am/en/companies/gavar-condominium/86594
+2024-07-25 10:29:48,563 - INFO - Fetching company information from https://www.spyur.am/en/companies/gavar-condominium/86594
+2024-07-25 10:29:48,572 - INFO - Fetching product information from https://www.spyur.am/en/companies/gavar-condominium/86594
+2024-07-25 10:29:48,575 - INFO - Fetching activity information from https://www.spyur.am/en/companies/gavar-condominium/86594
+2024-07-25 10:29:48,579 - INFO - Company data scraping completed successfully.
+2024-07-25 10:29:48,586 - INFO - Data appended to company_table table successfully.
+2024-07-25 10:29:48,592 - INFO - Data appended to executive_table table successfully.
+2024-07-25 10:29:48,598 - INFO - Data appended to contacts_table table successfully.
+2024-07-25 10:29:48,599 - INFO - Product data scraping completed successfully.
+2024-07-25 10:29:48,605 - INFO - Data appended to product_table table successfully.
+2024-07-25 10:29:48,606 - INFO - Activity data scraping completed successfully.
+2024-07-25 10:29:48,613 - INFO - Data appended to activity_table table successfully.
+2024-07-25 10:29:48,615 - INFO - Fetching data from: https://www.spyur.am/en/companies/surb-hakob-church-gyumri/86581
+2024-07-25 10:29:49,364 - INFO - Processing data from: https://www.spyur.am/en/companies/surb-hakob-church-gyumri/86581
+2024-07-25 10:29:49,365 - INFO - Fetching company information from https://www.spyur.am/en/companies/surb-hakob-church-gyumri/86581
+2024-07-25 10:29:49,374 - INFO - Fetching product information from https://www.spyur.am/en/companies/surb-hakob-church-gyumri/86581
+2024-07-25 10:29:49,377 - INFO - Fetching activity information from https://www.spyur.am/en/companies/surb-hakob-church-gyumri/86581
+2024-07-25 10:29:49,381 - INFO - Company data scraping completed successfully.
+2024-07-25 10:29:49,388 - INFO - Data appended to company_table table successfully.
+2024-07-25 10:29:49,395 - INFO - Data appended to executive_table table successfully.
+2024-07-25 10:29:49,401 - INFO - Data appended to contacts_table table successfully.
+2024-07-25 10:29:49,402 - INFO - Product data scraping completed successfully.
+2024-07-25 10:29:49,409 - INFO - Data appended to product_table table successfully.
+2024-07-25 10:29:49,410 - INFO - Activity data scraping completed successfully.
+2024-07-25 10:29:49,418 - INFO - Data appended to activity_table table successfully.
+2024-07-25 10:29:49,419 - INFO - Fetching data from: https://www.spyur.am/en/companies/children-and-youth-tennis-and-table-tennis-school-after-alexan-hakobyan-of-gyumri-community-of-shirak-marz-of-the-republic-of-armenia/86584
+2024-07-25 10:29:50,333 - INFO - Processing data from: https://www.spyur.am/en/companies/children-and-youth-tennis-and-table-tennis-school-after-alexan-hakobyan-of-gyumri-community-of-shirak-marz-of-the-republic-of-armenia/86584
+2024-07-25 10:29:50,333 - INFO - Fetching company information from https://www.spyur.am/en/companies/children-and-youth-tennis-and-table-tennis-school-after-alexan-hakobyan-of-gyumri-community-of-shirak-marz-of-the-republic-of-armenia/86584
+2024-07-25 10:29:50,340 - INFO - Fetching product information from https://www.spyur.am/en/companies/children-and-youth-tennis-and-table-tennis-school-after-alexan-hakobyan-of-gyumri-community-of-shirak-marz-of-the-republic-of-armenia/86584
+2024-07-25 10:29:50,343 - INFO - Fetching activity information from https://www.spyur.am/en/companies/children-and-youth-tennis-and-table-tennis-school-after-alexan-hakobyan-of-gyumri-community-of-shirak-marz-of-the-republic-of-armenia/86584
+2024-07-25 10:29:50,345 - INFO - Company data scraping completed successfully.
+2024-07-25 10:29:50,354 - INFO - Data appended to company_table table successfully.
+2024-07-25 10:29:50,362 - INFO - Data appended to executive_table table successfully.
+2024-07-25 10:29:50,368 - INFO - Data appended to contacts_table table successfully.
+2024-07-25 10:29:50,369 - INFO - Product data scraping completed successfully.
+2024-07-25 10:29:50,377 - INFO - Data appended to product_table table successfully.
+2024-07-25 10:29:50,377 - INFO - Activity data scraping completed successfully.
+2024-07-25 10:29:50,384 - INFO - Data appended to activity_table table successfully.
+2024-07-25 10:29:50,386 - INFO - Fetching data from: https://www.spyur.am/en/companies/children-and-youth-playing-sports-school-after-aram-sargsyan-of-gyumri-community-of-shirak-marz-of-the-republic-of-armenia/86590
+2024-07-25 10:29:56,233 - INFO - Processing data from: https://www.spyur.am/en/companies/children-and-youth-playing-sports-school-after-aram-sargsyan-of-gyumri-community-of-shirak-marz-of-the-republic-of-armenia/86590
+2024-07-25 10:29:56,235 - INFO - Fetching company information from https://www.spyur.am/en/companies/children-and-youth-playing-sports-school-after-aram-sargsyan-of-gyumri-community-of-shirak-marz-of-the-republic-of-armenia/86590
+2024-07-25 10:29:56,246 - INFO - Fetching product information from https://www.spyur.am/en/companies/children-and-youth-playing-sports-school-after-aram-sargsyan-of-gyumri-community-of-shirak-marz-of-the-republic-of-armenia/86590
+2024-07-25 10:29:56,251 - INFO - Fetching activity information from https://www.spyur.am/en/companies/children-and-youth-playing-sports-school-after-aram-sargsyan-of-gyumri-community-of-shirak-marz-of-the-republic-of-armenia/86590
+2024-07-25 10:29:56,256 - INFO - Company data scraping completed successfully.
+2024-07-25 10:29:56,265 - INFO - Data appended to company_table table successfully.
+2024-07-25 10:29:56,274 - INFO - Data appended to executive_table table successfully.
+2024-07-25 10:29:56,281 - INFO - Data appended to contacts_table table successfully.
+2024-07-25 10:29:56,283 - INFO - Product data scraping completed successfully.
+2024-07-25 10:29:56,292 - INFO - Data appended to product_table table successfully.
+2024-07-25 10:29:56,293 - INFO - Activity data scraping completed successfully.
+2024-07-25 10:29:56,302 - INFO - Data appended to activity_table table successfully.
+2024-07-25 10:29:56,304 - INFO - Fetching data from: https://www.spyur.am/en/companies/leningradyan-483-condominium/86571
+2024-07-25 10:30:03,633 - INFO - Processing data from: https://www.spyur.am/en/companies/leningradyan-483-condominium/86571
+2024-07-25 10:30:03,635 - INFO - Fetching company information from https://www.spyur.am/en/companies/leningradyan-483-condominium/86571
+2024-07-25 10:30:03,647 - INFO - Fetching product information from https://www.spyur.am/en/companies/leningradyan-483-condominium/86571
+2024-07-25 10:30:03,652 - INFO - Fetching activity information from https://www.spyur.am/en/companies/leningradyan-483-condominium/86571
+2024-07-25 10:30:03,657 - INFO - Company data scraping completed successfully.
+2024-07-25 10:30:03,665 - INFO - Data appended to company_table table successfully.
+2024-07-25 10:30:03,673 - INFO - Data appended to executive_table table successfully.
+2024-07-25 10:30:03,680 - INFO - Data appended to contacts_table table successfully.
+2024-07-25 10:30:03,682 - INFO - Product data scraping completed successfully.
+2024-07-25 10:30:03,689 - INFO - Data appended to product_table table successfully.
+2024-07-25 10:30:03,690 - INFO - Activity data scraping completed successfully.
+2024-07-25 10:30:03,696 - INFO - Data appended to activity_table table successfully.
+2024-07-25 10:30:03,698 - INFO - Fetching data from: https://www.spyur.am/en/companies/gavar-condominium/86595
+2024-07-25 10:30:07,134 - INFO - Processing data from: https://www.spyur.am/en/companies/gavar-condominium/86595
+2024-07-25 10:30:07,134 - INFO - Fetching company information from https://www.spyur.am/en/companies/gavar-condominium/86595
+2024-07-25 10:30:07,144 - INFO - Fetching product information from https://www.spyur.am/en/companies/gavar-condominium/86595
+2024-07-25 10:30:07,148 - INFO - Fetching activity information from https://www.spyur.am/en/companies/gavar-condominium/86595
+2024-07-25 10:30:07,152 - INFO - Company data scraping completed successfully.
+2024-07-25 10:30:07,160 - INFO - Data appended to company_table table successfully.
+2024-07-25 10:30:07,166 - INFO - Data appended to executive_table table successfully.
+2024-07-25 10:30:07,172 - INFO - Data appended to contacts_table table successfully.
+2024-07-25 10:30:07,173 - INFO - Product data scraping completed successfully.
+2024-07-25 10:30:07,180 - INFO - Data appended to product_table table successfully.
+2024-07-25 10:30:07,182 - INFO - Activity data scraping completed successfully.
+2024-07-25 10:30:07,191 - INFO - Data appended to activity_table table successfully.
+2024-07-25 10:30:07,192 - INFO - Fetching data from: https://www.spyur.am/en/companies/yerankyuni-condominium/86589
+2024-07-25 10:30:10,724 - INFO - Processing data from: https://www.spyur.am/en/companies/yerankyuni-condominium/86589
+2024-07-25 10:30:10,725 - INFO - Fetching company information from https://www.spyur.am/en/companies/yerankyuni-condominium/86589
+2024-07-25 10:30:10,734 - INFO - Fetching product information from https://www.spyur.am/en/companies/yerankyuni-condominium/86589
+2024-07-25 10:30:10,738 - INFO - Fetching activity information from https://www.spyur.am/en/companies/yerankyuni-condominium/86589
+2024-07-25 10:30:10,742 - INFO - Company data scraping completed successfully.
+2024-07-25 10:30:10,751 - INFO - Data appended to company_table table successfully.
+2024-07-25 10:30:10,758 - INFO - Data appended to executive_table table successfully.
+2024-07-25 10:30:10,765 - INFO - Data appended to contacts_table table successfully.
+2024-07-25 10:30:10,766 - INFO - Product data scraping completed successfully.
+2024-07-25 10:30:10,772 - INFO - Data appended to product_table table successfully.
+2024-07-25 10:30:10,773 - INFO - Activity data scraping completed successfully.
+2024-07-25 10:30:10,781 - INFO - Data appended to activity_table table successfully.
+2024-07-25 10:30:10,783 - INFO - Fetching data from: https://www.spyur.am/en/companies/van-condominium/86586
