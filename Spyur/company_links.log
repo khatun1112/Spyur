@@ -34670,3 +34670,471 @@
 2024-07-25 10:13:36,760 - INFO - Activity data scraping completed successfully.
 2024-07-25 10:13:36,765 - INFO - Data appended to activity_table table successfully.
 2024-07-25 10:13:36,766 - INFO - Fetching data from: https://www.spyur.am/en/companies/federation-of-youth-clubs-of-armenia/5265
+2024-07-25 10:13:38,802 - INFO - Processing data from: https://www.spyur.am/en/companies/federation-of-youth-clubs-of-armenia/5265
+2024-07-25 10:13:38,802 - INFO - Fetching company information from https://www.spyur.am/en/companies/federation-of-youth-clubs-of-armenia/5265
+2024-07-25 10:13:38,811 - INFO - Fetching product information from https://www.spyur.am/en/companies/federation-of-youth-clubs-of-armenia/5265
+2024-07-25 10:13:38,815 - INFO - Fetching activity information from https://www.spyur.am/en/companies/federation-of-youth-clubs-of-armenia/5265
+2024-07-25 10:13:38,819 - INFO - Company data scraping completed successfully.
+2024-07-25 10:13:38,826 - INFO - Data appended to company_table table successfully.
+2024-07-25 10:13:38,831 - INFO - Data appended to executive_table table successfully.
+2024-07-25 10:13:38,839 - INFO - Data appended to contacts_table table successfully.
+2024-07-25 10:13:38,839 - INFO - Product data scraping completed successfully.
+2024-07-25 10:13:38,844 - INFO - Data appended to product_table table successfully.
+2024-07-25 10:13:38,845 - INFO - Activity data scraping completed successfully.
+2024-07-25 10:13:38,853 - INFO - Data appended to activity_table table successfully.
+2024-07-25 10:13:38,854 - INFO - Fetching data from: https://www.spyur.am/en/companies/aiesec-representative-office-in-armenia/84322
+2024-07-25 10:13:46,289 - INFO - Processing data from: https://www.spyur.am/en/companies/aiesec-representative-office-in-armenia/84322
+2024-07-25 10:13:46,290 - INFO - Fetching company information from https://www.spyur.am/en/companies/aiesec-representative-office-in-armenia/84322
+2024-07-25 10:13:46,298 - INFO - Fetching product information from https://www.spyur.am/en/companies/aiesec-representative-office-in-armenia/84322
+2024-07-25 10:13:46,301 - INFO - Fetching activity information from https://www.spyur.am/en/companies/aiesec-representative-office-in-armenia/84322
+2024-07-25 10:13:46,305 - INFO - Company data scraping completed successfully.
+2024-07-25 10:13:46,312 - INFO - Data appended to company_table table successfully.
+2024-07-25 10:13:46,317 - INFO - Data appended to executive_table table successfully.
+2024-07-25 10:13:46,324 - INFO - Data appended to contacts_table table successfully.
+2024-07-25 10:13:46,325 - INFO - Product data scraping completed successfully.
+2024-07-25 10:13:46,331 - INFO - Data appended to product_table table successfully.
+2024-07-25 10:13:46,332 - INFO - Activity data scraping completed successfully.
+2024-07-25 10:13:46,337 - INFO - Data appended to activity_table table successfully.
+2024-07-25 10:13:46,339 - INFO - Fetching data from: https://www.spyur.am/en/companies/automobile-federation-of-armenia/3420
+2024-07-25 10:13:47,590 - INFO - Processing data from: https://www.spyur.am/en/companies/automobile-federation-of-armenia/3420
+2024-07-25 10:13:47,591 - INFO - Fetching company information from https://www.spyur.am/en/companies/automobile-federation-of-armenia/3420
+2024-07-25 10:13:47,603 - INFO - Fetching product information from https://www.spyur.am/en/companies/automobile-federation-of-armenia/3420
+2024-07-25 10:13:47,609 - INFO - Fetching activity information from https://www.spyur.am/en/companies/automobile-federation-of-armenia/3420
+2024-07-25 10:13:47,615 - INFO - Company data scraping completed successfully.
+2024-07-25 10:13:47,624 - INFO - Data appended to company_table table successfully.
+2024-07-25 10:13:47,632 - INFO - Data appended to executive_table table successfully.
+2024-07-25 10:13:47,638 - INFO - Data appended to contacts_table table successfully.
+2024-07-25 10:13:47,638 - INFO - Product data scraping completed successfully.
+2024-07-25 10:13:47,643 - INFO - Data appended to product_table table successfully.
+2024-07-25 10:13:47,644 - INFO - Activity data scraping completed successfully.
+2024-07-25 10:13:47,649 - INFO - Data appended to activity_table table successfully.
+2024-07-25 10:13:47,650 - INFO - Fetching data from: https://www.spyur.am/en/companies/chess-academy-of-armenia/81260
+2024-07-25 10:13:48,485 - INFO - Processing data from: https://www.spyur.am/en/companies/chess-academy-of-armenia/81260
+2024-07-25 10:13:48,487 - INFO - Fetching company information from https://www.spyur.am/en/companies/chess-academy-of-armenia/81260
+2024-07-25 10:13:48,498 - INFO - Fetching product information from https://www.spyur.am/en/companies/chess-academy-of-armenia/81260
+2024-07-25 10:13:48,503 - INFO - Fetching activity information from https://www.spyur.am/en/companies/chess-academy-of-armenia/81260
+2024-07-25 10:13:48,507 - INFO - Company data scraping completed successfully.
+2024-07-25 10:13:48,514 - INFO - Data appended to company_table table successfully.
+2024-07-25 10:13:48,521 - INFO - Data appended to executive_table table successfully.
+2024-07-25 10:13:48,528 - INFO - Data appended to contacts_table table successfully.
+2024-07-25 10:13:48,529 - INFO - Product data scraping completed successfully.
+2024-07-25 10:13:48,535 - INFO - Data appended to product_table table successfully.
+2024-07-25 10:13:48,536 - INFO - Activity data scraping completed successfully.
+2024-07-25 10:13:48,543 - INFO - Data appended to activity_table table successfully.
+2024-07-25 10:13:48,545 - INFO - Fetching data from: https://www.spyur.am/en/companies/financial-and-economic-college-of-the-armenian-state-university-of-economics/3423
+2024-07-25 10:13:53,891 - INFO - Processing data from: https://www.spyur.am/en/companies/financial-and-economic-college-of-the-armenian-state-university-of-economics/3423
+2024-07-25 10:13:53,892 - INFO - Fetching company information from https://www.spyur.am/en/companies/financial-and-economic-college-of-the-armenian-state-university-of-economics/3423
+2024-07-25 10:13:53,902 - INFO - Fetching product information from https://www.spyur.am/en/companies/financial-and-economic-college-of-the-armenian-state-university-of-economics/3423
+2024-07-25 10:13:53,907 - INFO - Fetching activity information from https://www.spyur.am/en/companies/financial-and-economic-college-of-the-armenian-state-university-of-economics/3423
+2024-07-25 10:13:53,911 - INFO - Company data scraping completed successfully.
+2024-07-25 10:13:53,920 - INFO - Data appended to company_table table successfully.
+2024-07-25 10:13:53,925 - INFO - Data appended to executive_table table successfully.
+2024-07-25 10:13:53,930 - INFO - Data appended to contacts_table table successfully.
+2024-07-25 10:13:53,931 - INFO - Product data scraping completed successfully.
+2024-07-25 10:13:53,936 - INFO - Data appended to product_table table successfully.
+2024-07-25 10:13:53,937 - INFO - Activity data scraping completed successfully.
+2024-07-25 10:13:53,943 - INFO - Data appended to activity_table table successfully.
+2024-07-25 10:13:53,943 - INFO - Fetching data from: https://www.spyur.am/en/companies/aviation-sport-federation-of-armenia/81600
+2024-07-25 10:13:57,393 - INFO - Processing data from: https://www.spyur.am/en/companies/aviation-sport-federation-of-armenia/81600
+2024-07-25 10:13:57,394 - INFO - Fetching company information from https://www.spyur.am/en/companies/aviation-sport-federation-of-armenia/81600
+2024-07-25 10:13:57,401 - INFO - Fetching product information from https://www.spyur.am/en/companies/aviation-sport-federation-of-armenia/81600
+2024-07-25 10:13:57,405 - INFO - Fetching activity information from https://www.spyur.am/en/companies/aviation-sport-federation-of-armenia/81600
+2024-07-25 10:13:57,409 - INFO - Company data scraping completed successfully.
+2024-07-25 10:13:57,416 - INFO - Data appended to company_table table successfully.
+2024-07-25 10:13:57,423 - INFO - Data appended to executive_table table successfully.
+2024-07-25 10:13:57,427 - INFO - Data appended to contacts_table table successfully.
+2024-07-25 10:13:57,429 - INFO - Product data scraping completed successfully.
+2024-07-25 10:13:57,435 - INFO - Data appended to product_table table successfully.
+2024-07-25 10:13:57,436 - INFO - Activity data scraping completed successfully.
+2024-07-25 10:13:57,443 - INFO - Data appended to activity_table table successfully.
+2024-07-25 10:13:57,444 - INFO - Fetching data from: https://www.spyur.am/en/companies/pains-without-borders-medical-psychological-program/4556
+2024-07-25 10:14:01,135 - INFO - Processing data from: https://www.spyur.am/en/companies/pains-without-borders-medical-psychological-program/4556
+2024-07-25 10:14:01,135 - INFO - Fetching company information from https://www.spyur.am/en/companies/pains-without-borders-medical-psychological-program/4556
+2024-07-25 10:14:01,142 - INFO - Fetching product information from https://www.spyur.am/en/companies/pains-without-borders-medical-psychological-program/4556
+2024-07-25 10:14:01,144 - INFO - Fetching activity information from https://www.spyur.am/en/companies/pains-without-borders-medical-psychological-program/4556
+2024-07-25 10:14:01,147 - INFO - Company data scraping completed successfully.
+2024-07-25 10:14:01,153 - INFO - Data appended to company_table table successfully.
+2024-07-25 10:14:01,161 - INFO - Data appended to executive_table table successfully.
+2024-07-25 10:14:01,167 - INFO - Data appended to contacts_table table successfully.
+2024-07-25 10:14:01,168 - INFO - Product data scraping completed successfully.
+2024-07-25 10:14:01,174 - INFO - Data appended to product_table table successfully.
+2024-07-25 10:14:01,175 - INFO - Activity data scraping completed successfully.
+2024-07-25 10:14:01,181 - INFO - Data appended to activity_table table successfully.
+2024-07-25 10:14:01,182 - INFO - Fetching data from: https://www.spyur.am/en/companies/mother-see-of-holy-etchmiadzin-and-armenian-general-benevolent-union-youth-centers-central-office/3443
+2024-07-25 10:14:05,401 - INFO - Processing data from: https://www.spyur.am/en/companies/mother-see-of-holy-etchmiadzin-and-armenian-general-benevolent-union-youth-centers-central-office/3443
+2024-07-25 10:14:05,402 - INFO - Fetching company information from https://www.spyur.am/en/companies/mother-see-of-holy-etchmiadzin-and-armenian-general-benevolent-union-youth-centers-central-office/3443
+2024-07-25 10:14:05,414 - INFO - Fetching product information from https://www.spyur.am/en/companies/mother-see-of-holy-etchmiadzin-and-armenian-general-benevolent-union-youth-centers-central-office/3443
+2024-07-25 10:14:05,420 - INFO - Fetching activity information from https://www.spyur.am/en/companies/mother-see-of-holy-etchmiadzin-and-armenian-general-benevolent-union-youth-centers-central-office/3443
+2024-07-25 10:14:05,425 - INFO - Company data scraping completed successfully.
+2024-07-25 10:14:05,432 - INFO - Data appended to company_table table successfully.
+2024-07-25 10:14:05,439 - INFO - Data appended to executive_table table successfully.
+2024-07-25 10:14:05,446 - INFO - Data appended to contacts_table table successfully.
+2024-07-25 10:14:05,448 - INFO - Product data scraping completed successfully.
+2024-07-25 10:14:05,455 - INFO - Data appended to product_table table successfully.
+2024-07-25 10:14:05,455 - INFO - Activity data scraping completed successfully.
+2024-07-25 10:14:05,460 - INFO - Data appended to activity_table table successfully.
+2024-07-25 10:14:05,462 - INFO - Fetching data from: https://www.spyur.am/en/companies/marina-fashion-atelier/6961
+2024-07-25 10:14:07,806 - INFO - Processing data from: https://www.spyur.am/en/companies/marina-fashion-atelier/6961
+2024-07-25 10:14:07,807 - INFO - Fetching company information from https://www.spyur.am/en/companies/marina-fashion-atelier/6961
+2024-07-25 10:14:07,816 - INFO - Fetching product information from https://www.spyur.am/en/companies/marina-fashion-atelier/6961
+2024-07-25 10:14:07,821 - INFO - Fetching activity information from https://www.spyur.am/en/companies/marina-fashion-atelier/6961
+2024-07-25 10:14:07,825 - INFO - Company data scraping completed successfully.
+2024-07-25 10:14:07,832 - INFO - Data appended to company_table table successfully.
+2024-07-25 10:14:07,839 - INFO - Data appended to executive_table table successfully.
+2024-07-25 10:14:07,847 - INFO - Data appended to contacts_table table successfully.
+2024-07-25 10:14:07,848 - INFO - Product data scraping completed successfully.
+2024-07-25 10:14:07,856 - INFO - Data appended to product_table table successfully.
+2024-07-25 10:14:07,857 - INFO - Activity data scraping completed successfully.
+2024-07-25 10:14:07,863 - INFO - Data appended to activity_table table successfully.
+2024-07-25 10:14:07,864 - INFO - Fetching data from: https://www.spyur.am/en/companies/orran-charitable-non-governmental-organization/80459
+2024-07-25 10:14:09,180 - INFO - Processing data from: https://www.spyur.am/en/companies/orran-charitable-non-governmental-organization/80459
+2024-07-25 10:14:09,180 - INFO - Fetching company information from https://www.spyur.am/en/companies/orran-charitable-non-governmental-organization/80459
+2024-07-25 10:14:09,187 - INFO - Fetching product information from https://www.spyur.am/en/companies/orran-charitable-non-governmental-organization/80459
+2024-07-25 10:14:09,190 - INFO - Fetching activity information from https://www.spyur.am/en/companies/orran-charitable-non-governmental-organization/80459
+2024-07-25 10:14:09,193 - INFO - Company data scraping completed successfully.
+2024-07-25 10:14:09,199 - INFO - Data appended to company_table table successfully.
+2024-07-25 10:14:09,205 - INFO - Data appended to executive_table table successfully.
+2024-07-25 10:14:09,212 - INFO - Data appended to contacts_table table successfully.
+2024-07-25 10:14:09,213 - INFO - Product data scraping completed successfully.
+2024-07-25 10:14:09,221 - INFO - Data appended to product_table table successfully.
+2024-07-25 10:14:09,221 - INFO - Activity data scraping completed successfully.
+2024-07-25 10:14:09,228 - INFO - Data appended to activity_table table successfully.
+2024-07-25 10:14:09,230 - INFO - Fetching data from: https://www.spyur.am/en/companies/yerevan-basic-school--24-named-after-suren-spandaryan/83714
+2024-07-25 10:14:10,096 - INFO - Processing data from: https://www.spyur.am/en/companies/yerevan-basic-school--24-named-after-suren-spandaryan/83714
+2024-07-25 10:14:10,097 - INFO - Fetching company information from https://www.spyur.am/en/companies/yerevan-basic-school--24-named-after-suren-spandaryan/83714
+2024-07-25 10:14:10,104 - INFO - Fetching product information from https://www.spyur.am/en/companies/yerevan-basic-school--24-named-after-suren-spandaryan/83714
+2024-07-25 10:14:10,107 - INFO - Fetching activity information from https://www.spyur.am/en/companies/yerevan-basic-school--24-named-after-suren-spandaryan/83714
+2024-07-25 10:14:10,111 - INFO - Company data scraping completed successfully.
+2024-07-25 10:14:10,119 - INFO - Data appended to company_table table successfully.
+2024-07-25 10:14:10,125 - INFO - Data appended to executive_table table successfully.
+2024-07-25 10:14:10,132 - INFO - Data appended to contacts_table table successfully.
+2024-07-25 10:14:10,133 - INFO - Product data scraping completed successfully.
+2024-07-25 10:14:10,140 - INFO - Data appended to product_table table successfully.
+2024-07-25 10:14:10,140 - INFO - Activity data scraping completed successfully.
+2024-07-25 10:14:10,147 - INFO - Data appended to activity_table table successfully.
+2024-07-25 10:14:10,148 - INFO - Fetching data from: https://www.spyur.am/en/companies/hakob-kojoyan-educational-complex/83471
+2024-07-25 10:14:12,969 - INFO - Processing data from: https://www.spyur.am/en/companies/hakob-kojoyan-educational-complex/83471
+2024-07-25 10:14:12,980 - INFO - Fetching company information from https://www.spyur.am/en/companies/hakob-kojoyan-educational-complex/83471
+2024-07-25 10:14:13,003 - INFO - Fetching product information from https://www.spyur.am/en/companies/hakob-kojoyan-educational-complex/83471
+2024-07-25 10:14:13,009 - INFO - Fetching activity information from https://www.spyur.am/en/companies/hakob-kojoyan-educational-complex/83471
+2024-07-25 10:14:13,013 - INFO - Company data scraping completed successfully.
+2024-07-25 10:14:13,021 - INFO - Data appended to company_table table successfully.
+2024-07-25 10:14:13,028 - INFO - Data appended to executive_table table successfully.
+2024-07-25 10:14:13,034 - INFO - Data appended to contacts_table table successfully.
+2024-07-25 10:14:13,035 - INFO - Product data scraping completed successfully.
+2024-07-25 10:14:13,041 - INFO - Data appended to product_table table successfully.
+2024-07-25 10:14:13,042 - INFO - Activity data scraping completed successfully.
+2024-07-25 10:14:13,048 - INFO - Data appended to activity_table table successfully.
+2024-07-25 10:14:13,049 - INFO - Fetching data from: https://www.spyur.am/en/companies/yerevan-basic-school--20-named-after-john-kirakosyan/83656
+2024-07-25 10:14:18,153 - INFO - Processing data from: https://www.spyur.am/en/companies/yerevan-basic-school--20-named-after-john-kirakosyan/83656
+2024-07-25 10:14:18,154 - INFO - Fetching company information from https://www.spyur.am/en/companies/yerevan-basic-school--20-named-after-john-kirakosyan/83656
+2024-07-25 10:14:18,163 - INFO - Fetching product information from https://www.spyur.am/en/companies/yerevan-basic-school--20-named-after-john-kirakosyan/83656
+2024-07-25 10:14:18,167 - INFO - Fetching activity information from https://www.spyur.am/en/companies/yerevan-basic-school--20-named-after-john-kirakosyan/83656
+2024-07-25 10:14:18,171 - INFO - Company data scraping completed successfully.
+2024-07-25 10:14:18,179 - INFO - Data appended to company_table table successfully.
+2024-07-25 10:14:18,185 - INFO - Data appended to executive_table table successfully.
+2024-07-25 10:14:18,194 - INFO - Data appended to contacts_table table successfully.
+2024-07-25 10:14:18,195 - INFO - Product data scraping completed successfully.
+2024-07-25 10:14:18,203 - INFO - Data appended to product_table table successfully.
+2024-07-25 10:14:18,204 - INFO - Activity data scraping completed successfully.
+2024-07-25 10:14:18,211 - INFO - Data appended to activity_table table successfully.
+2024-07-25 10:14:18,212 - INFO - Fetching data from: https://www.spyur.am/en/companies/yerevan-basic-school--2-named-after-khachatur-abovyan/83338
+2024-07-25 10:14:21,620 - INFO - Processing data from: https://www.spyur.am/en/companies/yerevan-basic-school--2-named-after-khachatur-abovyan/83338
+2024-07-25 10:14:21,621 - INFO - Fetching company information from https://www.spyur.am/en/companies/yerevan-basic-school--2-named-after-khachatur-abovyan/83338
+2024-07-25 10:14:21,632 - INFO - Fetching product information from https://www.spyur.am/en/companies/yerevan-basic-school--2-named-after-khachatur-abovyan/83338
+2024-07-25 10:14:21,636 - INFO - Fetching activity information from https://www.spyur.am/en/companies/yerevan-basic-school--2-named-after-khachatur-abovyan/83338
+2024-07-25 10:14:21,640 - INFO - Company data scraping completed successfully.
+2024-07-25 10:14:21,648 - INFO - Data appended to company_table table successfully.
+2024-07-25 10:14:21,653 - INFO - Data appended to executive_table table successfully.
+2024-07-25 10:14:21,659 - INFO - Data appended to contacts_table table successfully.
+2024-07-25 10:14:21,660 - INFO - Product data scraping completed successfully.
+2024-07-25 10:14:21,665 - INFO - Data appended to product_table table successfully.
+2024-07-25 10:14:21,666 - INFO - Activity data scraping completed successfully.
+2024-07-25 10:14:21,672 - INFO - Data appended to activity_table table successfully.
+2024-07-25 10:14:21,673 - INFO - Fetching data from: https://www.spyur.am/en/companies/yerevan-basic-school--39-named-after-hovhannes-baghramyan/83833
+2024-07-25 10:14:24,629 - INFO - Processing data from: https://www.spyur.am/en/companies/yerevan-basic-school--39-named-after-hovhannes-baghramyan/83833
+2024-07-25 10:14:24,630 - INFO - Fetching company information from https://www.spyur.am/en/companies/yerevan-basic-school--39-named-after-hovhannes-baghramyan/83833
+2024-07-25 10:14:24,637 - INFO - Fetching product information from https://www.spyur.am/en/companies/yerevan-basic-school--39-named-after-hovhannes-baghramyan/83833
+2024-07-25 10:14:24,641 - INFO - Fetching activity information from https://www.spyur.am/en/companies/yerevan-basic-school--39-named-after-hovhannes-baghramyan/83833
+2024-07-25 10:14:24,644 - INFO - Company data scraping completed successfully.
+2024-07-25 10:14:24,653 - INFO - Data appended to company_table table successfully.
+2024-07-25 10:14:24,659 - INFO - Data appended to executive_table table successfully.
+2024-07-25 10:14:24,665 - INFO - Data appended to contacts_table table successfully.
+2024-07-25 10:14:24,666 - INFO - Product data scraping completed successfully.
+2024-07-25 10:14:24,672 - INFO - Data appended to product_table table successfully.
+2024-07-25 10:14:24,672 - INFO - Activity data scraping completed successfully.
+2024-07-25 10:14:24,679 - INFO - Data appended to activity_table table successfully.
+2024-07-25 10:14:24,680 - INFO - Fetching data from: https://www.spyur.am/en/companies/yerevan-basic-school--14-named-after-nar-dos/83419
+2024-07-25 10:14:26,652 - INFO - Processing data from: https://www.spyur.am/en/companies/yerevan-basic-school--14-named-after-nar-dos/83419
+2024-07-25 10:14:26,652 - INFO - Fetching company information from https://www.spyur.am/en/companies/yerevan-basic-school--14-named-after-nar-dos/83419
+2024-07-25 10:14:26,662 - INFO - Fetching product information from https://www.spyur.am/en/companies/yerevan-basic-school--14-named-after-nar-dos/83419
+2024-07-25 10:14:26,667 - INFO - Fetching activity information from https://www.spyur.am/en/companies/yerevan-basic-school--14-named-after-nar-dos/83419
+2024-07-25 10:14:26,671 - INFO - Company data scraping completed successfully.
+2024-07-25 10:14:26,678 - INFO - Data appended to company_table table successfully.
+2024-07-25 10:14:26,683 - INFO - Data appended to executive_table table successfully.
+2024-07-25 10:14:26,688 - INFO - Data appended to contacts_table table successfully.
+2024-07-25 10:14:26,689 - INFO - Product data scraping completed successfully.
+2024-07-25 10:14:26,697 - INFO - Data appended to product_table table successfully.
+2024-07-25 10:14:26,698 - INFO - Activity data scraping completed successfully.
+2024-07-25 10:14:26,705 - INFO - Data appended to activity_table table successfully.
+2024-07-25 10:14:26,706 - INFO - Fetching data from: https://www.spyur.am/en/companies/yerevan-e-thaelmann-basic-school--13/83410
+2024-07-25 10:14:27,909 - INFO - Processing data from: https://www.spyur.am/en/companies/yerevan-e-thaelmann-basic-school--13/83410
+2024-07-25 10:14:27,910 - INFO - Fetching company information from https://www.spyur.am/en/companies/yerevan-e-thaelmann-basic-school--13/83410
+2024-07-25 10:14:27,918 - INFO - Fetching product information from https://www.spyur.am/en/companies/yerevan-e-thaelmann-basic-school--13/83410
+2024-07-25 10:14:27,920 - INFO - Fetching activity information from https://www.spyur.am/en/companies/yerevan-e-thaelmann-basic-school--13/83410
+2024-07-25 10:14:27,923 - INFO - Company data scraping completed successfully.
+2024-07-25 10:14:27,929 - INFO - Data appended to company_table table successfully.
+2024-07-25 10:14:27,934 - INFO - Data appended to executive_table table successfully.
+2024-07-25 10:14:27,940 - INFO - Data appended to contacts_table table successfully.
+2024-07-25 10:14:27,940 - INFO - Product data scraping completed successfully.
+2024-07-25 10:14:27,946 - INFO - Data appended to product_table table successfully.
+2024-07-25 10:14:27,947 - INFO - Activity data scraping completed successfully.
+2024-07-25 10:14:27,952 - INFO - Data appended to activity_table table successfully.
+2024-07-25 10:14:27,953 - INFO - Fetching data from: https://www.spyur.am/en/companies/yerevan-basic-school--4-named-after-levon-shant/83362
+2024-07-25 10:14:34,507 - INFO - Processing data from: https://www.spyur.am/en/companies/yerevan-basic-school--4-named-after-levon-shant/83362
+2024-07-25 10:14:34,507 - INFO - Fetching company information from https://www.spyur.am/en/companies/yerevan-basic-school--4-named-after-levon-shant/83362
+2024-07-25 10:14:34,518 - INFO - Fetching product information from https://www.spyur.am/en/companies/yerevan-basic-school--4-named-after-levon-shant/83362
+2024-07-25 10:14:34,522 - INFO - Fetching activity information from https://www.spyur.am/en/companies/yerevan-basic-school--4-named-after-levon-shant/83362
+2024-07-25 10:14:34,526 - INFO - Company data scraping completed successfully.
+2024-07-25 10:14:34,534 - INFO - Data appended to company_table table successfully.
+2024-07-25 10:14:34,541 - INFO - Data appended to executive_table table successfully.
+2024-07-25 10:14:34,549 - INFO - Data appended to contacts_table table successfully.
+2024-07-25 10:14:34,550 - INFO - Product data scraping completed successfully.
+2024-07-25 10:14:34,556 - INFO - Data appended to product_table table successfully.
+2024-07-25 10:14:34,558 - INFO - Activity data scraping completed successfully.
+2024-07-25 10:14:34,567 - INFO - Data appended to activity_table table successfully.
+2024-07-25 10:14:34,568 - INFO - Fetching data from: https://www.spyur.am/en/companies/yerevan-basic-school--10-named-after-khrimyan-hayrik/83407
+2024-07-25 10:14:36,259 - INFO - Processing data from: https://www.spyur.am/en/companies/yerevan-basic-school--10-named-after-khrimyan-hayrik/83407
+2024-07-25 10:14:36,260 - INFO - Fetching company information from https://www.spyur.am/en/companies/yerevan-basic-school--10-named-after-khrimyan-hayrik/83407
+2024-07-25 10:14:36,270 - INFO - Fetching product information from https://www.spyur.am/en/companies/yerevan-basic-school--10-named-after-khrimyan-hayrik/83407
+2024-07-25 10:14:36,274 - INFO - Fetching activity information from https://www.spyur.am/en/companies/yerevan-basic-school--10-named-after-khrimyan-hayrik/83407
+2024-07-25 10:14:36,278 - INFO - Company data scraping completed successfully.
+2024-07-25 10:14:36,285 - INFO - Data appended to company_table table successfully.
+2024-07-25 10:14:36,290 - INFO - Data appended to executive_table table successfully.
+2024-07-25 10:14:36,296 - INFO - Data appended to contacts_table table successfully.
+2024-07-25 10:14:36,297 - INFO - Product data scraping completed successfully.
+2024-07-25 10:14:36,303 - INFO - Data appended to product_table table successfully.
+2024-07-25 10:14:36,304 - INFO - Activity data scraping completed successfully.
+2024-07-25 10:14:36,309 - INFO - Data appended to activity_table table successfully.
+2024-07-25 10:14:36,310 - INFO - Fetching data from: https://www.spyur.am/en/companies/yerevan-basic-school--33-named-after-mikael-nalbandyan/83812
+2024-07-25 10:14:38,618 - INFO - Processing data from: https://www.spyur.am/en/companies/yerevan-basic-school--33-named-after-mikael-nalbandyan/83812
+2024-07-25 10:14:38,618 - INFO - Fetching company information from https://www.spyur.am/en/companies/yerevan-basic-school--33-named-after-mikael-nalbandyan/83812
+2024-07-25 10:14:38,626 - INFO - Fetching product information from https://www.spyur.am/en/companies/yerevan-basic-school--33-named-after-mikael-nalbandyan/83812
+2024-07-25 10:14:38,630 - INFO - Fetching activity information from https://www.spyur.am/en/companies/yerevan-basic-school--33-named-after-mikael-nalbandyan/83812
+2024-07-25 10:14:38,634 - INFO - Company data scraping completed successfully.
+2024-07-25 10:14:38,642 - INFO - Data appended to company_table table successfully.
+2024-07-25 10:14:38,648 - INFO - Data appended to executive_table table successfully.
+2024-07-25 10:14:38,656 - INFO - Data appended to contacts_table table successfully.
+2024-07-25 10:14:38,657 - INFO - Product data scraping completed successfully.
+2024-07-25 10:14:38,665 - INFO - Data appended to product_table table successfully.
+2024-07-25 10:14:38,666 - INFO - Activity data scraping completed successfully.
+2024-07-25 10:14:38,673 - INFO - Data appended to activity_table table successfully.
+2024-07-25 10:14:38,675 - INFO - Fetching data from: https://www.spyur.am/en/companies/yerevan-basic-school--1-named-after-stepan-shahumyan/83035
+2024-07-25 10:14:40,310 - INFO - Processing data from: https://www.spyur.am/en/companies/yerevan-basic-school--1-named-after-stepan-shahumyan/83035
+2024-07-25 10:14:40,311 - INFO - Fetching company information from https://www.spyur.am/en/companies/yerevan-basic-school--1-named-after-stepan-shahumyan/83035
+2024-07-25 10:14:40,319 - INFO - Fetching product information from https://www.spyur.am/en/companies/yerevan-basic-school--1-named-after-stepan-shahumyan/83035
+2024-07-25 10:14:40,323 - INFO - Fetching activity information from https://www.spyur.am/en/companies/yerevan-basic-school--1-named-after-stepan-shahumyan/83035
+2024-07-25 10:14:40,327 - INFO - Company data scraping completed successfully.
+2024-07-25 10:14:40,335 - INFO - Data appended to company_table table successfully.
+2024-07-25 10:14:40,344 - INFO - Data appended to executive_table table successfully.
+2024-07-25 10:14:40,353 - INFO - Data appended to contacts_table table successfully.
+2024-07-25 10:14:40,354 - INFO - Product data scraping completed successfully.
+2024-07-25 10:14:40,363 - INFO - Data appended to product_table table successfully.
+2024-07-25 10:14:40,364 - INFO - Activity data scraping completed successfully.
+2024-07-25 10:14:40,372 - INFO - Data appended to activity_table table successfully.
+2024-07-25 10:14:40,374 - INFO - Fetching data from: https://www.spyur.am/en/companies/yerevan-high-school--29-named-after-andranik-margaryan/83806
+2024-07-25 10:14:41,492 - INFO - Processing data from: https://www.spyur.am/en/companies/yerevan-high-school--29-named-after-andranik-margaryan/83806
+2024-07-25 10:14:41,493 - INFO - Fetching company information from https://www.spyur.am/en/companies/yerevan-high-school--29-named-after-andranik-margaryan/83806
+2024-07-25 10:14:41,500 - INFO - Fetching product information from https://www.spyur.am/en/companies/yerevan-high-school--29-named-after-andranik-margaryan/83806
+2024-07-25 10:14:41,503 - INFO - Fetching activity information from https://www.spyur.am/en/companies/yerevan-high-school--29-named-after-andranik-margaryan/83806
+2024-07-25 10:14:41,506 - INFO - Company data scraping completed successfully.
+2024-07-25 10:14:41,514 - INFO - Data appended to company_table table successfully.
+2024-07-25 10:14:41,521 - INFO - Data appended to executive_table table successfully.
+2024-07-25 10:14:41,528 - INFO - Data appended to contacts_table table successfully.
+2024-07-25 10:14:41,529 - INFO - Product data scraping completed successfully.
+2024-07-25 10:14:41,536 - INFO - Data appended to product_table table successfully.
+2024-07-25 10:14:41,537 - INFO - Activity data scraping completed successfully.
+2024-07-25 10:14:41,546 - INFO - Data appended to activity_table table successfully.
+2024-07-25 10:14:41,548 - INFO - Fetching data from: https://www.spyur.am/en/companies/yerevan-basic-school--7-named-after-vladimir-mayakovski/83390
+2024-07-25 10:14:43,622 - INFO - Processing data from: https://www.spyur.am/en/companies/yerevan-basic-school--7-named-after-vladimir-mayakovski/83390
+2024-07-25 10:14:43,623 - INFO - Fetching company information from https://www.spyur.am/en/companies/yerevan-basic-school--7-named-after-vladimir-mayakovski/83390
+2024-07-25 10:14:43,630 - INFO - Fetching product information from https://www.spyur.am/en/companies/yerevan-basic-school--7-named-after-vladimir-mayakovski/83390
+2024-07-25 10:14:43,634 - INFO - Fetching activity information from https://www.spyur.am/en/companies/yerevan-basic-school--7-named-after-vladimir-mayakovski/83390
+2024-07-25 10:14:43,637 - INFO - Company data scraping completed successfully.
+2024-07-25 10:14:43,645 - INFO - Data appended to company_table table successfully.
+2024-07-25 10:14:43,654 - INFO - Data appended to executive_table table successfully.
+2024-07-25 10:14:43,661 - INFO - Data appended to contacts_table table successfully.
+2024-07-25 10:14:43,662 - INFO - Product data scraping completed successfully.
+2024-07-25 10:14:43,669 - INFO - Data appended to product_table table successfully.
+2024-07-25 10:14:43,670 - INFO - Activity data scraping completed successfully.
+2024-07-25 10:14:43,678 - INFO - Data appended to activity_table table successfully.
+2024-07-25 10:14:43,680 - INFO - Fetching data from: https://www.spyur.am/en/companies/yerevan-basic-school--19-named-after-nikol-aghbalyan/83635
+2024-07-25 10:14:49,445 - INFO - Processing data from: https://www.spyur.am/en/companies/yerevan-basic-school--19-named-after-nikol-aghbalyan/83635
+2024-07-25 10:14:49,446 - INFO - Fetching company information from https://www.spyur.am/en/companies/yerevan-basic-school--19-named-after-nikol-aghbalyan/83635
+2024-07-25 10:14:49,454 - INFO - Fetching product information from https://www.spyur.am/en/companies/yerevan-basic-school--19-named-after-nikol-aghbalyan/83635
+2024-07-25 10:14:49,457 - INFO - Fetching activity information from https://www.spyur.am/en/companies/yerevan-basic-school--19-named-after-nikol-aghbalyan/83635
+2024-07-25 10:14:49,460 - INFO - Company data scraping completed successfully.
+2024-07-25 10:14:49,468 - INFO - Data appended to company_table table successfully.
+2024-07-25 10:14:49,476 - INFO - Data appended to executive_table table successfully.
+2024-07-25 10:14:49,486 - INFO - Data appended to contacts_table table successfully.
+2024-07-25 10:14:49,487 - INFO - Product data scraping completed successfully.
+2024-07-25 10:14:49,494 - INFO - Data appended to product_table table successfully.
+2024-07-25 10:14:49,495 - INFO - Activity data scraping completed successfully.
+2024-07-25 10:14:49,502 - INFO - Data appended to activity_table table successfully.
+2024-07-25 10:14:49,503 - INFO - Fetching data from: https://www.spyur.am/en/companies/yerevan-basic-school--8-named-after-alexander-pushkin/83395
+2024-07-25 10:14:54,754 - INFO - Processing data from: https://www.spyur.am/en/companies/yerevan-basic-school--8-named-after-alexander-pushkin/83395
+2024-07-25 10:14:54,754 - INFO - Fetching company information from https://www.spyur.am/en/companies/yerevan-basic-school--8-named-after-alexander-pushkin/83395
+2024-07-25 10:14:54,766 - INFO - Fetching product information from https://www.spyur.am/en/companies/yerevan-basic-school--8-named-after-alexander-pushkin/83395
+2024-07-25 10:14:54,770 - INFO - Fetching activity information from https://www.spyur.am/en/companies/yerevan-basic-school--8-named-after-alexander-pushkin/83395
+2024-07-25 10:14:54,774 - INFO - Company data scraping completed successfully.
+2024-07-25 10:14:54,780 - INFO - Data appended to company_table table successfully.
+2024-07-25 10:14:54,786 - INFO - Data appended to executive_table table successfully.
+2024-07-25 10:14:54,792 - INFO - Data appended to contacts_table table successfully.
+2024-07-25 10:14:54,793 - INFO - Product data scraping completed successfully.
+2024-07-25 10:14:54,801 - INFO - Data appended to product_table table successfully.
+2024-07-25 10:14:54,801 - INFO - Activity data scraping completed successfully.
+2024-07-25 10:14:54,808 - INFO - Data appended to activity_table table successfully.
+2024-07-25 10:14:54,809 - INFO - Fetching data from: https://www.spyur.am/en/companies/yerevan-basic-school--150-named-after-fridtjof-nansen/84329
+2024-07-25 10:14:56,068 - INFO - Processing data from: https://www.spyur.am/en/companies/yerevan-basic-school--150-named-after-fridtjof-nansen/84329
+2024-07-25 10:14:56,069 - INFO - Fetching company information from https://www.spyur.am/en/companies/yerevan-basic-school--150-named-after-fridtjof-nansen/84329
+2024-07-25 10:14:56,076 - INFO - Fetching product information from https://www.spyur.am/en/companies/yerevan-basic-school--150-named-after-fridtjof-nansen/84329
+2024-07-25 10:14:56,080 - INFO - Fetching activity information from https://www.spyur.am/en/companies/yerevan-basic-school--150-named-after-fridtjof-nansen/84329
+2024-07-25 10:14:56,083 - INFO - Company data scraping completed successfully.
+2024-07-25 10:14:56,090 - INFO - Data appended to company_table table successfully.
+2024-07-25 10:14:56,095 - INFO - Data appended to executive_table table successfully.
+2024-07-25 10:14:56,102 - INFO - Data appended to contacts_table table successfully.
+2024-07-25 10:14:56,103 - INFO - Product data scraping completed successfully.
+2024-07-25 10:14:56,108 - INFO - Data appended to product_table table successfully.
+2024-07-25 10:14:56,109 - INFO - Activity data scraping completed successfully.
+2024-07-25 10:14:56,114 - INFO - Data appended to activity_table table successfully.
+2024-07-25 10:14:56,115 - INFO - Fetching data from: https://www.spyur.am/en/companies/yerevan-high-school--114-named-after-khachik-dashtents/84172
+2024-07-25 10:15:01,546 - INFO - Processing data from: https://www.spyur.am/en/companies/yerevan-high-school--114-named-after-khachik-dashtents/84172
+2024-07-25 10:15:01,546 - INFO - Fetching company information from https://www.spyur.am/en/companies/yerevan-high-school--114-named-after-khachik-dashtents/84172
+2024-07-25 10:15:01,554 - INFO - Fetching product information from https://www.spyur.am/en/companies/yerevan-high-school--114-named-after-khachik-dashtents/84172
+2024-07-25 10:15:01,557 - INFO - Fetching activity information from https://www.spyur.am/en/companies/yerevan-high-school--114-named-after-khachik-dashtents/84172
+2024-07-25 10:15:01,560 - INFO - Company data scraping completed successfully.
+2024-07-25 10:15:01,567 - INFO - Data appended to company_table table successfully.
+2024-07-25 10:15:01,577 - INFO - Data appended to executive_table table successfully.
+2024-07-25 10:15:01,584 - INFO - Data appended to contacts_table table successfully.
+2024-07-25 10:15:01,586 - INFO - Product data scraping completed successfully.
+2024-07-25 10:15:01,592 - INFO - Data appended to product_table table successfully.
+2024-07-25 10:15:01,593 - INFO - Activity data scraping completed successfully.
+2024-07-25 10:15:01,600 - INFO - Data appended to activity_table table successfully.
+2024-07-25 10:15:01,601 - INFO - Fetching data from: https://www.spyur.am/en/companies/yerevan-high-school--105/84371
+2024-07-25 10:15:03,489 - INFO - Processing data from: https://www.spyur.am/en/companies/yerevan-high-school--105/84371
+2024-07-25 10:15:03,490 - INFO - Fetching company information from https://www.spyur.am/en/companies/yerevan-high-school--105/84371
+2024-07-25 10:15:03,497 - INFO - Fetching product information from https://www.spyur.am/en/companies/yerevan-high-school--105/84371
+2024-07-25 10:15:03,500 - INFO - Fetching activity information from https://www.spyur.am/en/companies/yerevan-high-school--105/84371
+2024-07-25 10:15:03,507 - INFO - Company data scraping completed successfully.
+2024-07-25 10:15:03,515 - INFO - Data appended to company_table table successfully.
+2024-07-25 10:15:03,521 - INFO - Data appended to executive_table table successfully.
+2024-07-25 10:15:03,529 - INFO - Data appended to contacts_table table successfully.
+2024-07-25 10:15:03,529 - INFO - Product data scraping completed successfully.
+2024-07-25 10:15:03,536 - INFO - Data appended to product_table table successfully.
+2024-07-25 10:15:03,537 - INFO - Activity data scraping completed successfully.
+2024-07-25 10:15:03,544 - INFO - Data appended to activity_table table successfully.
+2024-07-25 10:15:03,546 - INFO - Fetching data from: https://www.spyur.am/en/companies/yerevan-high-school--42-named-after-taras-shevchenko/84103
+2024-07-25 10:15:04,347 - INFO - Processing data from: https://www.spyur.am/en/companies/yerevan-high-school--42-named-after-taras-shevchenko/84103
+2024-07-25 10:15:04,347 - INFO - Fetching company information from https://www.spyur.am/en/companies/yerevan-high-school--42-named-after-taras-shevchenko/84103
+2024-07-25 10:15:04,356 - INFO - Fetching product information from https://www.spyur.am/en/companies/yerevan-high-school--42-named-after-taras-shevchenko/84103
+2024-07-25 10:15:04,361 - INFO - Fetching activity information from https://www.spyur.am/en/companies/yerevan-high-school--42-named-after-taras-shevchenko/84103
+2024-07-25 10:15:04,366 - INFO - Company data scraping completed successfully.
+2024-07-25 10:15:04,374 - INFO - Data appended to company_table table successfully.
+2024-07-25 10:15:04,382 - INFO - Data appended to executive_table table successfully.
+2024-07-25 10:15:04,388 - INFO - Data appended to contacts_table table successfully.
+2024-07-25 10:15:04,389 - INFO - Product data scraping completed successfully.
+2024-07-25 10:15:04,395 - INFO - Data appended to product_table table successfully.
+2024-07-25 10:15:04,396 - INFO - Activity data scraping completed successfully.
+2024-07-25 10:15:04,402 - INFO - Data appended to activity_table table successfully.
+2024-07-25 10:15:04,402 - INFO - Fetching data from: https://www.spyur.am/en/companies/yerevan-basic-school--71-named-after-nelson-stepanyan/80180
+2024-07-25 10:15:05,175 - INFO - Processing data from: https://www.spyur.am/en/companies/yerevan-basic-school--71-named-after-nelson-stepanyan/80180
+2024-07-25 10:15:05,175 - INFO - Fetching company information from https://www.spyur.am/en/companies/yerevan-basic-school--71-named-after-nelson-stepanyan/80180
+2024-07-25 10:15:05,183 - INFO - Fetching product information from https://www.spyur.am/en/companies/yerevan-basic-school--71-named-after-nelson-stepanyan/80180
+2024-07-25 10:15:05,186 - INFO - Fetching activity information from https://www.spyur.am/en/companies/yerevan-basic-school--71-named-after-nelson-stepanyan/80180
+2024-07-25 10:15:05,189 - INFO - Company data scraping completed successfully.
+2024-07-25 10:15:05,194 - INFO - Data appended to company_table table successfully.
+2024-07-25 10:15:05,200 - INFO - Data appended to executive_table table successfully.
+2024-07-25 10:15:05,208 - INFO - Data appended to contacts_table table successfully.
+2024-07-25 10:15:05,209 - INFO - Product data scraping completed successfully.
+2024-07-25 10:15:05,216 - INFO - Data appended to product_table table successfully.
+2024-07-25 10:15:05,217 - INFO - Activity data scraping completed successfully.
+2024-07-25 10:15:05,224 - INFO - Data appended to activity_table table successfully.
+2024-07-25 10:15:05,225 - INFO - Fetching data from: https://www.spyur.am/en/companies/yerevan-basic-school--11-named-after-monte-melkonyan/84367
+2024-07-25 10:15:05,901 - INFO - Processing data from: https://www.spyur.am/en/companies/yerevan-basic-school--11-named-after-monte-melkonyan/84367
+2024-07-25 10:15:05,901 - INFO - Fetching company information from https://www.spyur.am/en/companies/yerevan-basic-school--11-named-after-monte-melkonyan/84367
+2024-07-25 10:15:05,908 - INFO - Fetching product information from https://www.spyur.am/en/companies/yerevan-basic-school--11-named-after-monte-melkonyan/84367
+2024-07-25 10:15:05,911 - INFO - Fetching activity information from https://www.spyur.am/en/companies/yerevan-basic-school--11-named-after-monte-melkonyan/84367
+2024-07-25 10:15:05,914 - INFO - Company data scraping completed successfully.
+2024-07-25 10:15:05,920 - INFO - Data appended to company_table table successfully.
+2024-07-25 10:15:05,926 - INFO - Data appended to executive_table table successfully.
+2024-07-25 10:15:05,934 - INFO - Data appended to contacts_table table successfully.
+2024-07-25 10:15:05,935 - INFO - Product data scraping completed successfully.
+2024-07-25 10:15:05,940 - INFO - Data appended to product_table table successfully.
+2024-07-25 10:15:05,940 - INFO - Activity data scraping completed successfully.
+2024-07-25 10:15:05,946 - INFO - Data appended to activity_table table successfully.
+2024-07-25 10:15:05,948 - INFO - Fetching data from: https://www.spyur.am/en/companies/yerevan-basic-school--61-after-king-argishti-the-first/84416
+2024-07-25 10:15:06,667 - INFO - Processing data from: https://www.spyur.am/en/companies/yerevan-basic-school--61-after-king-argishti-the-first/84416
+2024-07-25 10:15:06,668 - INFO - Fetching company information from https://www.spyur.am/en/companies/yerevan-basic-school--61-after-king-argishti-the-first/84416
+2024-07-25 10:15:06,676 - INFO - Fetching product information from https://www.spyur.am/en/companies/yerevan-basic-school--61-after-king-argishti-the-first/84416
+2024-07-25 10:15:06,678 - INFO - Fetching activity information from https://www.spyur.am/en/companies/yerevan-basic-school--61-after-king-argishti-the-first/84416
+2024-07-25 10:15:06,681 - INFO - Company data scraping completed successfully.
+2024-07-25 10:15:06,688 - INFO - Data appended to company_table table successfully.
+2024-07-25 10:15:06,696 - INFO - Data appended to executive_table table successfully.
+2024-07-25 10:15:06,702 - INFO - Data appended to contacts_table table successfully.
+2024-07-25 10:15:06,703 - INFO - Product data scraping completed successfully.
+2024-07-25 10:15:06,710 - INFO - Data appended to product_table table successfully.
+2024-07-25 10:15:06,710 - INFO - Activity data scraping completed successfully.
+2024-07-25 10:15:06,714 - INFO - Data appended to activity_table table successfully.
+2024-07-25 10:15:06,718 - INFO - Fetching data from: https://www.spyur.am/en/companies/yerevan-basic-school--40-named-after-arshavir-shavarshyan/84054
+2024-07-25 10:15:07,612 - INFO - Processing data from: https://www.spyur.am/en/companies/yerevan-basic-school--40-named-after-arshavir-shavarshyan/84054
+2024-07-25 10:15:07,613 - INFO - Fetching company information from https://www.spyur.am/en/companies/yerevan-basic-school--40-named-after-arshavir-shavarshyan/84054
+2024-07-25 10:15:07,620 - INFO - Fetching product information from https://www.spyur.am/en/companies/yerevan-basic-school--40-named-after-arshavir-shavarshyan/84054
+2024-07-25 10:15:07,623 - INFO - Fetching activity information from https://www.spyur.am/en/companies/yerevan-basic-school--40-named-after-arshavir-shavarshyan/84054
+2024-07-25 10:15:07,626 - INFO - Company data scraping completed successfully.
+2024-07-25 10:15:07,633 - INFO - Data appended to company_table table successfully.
+2024-07-25 10:15:07,639 - INFO - Data appended to executive_table table successfully.
+2024-07-25 10:15:07,645 - INFO - Data appended to contacts_table table successfully.
+2024-07-25 10:15:07,645 - INFO - Product data scraping completed successfully.
+2024-07-25 10:15:07,652 - INFO - Data appended to product_table table successfully.
+2024-07-25 10:15:07,653 - INFO - Activity data scraping completed successfully.
+2024-07-25 10:15:07,658 - INFO - Data appended to activity_table table successfully.
+2024-07-25 10:15:07,659 - INFO - Fetching data from: https://www.spyur.am/en/companies/basic-school-named-after-hrant-matevosyan/84366
+2024-07-25 10:15:08,484 - INFO - Processing data from: https://www.spyur.am/en/companies/basic-school-named-after-hrant-matevosyan/84366
+2024-07-25 10:15:08,485 - INFO - Fetching company information from https://www.spyur.am/en/companies/basic-school-named-after-hrant-matevosyan/84366
+2024-07-25 10:15:08,494 - INFO - Fetching product information from https://www.spyur.am/en/companies/basic-school-named-after-hrant-matevosyan/84366
+2024-07-25 10:15:08,498 - INFO - Fetching activity information from https://www.spyur.am/en/companies/basic-school-named-after-hrant-matevosyan/84366
+2024-07-25 10:15:08,503 - INFO - Company data scraping completed successfully.
+2024-07-25 10:15:08,510 - INFO - Data appended to company_table table successfully.
+2024-07-25 10:15:08,515 - INFO - Data appended to executive_table table successfully.
+2024-07-25 10:15:08,520 - INFO - Data appended to contacts_table table successfully.
+2024-07-25 10:15:08,520 - INFO - Product data scraping completed successfully.
+2024-07-25 10:15:08,529 - INFO - Data appended to product_table table successfully.
+2024-07-25 10:15:08,530 - INFO - Activity data scraping completed successfully.
+2024-07-25 10:15:08,537 - INFO - Data appended to activity_table table successfully.
+2024-07-25 10:15:08,539 - INFO - Fetching data from: https://www.spyur.am/en/companies/yerevan-basic-school--134/84258
+2024-07-25 10:15:09,678 - INFO - Processing data from: https://www.spyur.am/en/companies/yerevan-basic-school--134/84258
+2024-07-25 10:15:09,678 - INFO - Fetching company information from https://www.spyur.am/en/companies/yerevan-basic-school--134/84258
+2024-07-25 10:15:09,687 - INFO - Fetching product information from https://www.spyur.am/en/companies/yerevan-basic-school--134/84258
+2024-07-25 10:15:09,690 - INFO - Fetching activity information from https://www.spyur.am/en/companies/yerevan-basic-school--134/84258
+2024-07-25 10:15:09,694 - INFO - Company data scraping completed successfully.
+2024-07-25 10:15:09,700 - INFO - Data appended to company_table table successfully.
+2024-07-25 10:15:09,707 - INFO - Data appended to executive_table table successfully.
+2024-07-25 10:15:09,714 - INFO - Data appended to contacts_table table successfully.
+2024-07-25 10:15:09,715 - INFO - Product data scraping completed successfully.
+2024-07-25 10:15:09,719 - INFO - Data appended to product_table table successfully.
+2024-07-25 10:15:09,720 - INFO - Activity data scraping completed successfully.
+2024-07-25 10:15:09,724 - INFO - Data appended to activity_table table successfully.
+2024-07-25 10:15:09,726 - INFO - Fetching data from: https://www.spyur.am/en/companies/yerevan-basic-school--156/84404
+2024-07-25 10:15:10,469 - INFO - Processing data from: https://www.spyur.am/en/companies/yerevan-basic-school--156/84404
+2024-07-25 10:15:10,470 - INFO - Fetching company information from https://www.spyur.am/en/companies/yerevan-basic-school--156/84404
+2024-07-25 10:15:10,478 - INFO - Fetching product information from https://www.spyur.am/en/companies/yerevan-basic-school--156/84404
+2024-07-25 10:15:10,481 - INFO - Fetching activity information from https://www.spyur.am/en/companies/yerevan-basic-school--156/84404
+2024-07-25 10:15:10,485 - INFO - Company data scraping completed successfully.
+2024-07-25 10:15:10,492 - INFO - Data appended to company_table table successfully.
+2024-07-25 10:15:10,500 - INFO - Data appended to executive_table table successfully.
+2024-07-25 10:15:10,507 - INFO - Data appended to contacts_table table successfully.
+2024-07-25 10:15:10,508 - INFO - Product data scraping completed successfully.
+2024-07-25 10:15:10,515 - INFO - Data appended to product_table table successfully.
+2024-07-25 10:15:10,516 - INFO - Activity data scraping completed successfully.
+2024-07-25 10:15:10,521 - INFO - Data appended to activity_table table successfully.
+2024-07-25 10:15:10,522 - INFO - Fetching data from: https://www.spyur.am/en/companies/yerevan-basic-school--89-named-after-daniel-varuzhan/84368
