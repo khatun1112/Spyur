@@ -46,7 +46,7 @@ Run the main script to start the scraping and data extraction process:
 
 ```bash
 python main.py
-    ```
+```
 
 ## Project Structure
 
