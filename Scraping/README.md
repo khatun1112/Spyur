@@ -47,11 +47,11 @@ Run the main script to start the scraping and data extraction process:
 ```bash
 python main.py
 
-
 ## Project Structure
 
-main.py: The main script to run the scraping pipeline.
-utils.py: Contains utility functions for scraping and data processing.
-utils_db.py: Contains functions for saving data to MySQL.
-config.py: Contains configuration details for database connection and proxy settings.
-requirements.txt: Lists the required Python packages.
+- **`main.py`**: The main script to run the scraping pipeline.
+- **`utils.py`**: Contains utility functions for scraping and data processing.
+- **`utils_db.py`**: Contains functions for saving data to MySQL.
+- **`config.py`**: Contains configuration details for database connection and proxy settings.
+- **`requirements.txt`**: Lists the required Python packages.
+
