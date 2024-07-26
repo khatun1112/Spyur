@@ -8,7 +8,10 @@ This repository contains a Python-based web scraping and data extraction pipelin
 - [Setup](#setup)
 - [Usage](#usage)
 - [Project Structure](#project-structure)
-  
+- [Configuration](#configuration)
+- [Functions](#functions)
+
+
 ## Requirements
 
 - Python 3.x
@@ -56,3 +59,74 @@ python main.py
 - **`config.py`**: Contains configuration details for database connection and proxy settings.
 - **`requirements.txt`**: Lists the required Python packages.
 
+
+## Configuration
+
+**Database Configuration (config.py):**
+```python
+ database_config = {
+    'user': 'your_mysql_username',
+    'password': 'your_mysql_password',
+    'host': 'localhost',
+    'port': 3306,
+    'database': 'spyur_companies'
+}
+```
+
+**Proxy Configuration (config.py):**
+
+```python
+proxy_config = {
+    "http": "http://your_proxy_url",
+    "https": "http://your_proxy_url",
+}
+```
+
+**Functions**
+
+*main.py*
+
+**Establish MySQL Connection:**
+
+```python
+connection = pymysql.connect(
+    user=database_config['user'],
+    password=database_config['password'],
+    host=database_config['host'],
+    port=database_config['port'],
+    database=database_config['database']
+)
+```
+
+**Scraping and Data Extraction:**
+
+  **Read URLs from company_link.txt.**
+  **Fetch and parse HTML content.**
+  **Extract company information, products, and activities.**
+  **Save extracted data to MySQL.**
+
+
+*utils.py*
+**Logging Configuration**
+
+```python
+logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s',
+                    handlers=[
+                        logging.StreamHandler(),
+                        logging.FileHandler('company_info.log', mode='w')
+                    ])
+)
+```
+
+
+**Utility Functions:**
+
+  **generate_id(value):** Generates a unique ID using MD5 hashing.
+  **get_company_info(content, url):** Extracts company information.
+  **get_company_products(content, url):** Extracts company products.
+  **get_company_activities(content, url):** Extracts company activities.
+
+
+*utils_db.py*
+**Database Functions:**
+  **save_to_mysql(df, table_name, connection):** Saves a pandas DataFrame to a MySQL table with duplicate handling.
