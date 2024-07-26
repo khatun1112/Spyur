@@ -100,10 +100,10 @@ connection = pymysql.connect(
 
 **Scraping and Data Extraction:**
 
-  **Read URLs from company_link.txt.**
-  **Fetch and parse HTML content.**
-  **Extract company information, products, and activities.**
-  **Save extracted data to MySQL.**
+  - **Read URLs from company_link.txt.**
+  - **Fetch and parse HTML content.**
+  - **Extract company information, products, and activities.**
+  - **Save extracted data to MySQL.**
 
 
 *utils.py*
@@ -121,12 +121,12 @@ logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(
 
 **Utility Functions:**
 
-  **generate_id(value):** Generates a unique ID using MD5 hashing.
-  **get_company_info(content, url):** Extracts company information.
-  **get_company_products(content, url):** Extracts company products.
-  **get_company_activities(content, url):** Extracts company activities.
+  - **generate_id(value):** Generates a unique ID using MD5 hashing.
+  - **get_company_info(content, url):** Extracts company information.
+  - **get_company_products(content, url):** Extracts company products.
+  - **get_company_activities(content, url):** Extracts company activities.
 
 
 *utils_db.py*
 **Database Functions:**
-  **save_to_mysql(df, table_name, connection):** Saves a pandas DataFrame to a MySQL table with duplicate handling.
+  - **save_to_mysql(df, table_name, connection):** Saves a pandas DataFrame to a MySQL table with duplicate handling.
