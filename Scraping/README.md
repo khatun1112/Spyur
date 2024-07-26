@@ -106,7 +106,7 @@ connection = pymysql.connect(
   - **Save extracted data to MySQL.**
 
 
-**`utils.py`**:
+**`utils.py`**
 
 **Logging Configuration**
 
