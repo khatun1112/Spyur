@@ -82,7 +82,7 @@ proxy_config = {
 }
 ```
 
-**Functions**
+## Functions
 
  **`main.py`**
 
