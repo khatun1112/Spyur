@@ -7,7 +7,7 @@ from bs4 import BeautifulSoup
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s',
                     handlers=[
                         logging.StreamHandler(),
-                        logging.FileHandler('company_links.log', mode='w')
+                        logging.FileHandler('links.log', mode='w')
                     ])
 
 
@@ -89,37 +89,29 @@ def get_company_info(content, url):
             'form_of_ownership': data.get('Form of ownership', 'N/A'),
             'year_established': data.get('Year established', 'N/A'),
             'date_of_information_update': data.get('Date of information update', 'N/A'),
-            'url': url
-        }]
-
-        executive_data = [{'executive': executive, 'url': url} for executive in lead_infos] if lead_infos else [{'executive': 'N/A', 'url': url}]
-        
-        contacts_data = [{
             'phone_numbers': phone_number,
             'site_url': ', '.join(site_urls) if site_urls else 'N/A',
             'web_link': ', '.join(web_links) if web_links else 'N/A',
             'url': url
         }]
 
+        executive_data = [{'executive': executive, 'url': url} for executive in lead_infos] if lead_infos else [{'executive': 'N/A', 'url': url}]
+        
+
     except Exception as e:
         logging.error(f"An error occurred while processing: {e}")
-        return pd.DataFrame(), pd.DataFrame(), pd.DataFrame()
+        return pd.DataFrame(), pd.DataFrame()
 
-    if company_data:
-        company_table = pd.DataFrame(company_data)
-        executive_table = pd.DataFrame(executive_data)
-        contacts_table = pd.DataFrame(contacts_data)
 
-        company_table['url_id'] = company_table['url'].apply(generate_id)
-        executive_table['url_id'] = executive_table['url'].apply(generate_id)
-        executive_table['executive_id'] = executive_table['executive'].apply(generate_id)
-        contacts_table['url_id'] = contacts_table['url'].apply(generate_id)
+    company_table = pd.DataFrame(company_data)
+    executive_table = pd.DataFrame(executive_data)
 
-        return company_table, executive_table, contacts_table
+    company_table['url_id'] = company_table['url'].apply(generate_id)
+    executive_table['url_id'] = executive_table['url'].apply(generate_id)
+    executive_table['executive_id'] = executive_table['executive'].apply(generate_id)
 
-    else:
-        logging.error("No data could be scraped from the provided URLs.")
-        return pd.DataFrame(), pd.DataFrame(), pd.DataFrame()
+    return company_table, executive_table
+
 
 
 
@@ -136,69 +128,66 @@ def get_company_products(content, url):
     """
     prod_data = []
 
-    try:
-        logging.info(f"Fetching product information from {url}")
 
-        info_sections = content.find_all('div', class_='info_section')
+    logging.info(f"Fetching product information from {url}")
 
-        # Initialize the flag to check if products data is found
-        products_data_found = False
+    info_sections = content.find_all('div', class_='info_section')
 
-        # Loop through each info section and extract the desired data
-        for section in info_sections:
-            title = section.find('div', class_='info_title').text.strip()
-            section_content = section.find('div', class_='info_content')
+    # Initialize the flag to check if products data is found
+    products_data_found = False
 
-            if "Products, services by" in title:
-                products_data_found = True
-                prod_content = section_content.find('ul', class_='multilevel_list')
-                if not prod_content:
+    # Loop through each info section and extract the desired data
+    for section in info_sections:
+        title = section.find('div', class_='info_title').text.strip()
+        section_content = section.find('div', class_='info_content')
+
+        if "Products, services by" in title:
+            products_data_found = True
+            prod_content = section_content.find('ul', class_='multilevel_list')
+            if not prod_content:
+                continue
+
+            for first_level in prod_content.find_all('div', class_='first_level_info'):
+                first_level_text = first_level.get_text(strip=True)
+                second_level_ul = first_level.find_next_sibling('ul')
+
+                if not second_level_ul:
                     continue
 
-                for first_level in prod_content.find_all('div', class_='first_level_info'):
-                    first_level_text = first_level.get_text(strip=True)
-                    second_level_ul = first_level.find_next_sibling('ul')
+                for second_level in second_level_ul.find_all('div', class_='second_level_info'):
+                    second_level_text = second_level.get_text(strip=True)
+                    product_ul = second_level.find_next_sibling('ul')
 
-                    if not second_level_ul:
+                    if not product_ul:
                         continue
 
-                    for second_level in second_level_ul.find_all('div', class_='second_level_info'):
-                        second_level_text = second_level.get_text(strip=True)
-                        product_ul = second_level.find_next_sibling('ul')
+                    for product in product_ul.find_all('a'):
+                        product_name = product.get_text(strip=True)
+                        prod_data.append({
+                            'url': url,
+                            'product_name': product_name,
+                            'prod_first_level_cluster': first_level_text,
+                            'prod_second_level_cluster': second_level_text
+                        })
 
-                        if not product_ul:
-                            continue
+    if not products_data_found:
+        logging.warning(f"An error occurred while processing product data")
+        prod_data.append({
+            'url': url,
+            'product_name': 'N/A',
+            'prod_first_level_cluster': 'N/A',
+            'prod_second_level_cluster': 'N/A'
+        })
 
-                        for product in product_ul.find_all('a'):
-                            product_name = product.get_text(strip=True)
-                            prod_data.append({
-                                'url': url,
-                                'product_name': product_name,
-                                'prod_first_level_cluster': first_level_text,
-                                'prod_second_level_cluster': second_level_text
-                            })
 
-        if not products_data_found:
-            prod_data.append({
-                'url': url,
-                'product_name': 'N/A',
-                'prod_first_level_cluster': 'N/A',
-                'prod_second_level_cluster': 'N/A'
-            })
 
-    except Exception as e:
-        logging.error(f"An error occurred while processing product data {e}")
+    product_table = pd.DataFrame(prod_data)
 
-    if prod_data:
-        product_table = pd.DataFrame(prod_data)
+    product_table['url_id'] = product_table['url'].apply(generate_id)
+    product_table['product_name_id'] = product_table['product_name'].apply(generate_id)
 
-        product_table['url_id'] = product_table['url'].apply(generate_id)
-        product_table['product_name_id'] = product_table['product_name'].apply(generate_id)
+    return product_table
 
-        return product_table
-    else:
-        logging.error("No product data could be scraped from the provided URLs.")
-        return None
 
 
 def get_company_activities(content, url):
@@ -214,67 +203,64 @@ def get_company_activities(content, url):
     """
     act_data = []
 
-    try:
-        logging.info(f"Fetching activity information from {url}")
 
-        info_sections = content.find_all('div', class_='info_section')
+    logging.info(f"Fetching activity information from {url}")
 
-        # Initialize the flag to check if activities data is found
-        activities_data_found = False
+    info_sections = content.find_all('div', class_='info_section')
 
-        # Loop through each info section and extract the desired data
-        for section in info_sections:
-            title = section.find('div', class_='info_title').text.strip()
-            section_content = section.find('div', class_='info_content')
+    # Initialize the flag to check if activities data is found
+    activities_data_found = False
 
-            if "Activity types by" in title:
-                activities_data_found = True
-                act_content = section_content.find('ul', class_='multilevel_list')
-                if not act_content:
+    # Loop through each info section and extract the desired data
+    for section in info_sections:
+        title = section.find('div', class_='info_title').text.strip()
+        section_content = section.find('div', class_='info_content')
+
+        if "Activity types by" in title:
+            activities_data_found = True
+            act_content = section_content.find('ul', class_='multilevel_list')
+            if not act_content:
+                continue
+
+            for first_level in act_content.find_all('div', class_='first_level_info'):
+                first_level_text = first_level.get_text(strip=True)
+                second_level_ul = first_level.find_next_sibling('ul')
+
+                if not second_level_ul:
                     continue
 
-                for first_level in act_content.find_all('div', class_='first_level_info'):
-                    first_level_text = first_level.get_text(strip=True)
-                    second_level_ul = first_level.find_next_sibling('ul')
+                for second_level in second_level_ul.find_all('div', class_='second_level_info'):
+                    second_level_text = second_level.get_text(strip=True)
+                    activity_ul = second_level.find_next_sibling('ul')
 
-                    if not second_level_ul:
+                    if not activity_ul:
                         continue
 
-                    for second_level in second_level_ul.find_all('div', class_='second_level_info'):
-                        second_level_text = second_level.get_text(strip=True)
-                        activity_ul = second_level.find_next_sibling('ul')
+                    for activity in activity_ul.find_all('a'):
+                        activity_name = activity.get_text(strip=True)
+                        act_data.append({
+                            'url': url,
+                            'activity_name': activity_name,
+                            'act_first_level_cluster': first_level_text,
+                            'act_second_level_cluster': second_level_text
+                        })
 
-                        if not activity_ul:
-                            continue
+    if not activities_data_found:
+        logging.warning(f"An error occurred while processing activity data")
+        act_data.append({
+            'url': url,
+            'activity_name': 'N/A',
+            'act_first_level_cluster': 'N/A',
+            'act_second_level_cluster': 'N/A'
+        })
 
-                        for activity in activity_ul.find_all('a'):
-                            activity_name = activity.get_text(strip=True)
-                            act_data.append({
-                                'url': url,
-                                'activity_name': activity_name,
-                                'act_first_level_cluster': first_level_text,
-                                'act_second_level_cluster': second_level_text
-                            })
 
-        if not activities_data_found:
-            act_data.append({
-                'url': url,
-                'activity_name': 'N/A',
-                'act_first_level_cluster': 'N/A',
-                'act_second_level_cluster': 'N/A'
-            })
 
-    except Exception as e:
-        logging.error(f"An error occurred while processing activity data {e}")
+    activity_table = pd.DataFrame(act_data)
 
-    if act_data:
-        activity_table = pd.DataFrame(act_data)
+    activity_table['url_id'] = activity_table['url'].apply(generate_id)
+    activity_table['activity_name_id'] = activity_table['activity_name'].apply(generate_id)
 
-        activity_table['url_id'] = activity_table['url'].apply(generate_id)
-        activity_table['activity_name_id'] = activity_table['activity_name'].apply(generate_id)
+    return activity_table
 
-        return activity_table
-    else:
-        logging.error("No activity data could be scraped from the provided URLs.")
-        return None
 

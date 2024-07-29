@@ -1,37 +1,31 @@
 from tqdm import tqdm
 from utils import get_company_info, get_company_products, get_company_activities
 from utils_db import save_to_mysql
+from config import database_config, proxy_config
 import logging
 import pymysql
 import traceback
 import requests
 from bs4 import BeautifulSoup
 
-# Database connection details
-user = 'Copa'
-password = 'COPA888'
-host = 'localhost'
-port = 3306
-database = 'spyur_companies'
 
 # Establish a connection to the MySQL database
-connection = pymysql.connect(user=user, password=password, host=host, port=port, database=database)
-
-proxy = {
-    "http": "http://brd-customer-hl_92e289be-zone-datacenter_proxy1-ip-45.143.104.217:dnrfxzvtp140@brd.superproxy.io:22225",
-    "https": "http://brd-customer-hl_92e289be-zone-datacenter_proxy1-ip-45.143.104.217:dnrfxzvtp140@brd.superproxy.io:22225",
-}
+connection = pymysql.connect(user= database_config['user'],
+                             password= database_config['password'],
+                             host = database_config['host'],
+                             port = database_config['port'],
+                             database = database_config['database'])
 
 
 if __name__ == "__main__":
-    with open("company_link.txt", "r") as file:
+    with open("try.txt", "r") as file:
         urls = file.readlines()
     urls = ['https://www.spyur.am' + url.strip() for url in urls]
 
     for url in tqdm(urls):
         try:
             logging.info(f"Fetching data from: {url}")
-            response = requests.get(url, proxies=proxy)
+            response = requests.get(url, proxies=proxy_config)
             if response.status_code == 200:
                 content = BeautifulSoup(response.content, 'html.parser')
             else:
@@ -43,30 +37,20 @@ if __name__ == "__main__":
 
         try:
             logging.info(f"Processing data from: {url}")
-            company_table, executive_table, contacts_table = get_company_info(content, url)
+            company_table, executive_table = get_company_info(content, url)
             product_table = get_company_products(content, url)
             activity_table = get_company_activities(content, url)
 
-            # Ensure all DataFrames are defined
-            if company_table is not None and executive_table is not None and contacts_table is not None:
-                logging.info("Company data scraping completed successfully.")
-                save_to_mysql(company_table, 'company_table', connection)
-                save_to_mysql(executive_table, 'executive_table', connection)
-                save_to_mysql(contacts_table, 'contacts_table', connection)
-            else:
-                logging.error("Company data scraping failed for some tables.")
+            logging.info("Company data scraping completed successfully.")
+            save_to_mysql(company_table, 'company_table', connection)
+            save_to_mysql(executive_table, 'executive_table', connection)
 
-            if product_table is not None:
-                logging.info("Product data scraping completed successfully.")
-                save_to_mysql(product_table, 'product_table', connection)
-            else:
-                logging.error("Product data scraping failed.")
+            logging.info("Product data scraping completed successfully.")
+            save_to_mysql(product_table, 'product_table', connection)
 
-            if activity_table is not None:
-                logging.info("Activity data scraping completed successfully.")
-                save_to_mysql(activity_table, 'activity_table', connection)
-            else:
-                logging.error("Activity data scraping failed.")
+            logging.info("Activity data scraping completed successfully.")
+            save_to_mysql(activity_table, 'activity_table', connection)
+
 
         except Exception as e:
             tb = traceback.extract_tb(e.__traceback__)
