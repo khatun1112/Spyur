@@ -5,6 +5,7 @@ from streamlit_folium import st_folium
 import plotly.graph_objects as go
 import plotly.express as px
 from PIL import Image
+from folium.plugins import MarkerCluster
 
 # Load the DataFrame
 with open('final_df.pkl', 'rb') as f:
@@ -22,12 +23,12 @@ st.set_page_config(
     initial_sidebar_state="expanded",
 )
 
-# Load the sidebar image
+# Loading the sidebar image
 sidebar_logo = Image.open(sidebar_path)
 st.sidebar.image(sidebar_logo, use_column_width=False, width=220) 
 
 
-# Sidebar navigation menu
+# Navigation menu
 menu_option = st.sidebar.radio("Go to", ["Gender Distribution", "Main Activities", "Main Products", "Roles", "Map"])
 
 # Sidebar filters
@@ -47,19 +48,19 @@ max_year = int(final_df['year_established'].max())
 min_year = int(final_df['year_established'].min())
 selected_year_range = st.sidebar.slider('Select Year Range', min_value=min_year, max_value=max_year, value=(min_year, max_year), step=1)
 
-# Apply filters
+# Applying filters
 def apply_filters(df, company_size, form_of_ownership, year_range):
     filtered_df = df.copy()
     
-    # Filter based on company size
+    # Filtering based on company size
     if company_size and company_size != 'All':
         filtered_df = filtered_df[filtered_df['number_of_employees'] == company_size]
     
-    # Filter based on form of ownership
+    # Filtering based on form of ownership
     if form_of_ownership and form_of_ownership != 'All':
         filtered_df = filtered_df[filtered_df['form_of_ownership'] == form_of_ownership]
     
-    # Filter based on year established range
+    # Filtering based on year established range
     if year_range:
         start_year, end_year = year_range
         filtered_df = filtered_df[(filtered_df['year_established'] >= start_year) & 
@@ -67,18 +68,19 @@ def apply_filters(df, company_size, form_of_ownership, year_range):
     
     return filtered_df
 
-# Apply filters
+# Appling filters
 filtered_df = apply_filters(final_df, selected_size, selected_ownership, selected_year_range)
 
-# Streamlit headers
+# Headers
 st.title('Gender Roles in Workplace')
 
 if menu_option == "Gender Distribution":
     st.subheader('Gender Distribution')
 
-    # Function to compute gender distribution
+    # Computing gender distribution
     def compute_gender_distribution(df):
-        gender_counts = df['gender'].value_counts()
+        aggregated_df = df.drop_duplicates(subset='url_id')
+        gender_counts = aggregated_df['gender'].value_counts()
         total_count = gender_counts.sum()
         
         male_percent = round((gender_counts.get('Male', 0) / total_count) * 100, 2)
@@ -96,11 +98,11 @@ if menu_option == "Gender Distribution":
 
     # Pie chart with hover information
     fig_pie = go.Figure(data=[go.Pie(labels=['Male', 'Female', 'Unknown'], 
-                                     values=[male_counts, female_counts, unknown_counts], 
-                                     customdata=[male_percent, female_percent, unknown_percent],
-                                     hoverinfo='text', textinfo='percent',
-                                     text=[f'Male count: {male_counts}', f'Female count: {female_counts}', f'Unknown count: {unknown_counts}'],
-                                     marker=dict(colors=[colors.get(gender, '#000000') for gender in ['Male', 'Female', 'Unknown']]))])
+                                    values=[male_counts, female_counts, unknown_counts], 
+                                    customdata=[male_percent, female_percent, unknown_percent],
+                                    hoverinfo='text', textinfo='percent',
+                                    text=[f'Male count: {male_counts}', f'Female count: {female_counts}', f'Unknown count: {unknown_counts}'],
+                                    marker=dict(colors=[colors.get(gender, '#000000') for gender in ['Male', 'Female', 'Unknown']]))])
 
     fig_pie.update_layout(
         title='Gender Distribution',
@@ -109,7 +111,8 @@ if menu_option == "Gender Distribution":
 
     # Line plot for executive counts over years 
     fig_line = go.Figure()
-    exec_counts = filtered_df.groupby('year_established')['gender'].value_counts().unstack().fillna(0)
+    aggregated_df = filtered_df.drop_duplicates(subset='url_id')
+    exec_counts = aggregated_df.groupby('year_established')['gender'].value_counts().unstack().fillna(0)
 
     for gender in exec_counts.columns:
         fig_line.add_trace(go.Scatter(x=exec_counts.index, y=exec_counts[gender], mode='lines+markers', name=gender, line=dict(color=colors.get(gender, '#000000'))))
@@ -130,59 +133,60 @@ if menu_option == "Gender Distribution":
     with col2:
         st.plotly_chart(fig_line)
 
-elif menu_option == "Main Activities":
-    st.subheader('Main Activities')
+# elif menu_option == "Main Activities":
+#     st.subheader('Main Activities')
 
-    def get_top_activities(df, gender, top_n=15):
-        activities = df[df['gender'] == gender]['activity_name'].value_counts(normalize=True).head(top_n)
-        return activities
+#     def get_top_activities(df, gender, top_n=15):
+#         activities = df[df['gender'] == gender]['activity_name'].value_counts(normalize=True).head(top_n)
+#         return activities
 
-    male_activities = get_top_activities(filtered_df, 'Male').sort_values(ascending=False)
-    female_activities = get_top_activities(filtered_df, 'Female').sort_values(ascending=False)
+#     male_activities = get_top_activities(filtered_df, 'Male').sort_values(ascending=False)
+#     female_activities = get_top_activities(filtered_df, 'Female').sort_values(ascending=False)
 
-    male_activities_pct = round(male_activities * 100, 2)
-    female_activities_pct = round(female_activities * 100, 2)
+#     male_activities_pct = round(male_activities * 100, 2)
+#     female_activities_pct = round(female_activities * 100, 2)
 
-    col1, col2 = st.columns(2)
-    with col1:
-        st.write("Male")
-        fig_male = px.bar(male_activities_pct, x=male_activities_pct.values, y=male_activities_pct.index, orientation='h',
-                          labels={'x': 'Percentage', 'y': 'Activity'})
-        st.plotly_chart(fig_male, use_container_width=True)
+#     col1, col2 = st.columns(2)
+#     with col1:
+#         st.write("Male")
+#         fig_male = px.bar(male_activities_pct, x=male_activities_pct.values, y=male_activities_pct.index, orientation='h',
+#                         labels={'x': 'Percentage'})
+#         st.plotly_chart(fig_male, use_container_width=True)
 
-    with col2:
-        st.write("Female")
-        fig_female = px.bar(female_activities_pct, x=female_activities_pct.values, y=female_activities_pct.index, orientation='h',
-                            labels={'x': 'Percentage', 'y': 'Activity'})
-        st.plotly_chart(fig_female, use_container_width=True)
+#     with col2:
+#         st.write("Female")
+#         fig_female = px.bar(female_activities_pct, x=female_activities_pct.values, y=female_activities_pct.index, orientation='h',
+#                             labels={'x': 'Percentage'})
+#         st.plotly_chart(fig_female, use_container_width=True)
 
-elif menu_option == "Main Products":
-    st.subheader('Main Products')
+# elif menu_option == "Main Products":
+#     st.subheader('Main Products')
 
-    def get_top_products(df, gender, top_n=15):
-        products = df[df['gender'] == gender]['product_name'].value_counts(normalize=True).head(top_n)
-        return products
+#     def get_top_products(df, gender, top_n=15):
+#         products = df[df['gender'] == gender]['product_name'].value_counts(normalize=True).head(top_n)
+#         return products
 
-    male_products = get_top_products(filtered_df, 'Male').sort_values(ascending=False)
-    female_products = get_top_products(filtered_df, 'Female').sort_values(ascending=False)
+#     male_products = get_top_products(filtered_df, 'Male').sort_values(ascending=False)
+#     female_products = get_top_products(filtered_df, 'Female').sort_values(ascending=False)
 
-    male_products_pct = round(male_products * 100, 2)
-    female_products_pct = round(female_products * 100, 2)
+#     male_products_pct = round(male_products * 100, 2)
+#     female_products_pct = round(female_products * 100, 2)
 
-    col1, col2 = st.columns(2)
-    with col1:
-        st.write("Male")
-        st.bar_chart(male_products_pct)
+#     col1, col2 = st.columns(2)
+#     with col1:
+#         st.write("Male")
+#         st.bar_chart(male_products_pct)
 
-    with col2:
-        st.write("Female")
-        st.bar_chart(female_products_pct)
+#     with col2:
+#         st.write("Female")
+#         st.bar_chart(female_products_pct)
 
 elif menu_option == "Roles":
-    st.subheader('Roles for Executives')
+    st.subheader('Top 5 roles for Executives')
 
-    def get_roles(df, gender):
-        roles = df[df['gender'] == gender]['role'].value_counts()
+    def get_roles(df, gender, top_n = 5):
+        aggregated_df = df.drop_duplicates(subset='url_id')
+        roles = aggregated_df[aggregated_df['gender'] == gender]['role'].value_counts().head(top_n)
         return roles
 
     male_roles = get_roles(filtered_df, 'Male')
@@ -191,11 +195,11 @@ elif menu_option == "Roles":
     col1, col2 = st.columns(2)
     with col1:
         st.markdown("Male", unsafe_allow_html=True)
-        st.table(male_roles)
+        st.bar_chart(male_roles)
 
     with col2:
         st.markdown("Female", unsafe_allow_html=True)
-        st.table(female_roles)
+        st.bar_chart(female_roles)
 
 elif menu_option == "Map":
     colors = {
@@ -209,6 +213,7 @@ elif menu_option == "Map":
     filtered_df_unique = filtered_df.drop_duplicates(subset=['location'])
 
     def add_markers_to_map(map_obj, df):
+        marker_cluster = MarkerCluster().add_to(map_obj)
         for idx, row in df.iterrows():
             try:
                 lat, lon = row['location']
@@ -223,9 +228,13 @@ elif menu_option == "Map":
                     fill_color=color,
                     fill_opacity=0.6,
                     popup=f"{row['company_name']}\nGender: {gender}"
-                ).add_to(map_obj)
+                ).add_to(marker_cluster)
             except Exception as e:
                 st.error(f"Error processing row {idx}: {e}")
 
     add_markers_to_map(m, filtered_df)
     st_folium(m, width='100%', height=500)
+
+
+
+    
