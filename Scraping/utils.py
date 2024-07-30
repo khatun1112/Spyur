@@ -7,7 +7,7 @@ from bs4 import BeautifulSoup
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s',
                     handlers=[
                         logging.StreamHandler(),
-                        logging.FileHandler('links.log', mode='w')
+                        logging.FileHandler('company_info.log', mode='w')
                     ])
 
 
