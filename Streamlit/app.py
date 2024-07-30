@@ -8,16 +8,16 @@ from PIL import Image
 from folium.plugins import MarkerCluster
 
 # Load the DataFrame
-with open('final_df.pkl', 'rb') as f:
+with open('comp_and_ex.pkl', 'rb') as f:
     final_df = pd.read_pickle(f)
 
 # Sidebar paths
-sidebar_path = '/home/meri.davtyan/Spyur/Streamlit/download-1-removebg-preview.png'
-logo = '/home/meri.davtyan/Spyur/Streamlit/[removal.ai]_916c7b22-1390-4e8f-b8a3-45ad4baf38ab-images-1.png'
+sidebar_path = '/Users/copa/Desktop/Top2Vec/Spyur/Streamlit/download-1-removebg-preview.png'
+logo = '/Users/copa/Desktop/Top2Vec/Spyur/Streamlit/[removal.ai]_916c7b22-1390-4e8f-b8a3-45ad4baf38ab-images-1.png'
 
 # Streamlit configuration
 st.set_page_config(
-    page_title="Gender Roles in the Workplace",
+    page_title="SDG5",
     page_icon=logo, 
     layout="wide",
     initial_sidebar_state="expanded",
@@ -40,12 +40,13 @@ company_sizes = ['All'] + employees_list
 selected_size = st.sidebar.selectbox('Select Company Size', company_sizes)
 
 # Filter by form of ownership
-forms_of_ownership = ['All'] + final_df['form_of_ownership'].dropna().unique().tolist()
+forms = ['Non-governmental', 'State', 'International', 'Foreign', 'Mixed (non-governmental/state)']
+forms_of_ownership = ['All'] + forms
 selected_ownership = st.sidebar.selectbox('Select Form of Ownership', forms_of_ownership)
 
 # Filter by year established
 max_year = int(final_df['year_established'].max())
-min_year = int(final_df['year_established'].min())
+min_year = 1832
 selected_year_range = st.sidebar.slider('Select Year Range', min_value=min_year, max_value=max_year, value=(min_year, max_year), step=1)
 
 # Applying filters
@@ -85,23 +86,20 @@ if menu_option == "Gender Distribution":
         
         male_percent = round((gender_counts.get('Male', 0) / total_count) * 100, 2)
         female_percent = round((gender_counts.get('Female', 0) / total_count) * 100, 2)
-        unknown_percent = round((gender_counts.get('Unknown', 0) / total_count) * 100, 2)
-        
-        return gender_counts, male_percent, female_percent, unknown_percent
+        return gender_counts, male_percent, female_percent, 
 
-    gender_counts, male_percent, female_percent, unknown_percent = compute_gender_distribution(filtered_df)
+    gender_counts, male_percent, female_percent = compute_gender_distribution(filtered_df)
 
-    colors = {'Female': '#e22e1f', 'Male': '#4788c8', 'Unknown': '#4cac55'}
+    colors = {'Female': '#e22e1f', 'Male': '#4788c8'}
     male_counts = (gender_counts.get('Male', 0))
     female_counts = (gender_counts.get('Female', 0))
-    unknown_counts = (gender_counts.get('Unknown', 0))
 
     # Pie chart with hover information
     fig_pie = go.Figure(data=[go.Pie(labels=['Male', 'Female', 'Unknown'], 
-                                    values=[male_counts, female_counts, unknown_counts], 
-                                    customdata=[male_percent, female_percent, unknown_percent],
+                                    values=[male_counts, female_counts], 
+                                    customdata=[male_percent, female_percent],
                                     hoverinfo='text', textinfo='percent',
-                                    text=[f'Male count: {male_counts}', f'Female count: {female_counts}', f'Unknown count: {unknown_counts}'],
+                                    text=[f'Male count: {male_counts}', f'Female count: {female_counts}'],
                                     marker=dict(colors=[colors.get(gender, '#000000') for gender in ['Male', 'Female', 'Unknown']]))])
 
     fig_pie.update_layout(
@@ -213,13 +211,17 @@ elif menu_option == "Map":
     filtered_df_unique = filtered_df.drop_duplicates(subset=['location'])
 
     def add_markers_to_map(map_obj, df):
-        marker_cluster = MarkerCluster().add_to(map_obj)
         for idx, row in df.iterrows():
             try:
-                lat, lon = row['location']
+                location = row['location']
+                if location is None:
+                    continue  
+
+                lat, lon = location
                 gender = row['gender']
                 color = colors.get(gender, '#000000')
-
+                if gender not in ['Male', 'Female']:
+                    continue  
                 folium.CircleMarker(
                     location=(lat, lon),
                     radius=5,
@@ -228,7 +230,7 @@ elif menu_option == "Map":
                     fill_color=color,
                     fill_opacity=0.6,
                     popup=f"{row['company_name']}\nGender: {gender}"
-                ).add_to(marker_cluster)
+                ).add_to(map_obj)
             except Exception as e:
                 st.error(f"Error processing row {idx}: {e}")
 
