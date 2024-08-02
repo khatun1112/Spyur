@@ -5,7 +5,10 @@ from streamlit_folium import st_folium
 import plotly.graph_objects as go
 import plotly.express as px
 from PIL import Image
-from folium.plugins import MarkerCluster
+import geopandas as gpd
+from utils_map import map_df, style_function
+from streamlit_folium import st_folium
+
 
 # Load the DataFrame
 with open('comp_and_ex.pkl', 'rb') as f:
@@ -131,31 +134,31 @@ if menu_option == "Gender Distribution":
     with col2:
         st.plotly_chart(fig_line)
 
-# elif menu_option == "Main Activities":
-#     st.subheader('Main Activities')
+elif menu_option == "Main Activities":
+    st.subheader('Main Activities')
 
-#     def get_top_activities(df, gender, top_n=15):
-#         activities = df[df['gender'] == gender]['activity_name'].value_counts(normalize=True).head(top_n)
-#         return activities
+    def get_top_activities(df, gender, top_n=15):
+        activities = df[df['gender'] == gender]['cluster'].value_counts(normalize=True).head(top_n)
+        return activities
 
-#     male_activities = get_top_activities(filtered_df, 'Male').sort_values(ascending=False)
-#     female_activities = get_top_activities(filtered_df, 'Female').sort_values(ascending=False)
+    male_activities = get_top_activities(filtered_df, 'Male').sort_values(ascending=False)
+    female_activities = get_top_activities(filtered_df, 'Female').sort_values(ascending=False)
 
-#     male_activities_pct = round(male_activities * 100, 2)
-#     female_activities_pct = round(female_activities * 100, 2)
+    male_activities_pct = round(male_activities * 100, 2)
+    female_activities_pct = round(female_activities * 100, 2)
 
-#     col1, col2 = st.columns(2)
-#     with col1:
-#         st.write("Male")
-#         fig_male = px.bar(male_activities_pct, x=male_activities_pct.values, y=male_activities_pct.index, orientation='h',
-#                         labels={'x': 'Percentage'})
-#         st.plotly_chart(fig_male, use_container_width=True)
+    col1, col2 = st.columns(2)
+    with col1:
+        st.write("Male")
+        fig_male = px.bar(male_activities_pct, x=male_activities_pct.values, y=male_activities_pct.index, orientation='h',
+                        labels={'x': 'Percentage'})
+        st.plotly_chart(fig_male, use_container_width=True)
 
-#     with col2:
-#         st.write("Female")
-#         fig_female = px.bar(female_activities_pct, x=female_activities_pct.values, y=female_activities_pct.index, orientation='h',
-#                             labels={'x': 'Percentage'})
-#         st.plotly_chart(fig_female, use_container_width=True)
+    with col2:
+        st.write("Female")
+        fig_female = px.bar(female_activities_pct, x=female_activities_pct.values, y=female_activities_pct.index, orientation='h',
+                            labels={'x': 'Percentage'})
+        st.plotly_chart(fig_female, use_container_width=True)
 
 # elif menu_option == "Main Products":
 #     st.subheader('Main Products')
@@ -180,63 +183,65 @@ if menu_option == "Gender Distribution":
 #         st.bar_chart(female_products_pct)
 
 elif menu_option == "Roles":
-    st.subheader('Top 5 roles for Executives')
+    st.subheader('Top 10 Roles for Executives')
 
-    def get_roles(df, gender, top_n = 5):
-        aggregated_df = df.drop_duplicates(subset='url_id')
+    def get_roles(df, gender, top_n=10):
+        aggregated_df = df.drop_duplicates(subset='full_name')
         roles = aggregated_df[aggregated_df['gender'] == gender]['role'].value_counts().head(top_n)
-        return roles
+        total = roles.sum()
+        roles_percentage = round((roles / total) * 100, 2)  
+        return roles_percentage
 
-    male_roles = get_roles(filtered_df, 'Male')
-    female_roles = get_roles(filtered_df, 'Female')
+    male_roles_percentage = get_roles(filtered_df, 'Male')
+    female_roles_percentage = get_roles(filtered_df, 'Female')
 
     col1, col2 = st.columns(2)
     with col1:
-        st.markdown("Male", unsafe_allow_html=True)
-        st.bar_chart(male_roles)
+        st.write("Male")
+        fig_male = px.bar(male_roles_percentage, x=male_roles_percentage.values, y=male_roles_percentage.index, orientation='h',
+                          labels={'x': 'Percentage', 'y': 'Role'}, title="Male Executive Roles")
+        st.plotly_chart(fig_male, use_container_width=True)
 
     with col2:
-        st.markdown("Female", unsafe_allow_html=True)
-        st.bar_chart(female_roles)
+        st.write("Female")
+        fig_female = px.bar(female_roles_percentage, x=female_roles_percentage.values, y=female_roles_percentage.index, orientation='h',
+                            labels={'x': 'Percentage', 'y': 'Role'}, title="Female Executive Roles")
+        st.plotly_chart(fig_female, use_container_width=True)
+
 
 elif menu_option == "Map":
-    colors = {
-    'Male': '#4788c8',     
-    'Female': '#e22e1f',  
-    'Unknown': '#4cac55'    
-}
-    st.subheader('Company Locations in Armenia')
-    map_center = [40.0691, 45.0382]
-    m = folium.Map(location=map_center, zoom_start=7, control_scale=True)
-    filtered_df_unique = filtered_df.drop_duplicates(subset=['location'])
+    st.subheader('Female Executives On Map')
+    try:
+        shapefile_path = '/Users/copa/Desktop/Top2Vec/Spyur/Streamlit/Map/arm.shp'
+        
+        @st.cache_data
+        def load_data(filepath):
+            return gpd.read_file(filepath)
 
-    def add_markers_to_map(map_obj, df):
-        for idx, row in df.iterrows():
-            try:
-                location = row['location']
-                if location is None:
-                    continue  
+        gdf = map_df(filtered_df, shapefile_path)
+        gdf['geometry_wkt'] = gdf.geometry.apply(lambda x: x.wkt)
+        
+        map_center = [gdf.geometry.centroid.y.mean(), gdf.geometry.centroid.x.mean()]
+        m = folium.Map(location=map_center, zoom_start=10)
+        
+        folium.GeoJson(
+            gdf.__geo_interface__,
+            style_function=style_function,
+            tooltip=folium.GeoJsonTooltip(fields=['women_count', 'women_perc'],
+                                        aliases=['Count:', 'Percentage:'],
+                                        localize=True)
+        ).add_to(m)
+        
+        for _, row in gdf.iterrows():
+            geom = row['geometry']
+            if geom.geom_type == 'Point':
+                folium.Marker(
+                    location=[geom.y, geom.x],
+                    popup=f"Count: {row['women_count']}"
+                ).add_to(m)
 
-                lat, lon = location
-                gender = row['gender']
-                color = colors.get(gender, '#000000')
-                if gender not in ['Male', 'Female']:
-                    continue  
-                folium.CircleMarker(
-                    location=(lat, lon),
-                    radius=5,
-                    color=color,
-                    fill=True,
-                    fill_color=color,
-                    fill_opacity=0.6,
-                    popup=f"{row['company_name']}\nGender: {gender}"
-                ).add_to(map_obj)
-            except Exception as e:
-                st.error(f"Error processing row {idx}: {e}")
+        st_folium(m, width='100%', height=500)
 
-    add_markers_to_map(m, filtered_df)
-    st_folium(m, width='100%', height=500)
-
-
-
-    
+    except Exception as e:
+        m = folium.Map(location=[40.0691, 45.0382])
+        st_folium(m, width='100%', height=500)
