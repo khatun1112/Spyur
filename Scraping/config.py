@@ -1,12 +1,13 @@
 # Database connection details
-database_config = {'user': 'Copa',
-                   'password': 'COPA888',
+database_config = {'user': 'khatun',
+                   'password': 'password',
                    'host': 'localhost',
                    'port': 3306,
-                   'database': 'spyur'
+                   'database': 'spyur_companies'
                   }
 
+
 proxy_config = {
-    "http": "http://brd-customer-hl_92e289be-zone-datacenter_proxy1-ip-45.143.104.217:dnrfxzvtp140@brd.superproxy.io:22225",
-    "https": "http://brd-customer-hl_92e289be-zone-datacenter_proxy1-ip-45.143.104.217:dnrfxzvtp140@brd.superproxy.io:22225",
+    "http": "http://brd-customer-hl_e07fff49-zone-proxy_1-ip-45.143.104.97:yy4qtrybf29m@brd.superproxy.io:22225",
+    "https": "http://brd-customer-hl_e07fff49-zone-proxy_1-ip-45.143.104.97:yy4qtrybf29m@brd.superproxy.io:22225"
 }
