@@ -11,7 +11,7 @@ from streamlit_folium import st_folium
 
 
 # Load the DataFrame
-with open('comp_and_ex.pkl', 'rb') as f:
+with open('spyur.pkl', 'rb') as f:
     final_df = pd.read_pickle(f)
 
 # Sidebar paths
@@ -32,7 +32,7 @@ st.sidebar.image(sidebar_logo, use_column_width=False, width=220)
 
 
 # Navigation menu
-menu_option = st.sidebar.radio("Go to", ["Gender Distribution", "Main Activities", "Main Products", "Roles", "Map"])
+menu_option = st.sidebar.radio("Go to", ["Gender Distribution","Timeseries", "Main Activities", "Main Products", "Roles", "Map"])
 
 # Sidebar filters
 st.sidebar.header("Filters")
@@ -47,33 +47,22 @@ forms = ['Non-governmental', 'State', 'International', 'Foreign', 'Mixed (non-go
 forms_of_ownership = ['All'] + forms
 selected_ownership = st.sidebar.selectbox('Select Form of Ownership', forms_of_ownership)
 
-# Filter by year established
-max_year = int(final_df['year_established'].max())
-min_year = 1832
-selected_year_range = st.sidebar.slider('Select Year Range', min_value=min_year, max_value=max_year, value=(min_year, max_year), step=1)
-
 # Applying filters
-def apply_filters(df, company_size, form_of_ownership, year_range):
+def apply_filters(df, company_size, form_of_ownership):
     filtered_df = df.copy()
     
     # Filtering based on company size
     if company_size and company_size != 'All':
         filtered_df = filtered_df[filtered_df['number_of_employees'] == company_size]
-    
+
     # Filtering based on form of ownership
     if form_of_ownership and form_of_ownership != 'All':
-        filtered_df = filtered_df[filtered_df['form_of_ownership'] == form_of_ownership]
-    
-    # Filtering based on year established range
-    if year_range:
-        start_year, end_year = year_range
-        filtered_df = filtered_df[(filtered_df['year_established'] >= start_year) & 
-                                  (filtered_df['year_established'] <= end_year)]
+        filtered_df = filtered_df[filtered_df['form_of_ownership'] == form_of_ownership]    
     
     return filtered_df
 
 # Appling filters
-filtered_df = apply_filters(final_df, selected_size, selected_ownership, selected_year_range)
+filtered_df = apply_filters(final_df, selected_size, selected_ownership)
 
 # Headers
 st.title('Gender Roles in Workplace')
@@ -94,27 +83,57 @@ if menu_option == "Gender Distribution":
     gender_counts, male_percent, female_percent = compute_gender_distribution(filtered_df)
 
     colors = {'Female': '#e22e1f', 'Male': '#4788c8'}
-    male_counts = (gender_counts.get('Male', 0))
-    female_counts = (gender_counts.get('Female', 0))
+    male_counts = gender_counts.get('Male', 0)
+    female_counts = gender_counts.get('Female', 0)
 
     # Pie chart with hover information
-    fig_pie = go.Figure(data=[go.Pie(labels=['Male', 'Female', 'Unknown'], 
+    fig_pie = go.Figure(data=[go.Pie(labels=['Male', 'Female'], 
                                     values=[male_counts, female_counts], 
                                     customdata=[male_percent, female_percent],
-                                    hoverinfo='text', textinfo='percent',
+                                    hoverinfo='label+percent+value', textinfo='percent',
                                     text=[f'Male count: {male_counts}', f'Female count: {female_counts}'],
-                                    marker=dict(colors=[colors.get(gender, '#000000') for gender in ['Male', 'Female', 'Unknown']]))])
+                                    marker=dict(colors=[colors['Male'], colors['Female']]))])
 
     fig_pie.update_layout(
         title='Gender Distribution',
         template='plotly_white'
     )
 
-    # Line plot for executive counts over years 
+    col1, col2 = st.columns([1, 1])
+
+    with col1:
+        st.plotly_chart(fig_pie)
+
+    with col2:
+        st.markdown(f"""
+        ### Key Insights
+        - **Total Companies:** {gender_counts.sum()}
+        - **Male Executives:** {male_counts} ({male_percent}%)
+        - **Female Executives:** {female_counts} ({female_percent}%)
+        """)
+
+
+if menu_option == "Timeseries":
+    st.subheader('Timeseries')
+    st.markdown('<p style="color:gray; font-size:12px;">This timeseries is based on founding year for companies who mentioned the date</p>', unsafe_allow_html=True)
+
+    # Filter by year established, remove rows with year_established as 0
+    filtered_df = final_df[final_df['year_established'] != 1990]
+    
+    max_year = int(filtered_df['year_established'].max())
+    min_year = 1832
+    selected_year_range = st.slider('Select Year Range', min_value=min_year, max_value=max_year, value=(min_year, max_year), step=1)
+    
+    # Further filter data based on selected year range
+    filtered_df = filtered_df[(filtered_df['year_established'] >= selected_year_range[0]) & 
+                              (filtered_df['year_established'] <= selected_year_range[1])]
+
+    # Line plot for executive counts over years
     fig_line = go.Figure()
     aggregated_df = filtered_df.drop_duplicates(subset='url_id')
     exec_counts = aggregated_df.groupby('year_established')['gender'].value_counts().unstack().fillna(0)
 
+    colors = {'Female': '#e22e1f', 'Male': '#4788c8'}
     for gender in exec_counts.columns:
         fig_line.add_trace(go.Scatter(x=exec_counts.index, y=exec_counts[gender], mode='lines+markers', name=gender, line=dict(color=colors.get(gender, '#000000'))))
 
@@ -125,14 +144,7 @@ if menu_option == "Gender Distribution":
         legend_title='Gender',
         template='plotly_white'
     )
-
-    col1, col2 = st.columns(2)
-
-    with col1:
-        st.plotly_chart(fig_pie)
-
-    with col2:
-        st.plotly_chart(fig_line)
+    st.plotly_chart(fig_line)
 
 elif menu_option == "Main Activities":
     st.subheader('Main Activities')
@@ -160,27 +172,32 @@ elif menu_option == "Main Activities":
                             labels={'x': 'Percentage'})
         st.plotly_chart(fig_female, use_container_width=True)
 
-# elif menu_option == "Main Products":
-#     st.subheader('Main Products')
+elif menu_option == "Main Products":
+    st.subheader('Main Products')
 
-#     def get_top_products(df, gender, top_n=15):
-#         products = df[df['gender'] == gender]['product_name'].value_counts(normalize=True).head(top_n)
-#         return products
+    def get_top_products(df, gender, top_n=15):
+        filtered_df = df[(df['gender'] == gender) & (df['label'].notna()) & (df['label'] != 'N/A')]
+        products = filtered_df['label'].value_counts(normalize=True).head(top_n)
+        return products
 
-#     male_products = get_top_products(filtered_df, 'Male').sort_values(ascending=False)
-#     female_products = get_top_products(filtered_df, 'Female').sort_values(ascending=False)
+    male_products = get_top_products(filtered_df, 'Male').sort_values(ascending=False)
+    female_products = get_top_products(filtered_df, 'Female').sort_values(ascending=False)
 
-#     male_products_pct = round(male_products * 100, 2)
-#     female_products_pct = round(female_products * 100, 2)
+    male_products_pct = round(male_products * 100, 2)
+    female_products_pct = round(female_products * 100, 2)
 
-#     col1, col2 = st.columns(2)
-#     with col1:
-#         st.write("Male")
-#         st.bar_chart(male_products_pct)
+    col1, col2 = st.columns(2)
+    with col1:
+        st.write("Male")
+        fig_male = px.bar(male_products_pct, x=male_products_pct.values, y=male_products_pct.index, orientation='h',
+                        labels={'x': 'Percentage'})
+        st.plotly_chart(fig_male, use_container_width=True)
 
-#     with col2:
-#         st.write("Female")
-#         st.bar_chart(female_products_pct)
+    with col2:
+        st.write("Female")
+        fig_female = px.bar(female_products_pct, x=female_products_pct.values, y=female_products_pct.index, orientation='h',
+                        labels={'x': 'Percentage'})
+        st.plotly_chart(fig_female, use_container_width=True)
 
 elif menu_option == "Roles":
     st.subheader('Top 10 Roles for Executives')
@@ -211,37 +228,35 @@ elif menu_option == "Roles":
 
 elif menu_option == "Map":
     st.subheader('Female Executives On Map')
+    shapefile_path = '/Users/copa/Desktop/Top2Vec/Spyur/Streamlit/Map/arm.shp'
+    
     try:
-        shapefile_path = '/Users/copa/Desktop/Top2Vec/Spyur/Streamlit/Map/arm.shp'
-        
-        @st.cache_data
-        def load_data(filepath):
-            return gpd.read_file(filepath)
-
         gdf = map_df(filtered_df, shapefile_path)
-        gdf['geometry_wkt'] = gdf.geometry.apply(lambda x: x.wkt)
-        
-        map_center = [gdf.geometry.centroid.y.mean(), gdf.geometry.centroid.x.mean()]
-        m = folium.Map(location=map_center, zoom_start=10)
-        
-        folium.GeoJson(
-            gdf.__geo_interface__,
-            style_function=style_function,
-            tooltip=folium.GeoJsonTooltip(fields=['women_count', 'women_perc'],
-                                        aliases=['Count:', 'Percentage:'],
-                                        localize=True)
-        ).add_to(m)
-        
-        for _, row in gdf.iterrows():
-            geom = row['geometry']
-            if geom.geom_type == 'Point':
-                folium.Marker(
-                    location=[geom.y, geom.x],
-                    popup=f"Count: {row['women_count']}"
-                ).add_to(m)
+        if gdf.empty:
+            st.warning("No data to display on the map.")
+        else:
+            gdf['geometry_wkt'] = gdf.geometry.apply(lambda x: x.wkt)
 
-        st_folium(m, width='100%', height=500)
+            map_center = [gdf.geometry.centroid.y.mean(), gdf.geometry.centroid.x.mean()]
+            m = folium.Map(location=map_center, zoom_start=10)
 
+            folium.GeoJson(
+                gdf.__geo_interface__,
+                style_function=style_function,
+                tooltip=folium.GeoJsonTooltip(fields=['point_count', 'women_perc'],
+                                              aliases=['Total Count:', 'Female Percentage:'],
+                                              localize=True)
+            ).add_to(m)
+
+            for _, row in gdf.iterrows():
+                geom = row['geometry']
+                if geom.geom_type == 'Point':
+                    folium.Marker(
+                        location=[geom.y, geom.x],
+                        popup=f"Count: {row['women_count']}"
+                    ).add_to(m)
+
+            st_folium(m, width='100%', height=500)
     except Exception as e:
         m = folium.Map(location=[40.0691, 45.0382])
         st_folium(m, width='100%', height=500)

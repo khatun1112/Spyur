@@ -6,19 +6,6 @@ import os
 os.environ['SHAPE_RESTORE_SHX'] = 'YES'
 
 def map_df(filtered_df, shapefile_path):
-    """
-    Processes a DataFrame containing location and gender data to map gender distribution 
-    across regions defined in a shapefile.
-
-    Parameters:
-    filtered_df (pd.DataFrame): DataFrame containing location and gender information with 
-                                columns 'url_id', 'location', and 'gender'.
-    shapefile_path (str): File path to the shapefile (.shp) that defines the regions to map.
-
-    Returns:
-    gpd.GeoDataFrame: A GeoDataFrame with additional columns for counts and percentages of 
-                    female and male executives in each region.
-    """
     polygon_gdf = gpd.read_file(shapefile_path)
 
     all_data = filtered_df[['url_id', 'location', 'gender']]
@@ -37,34 +24,24 @@ def map_df(filtered_df, shapefile_path):
     men_counts = men_gdf.groupby('index_right').size()
     polygon_gdf['women_count'] = polygon_gdf.index.map(women_counts).fillna(0).astype(int)
     polygon_gdf['men_count'] = polygon_gdf.index.map(men_counts).fillna(0).astype(int)
-    polygon_gdf['women_perc'] = ((polygon_gdf['women_count'] / polygon_gdf['women_count'].sum()) * 100).round()
-    polygon_gdf['men_percentage'] = ((polygon_gdf['men_count'] / polygon_gdf['men_count'].sum()) * 100).round()
-
+    polygon_gdf['women_perc'] = ((polygon_gdf['women_count'] / (polygon_gdf['women_count'] + polygon_gdf['men_count'])) * 100).round()
+    polygon_gdf['point_count'] = polygon_gdf['women_count'] + polygon_gdf['men_count']
     return polygon_gdf
 
 def style_function(feature):
-    """
-    Generates style settings for a GeoJSON feature to visually represent gender distribution 
-    with varying opacity based on the percentage of female executives.
-
-    Parameters:
-    feature (dict): A GeoJSON feature dictionary containing properties with 'women_perc' 
-                    indicating the percentage of female executives.
-
-    Returns:
-    dict: A dictionary with style settings for the feature, including fill color, border color, 
-          weight, and fill opacity.
-    """
     opacity_percentage = feature['properties']['women_perc']
     opacity_percentage = int(opacity_percentage)
 
-    alpha_value = int((opacity_percentage / 100) * 255) + 100
-    alpha_hex = format(alpha_value, '02X')
-    rgba_color = '#e22e1f' + alpha_hex
+    if opacity_percentage == 0:
+        rgba_color = '#FFFFFF00'  
+    else:
+        alpha_value = int((opacity_percentage / 100) * 255)
+        alpha_hex = format(alpha_value, '02X')
+        rgba_color = '#e22e1f' + alpha_hex
 
     return {
         'fillColor': rgba_color,
         'color': 'black',
         'weight': 2,
-        'fillOpacity': opacity_percentage / 100,
+        'fillOpacity': opacity_percentage / 100 if opacity_percentage != 0 else 0,
     }
