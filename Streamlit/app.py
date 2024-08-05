@@ -5,22 +5,39 @@ from streamlit_folium import st_folium
 import plotly.graph_objects as go
 import plotly.express as px
 from PIL import Image
-import geopandas as gpd
 from utils_map import map_df, style_function
 from streamlit_folium import st_folium
+import pickle
+from streamlit_option_menu import option_menu
 
+# Function to set the background image with transparency and margin
+def set_background(image_url):
+    background_image = f"""
+    <style>
+    [data-testid="stAppViewContainer"] > .main {{
+        background-image: url("{image_url}");
+        background-size: 100vw 100vh;  
+        background-position: center;
+        background-repeat: no-repeat;
+        background-color: rgba(255, 255, 255, 0.8); /* Adjust the transparency here */
+        margin-top: -35px; /* Add space for the menu */
+    }}
+    </style>
+    """
+    st.markdown(background_image, unsafe_allow_html=True)
 
 # Load the DataFrame
-with open('spyur.pkl', 'rb') as f:
-    final_df = pd.read_pickle(f)
+file_path = '/home/copa/Spyur/Streamlit/spyur.pkl'
+with open(file_path, 'rb') as f:
+    final_df = pickle.load(f)
 
 # Sidebar paths
-sidebar_path = '/Users/copa/Desktop/Top2Vec/Spyur/Streamlit/download-1-removebg-preview.png'
-logo = '/Users/copa/Desktop/Top2Vec/Spyur/Streamlit/[removal.ai]_916c7b22-1390-4e8f-b8a3-45ad4baf38ab-images-1.png'
+logo = '/home/copa/Spyur/Streamlit/logo1.png'
+sidebar_path = '/home/copa/Spyur/Streamlit/logo2.png'
 
 # Streamlit configuration
 st.set_page_config(
-    page_title="SDG5",
+    page_title="SDG 5",
     page_icon=logo, 
     layout="wide",
     initial_sidebar_state="expanded",
@@ -30,9 +47,15 @@ st.set_page_config(
 sidebar_logo = Image.open(sidebar_path)
 st.sidebar.image(sidebar_logo, use_column_width=False, width=220) 
 
-
 # Navigation menu
-menu_option = st.sidebar.radio("Go to", ["Gender Distribution","Timeseries", "Main Activities", "Main Products", "Roles", "Map"])
+menu_option = option_menu(
+    None,
+    ["Home","Gender Distribution", "Timeseries", "Main Activities", "Main Products", "Roles", "Map"],
+    icons=["house","people", "clock", "activity", "box", "briefcase", "map"],
+    menu_icon="cast",
+    default_index=0,
+    orientation="horizontal",
+)
 
 # Sidebar filters
 st.sidebar.header("Filters")
@@ -64,12 +87,68 @@ def apply_filters(df, company_size, form_of_ownership):
 # Appling filters
 filtered_df = apply_filters(final_df, selected_size, selected_ownership)
 
-# Headers
-st.title('Gender Roles in Workplace')
+# Include Font Awesome CDN for icons
+st.markdown('<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">', unsafe_allow_html=True)
+
+if menu_option == "Home":
+    # Header
+    st.markdown('<h1 style="color:#e31f33;">Workplace Gender Roles</h1>', unsafe_allow_html=True)
+    set_background('https://images.pexels.com/photos/3861958/pexels-photo-3861958.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')
+    # About Us section
+    st.markdown("""
+        <div style="
+            border: 2px solid red;
+            border-radius: 10px;
+            padding: 20px;
+            width: 70%;
+            background-color: rgba(245, 251, 255, 0.7);
+            margin-left: 0;
+            margin-bottom: 40px;
+            font-family: Arial, sans-serif; 
+            font-size: 16px;
+            line-height: 2;  
+        ">
+            <h2>About Us</h2>
+            <p>Welcome to COPA, a forward-thinking data science company. </p>
+            <p> Our team recently undertook an ambitious project focused on understanding gender roles within the Armenian workplace. Our research aimed to uncover and analyze the representation of 
+                women in executive roles across various industries in Armenia.</p>
+            <p> Through meticulous data collection and analysis, we have developed an intuitive and interactive dashboard that visualizes the percentage of women in leadership positions. 
+                This tool is designed to provide valuable insights into gender diversity and highlight areas for improvement. Our goal is to shed light on the current state of gender representation 
+                in high-level roles and promote discussions and strategies to enhance women's participation in leadership.</p>
+            <p>  At COPA, we are committed to using our expertise to not only provide data-driven solutions but also to contribute to social progress.</p>
+                We invite you to explore our dashboard, delve into the data, and join us in our mission to drive positive change and create a more inclusive and balanced workforce.
+            <p> Thank you for your interest in our work and for being a part of this important journey.</p>
+        </div>
+    """, unsafe_allow_html=True)
+
+    # Contact Us section
+    st.markdown("""
+        <div style="
+            border: 2px solid red;
+            border-radius: 10px;
+            padding: 20px;
+            width: 70%;
+            background-color: rgba(245, 251, 255, 0.7); 
+            margin-left: 0;
+            font-family: Arial, sans-serif; 
+            font-size: 16px;
+            line-height: 1.6; 
+        ">
+            <h2 style="font-size: 24px; margin-top: 0;">Contact Us</h2>
+            <p>If you have any questions, feel free to reach out to us through the following channels:</p>
+            <ul style="list-style-type: none; padding-left: 0;">
+                <li><i class="fab fa-github" style="color: #333; margin-right: 8px;"></i><a href="https://github.com/khatun1112/Spyur" target="_blank">GitHub</a></li>
+                <li><i class="fas fa-globe" style="color: #333; margin-right: 8px;"></i><a href="https://yourwebsite.com" target="_blank">Website</a></li>
+                <li><i class="fas fa-envelope" style="color: #333; margin-right: 8px;"></i><a href="mail.to.contact">Email Us</a></li>
+            </ul>
+        </div>
+    """, unsafe_allow_html=True)
+
+
 
 if menu_option == "Gender Distribution":
     st.subheader('Gender Distribution')
-
+    #https://images.pexels.com/photos/3757946/pexels-photo-3757946.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1
     # Computing gender distribution
     def compute_gender_distribution(df):
         aggregated_df = df.drop_duplicates(subset='url_id')
@@ -95,7 +174,6 @@ if menu_option == "Gender Distribution":
                                     marker=dict(colors=[colors['Male'], colors['Female']]))])
 
     fig_pie.update_layout(
-        title='Gender Distribution',
         template='plotly_white'
     )
 
@@ -111,6 +189,8 @@ if menu_option == "Gender Distribution":
         - **Male Executives:** {male_counts} ({male_percent}%)
         - **Female Executives:** {female_counts} ({female_percent}%)
         """)
+
+        
 
 
 if menu_option == "Timeseries":
@@ -228,7 +308,8 @@ elif menu_option == "Roles":
 
 elif menu_option == "Map":
     st.subheader('Female Executives On Map')
-    shapefile_path = '/Users/copa/Desktop/Top2Vec/Spyur/Streamlit/Map/arm.shp'
+    shapefile_path = '/home/copa/Spyur/Streamlit/Map/arm.shp'
+
     
     try:
         gdf = map_df(filtered_df, shapefile_path)
@@ -256,7 +337,8 @@ elif menu_option == "Map":
                         popup=f"Count: {row['women_count']}"
                     ).add_to(m)
 
-            st_folium(m, width='100%', height=500)
+            st_folium(m, width='100%', height=500, key="map_display")
     except Exception as e:
+        st.error(f"An error occurred while generating the map: {e}")
         m = folium.Map(location=[40.0691, 45.0382])
-        st_folium(m, width='100%', height=500)
+        st_folium(m, width='100%', height=500, key="map_error")

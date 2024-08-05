@@ -7,6 +7,8 @@ os.environ['SHAPE_RESTORE_SHX'] = 'YES'
 
 def map_df(filtered_df, shapefile_path):
     polygon_gdf = gpd.read_file(shapefile_path)
+    if polygon_gdf.crs is None:
+        polygon_gdf.set_crs(epsg=4326, inplace=True)
 
     all_data = filtered_df[['url_id', 'location', 'gender']]
     loc_dir_unique = all_data.drop_duplicates(subset=['url_id'])
