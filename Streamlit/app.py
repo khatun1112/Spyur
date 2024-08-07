@@ -29,7 +29,7 @@ def set_background(image_url):
 file_path = '/home/copa/Spyur/Streamlit/spyur.pkl'
 with open(file_path, 'rb') as f:
     final_df = pickle.load(f)
-
+    
 # Sidebar paths
 logo = '/home/copa/Spyur/Streamlit/logo1.png'
 sidebar_path = '/home/copa/Spyur/Streamlit/logo2.png'
@@ -293,7 +293,7 @@ if menu_option == "Timeseries":
     with col2:
         st.markdown("###           ")
         st.markdown("###           ")
-        selected_clusters = st.selectbox('Select Clusters', options=clusters_with_all)
+        selected_clusters = st.selectbox('Select Industry', options=clusters_with_all)
     
     with col1:
         if selected_clusters == 'All':
@@ -312,7 +312,15 @@ if menu_option == "Timeseries":
 
         colors = {'Female': '#e22e1f', 'Male': '#4788c8'}
         for gender in exec_pct.columns:
-            fig_line.add_trace(go.Scatter(x=exec_pct.index, y=exec_pct[gender], mode='lines+markers', name=gender, line=dict(color=colors.get(gender, '#000000'))))
+            fig_line.add_trace(go.Scatter(
+                x=exec_pct.index, 
+                y=exec_pct[gender], 
+                mode='lines+markers', 
+                name=gender, 
+                line=dict(color=colors.get(gender, '#000000')),
+                text=[f"Count: {count}<br>Percentage: {pct:.1f}%" for count, pct in zip(exec_counts[gender].astype(int), exec_pct[gender])], 
+                hoverinfo='x+text'  
+            ))
 
         fig_line.update_layout(
             title='Executive Percentages Based On Year Established',
