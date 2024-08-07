@@ -8,3 +8,10 @@ tqdm == 4.66.4
 bs4 == 0.0.2
 requests == 2.32.3
 PyMySQL == 1.1.1
+beautifulsoup4 == 4.12.3
+geographiclib == 2.0
+geopandas == 0.13.2
+shapely == 2.0.5
+streamlit-option-menu == 0.3.13
+openai == 1.39.0
+nltk == 3.8.1
