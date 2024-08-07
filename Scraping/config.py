@@ -1,13 +1,13 @@
 # Database connection details
-database_config = {'user': 'khatun',
-                   'password': 'password',
+database_config = {'user': 'user_here',
+                   'password': 'password_here',
                    'host': 'localhost',
                    'port': 3306,
-                   'database': 'spyur_companies'
+                   'database': 'database_here'
                   }
 
 
 proxy_config = {
-    "http": "http://brd-customer-hl_e07fff49-zone-proxy_1-ip-45.143.104.97:yy4qtrybf29m@brd.superproxy.io:22225",
-    "https": "http://brd-customer-hl_e07fff49-zone-proxy_1-ip-45.143.104.97:yy4qtrybf29m@brd.superproxy.io:22225"
+    "http": "proxy_here",
+    "https": "proxy_here"
 }
