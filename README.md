@@ -4,6 +4,7 @@ By COPA
 This project explores female representation in executive roles within the Armenian workplace across various industries. 
 The analysis uses data scraped and cleaned from Armenian Yellow Pages (Spyur.am), providing insights into gender distribution and roles in different sectors. 
 The project includes sections such as Web Scraping and Data Extraction, Data Cleaning and Processing and Streamlit dashboard to visualize the data interactively.
+######
 Our Dashboard: http://34.159.101.186:8501/
 
 # Web Scraping and Data Extraction
