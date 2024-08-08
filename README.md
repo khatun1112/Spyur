@@ -299,7 +299,7 @@ To run this Streamlit dashboard locally, follow these steps:
 
 4. **Run the Streamlit app:**
     ```sh
-    streamlit run app.py
+    streamlit run main.py
     ```
 
 ## Usage
