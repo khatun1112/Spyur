@@ -66,28 +66,6 @@ def style_function(feature):
     }
 
 
-def add_blurred_mask(m):
-    # Create an HTML IFrame with CSS to blur the background
-    html = """
-    <style>
-    .blurred-overlay {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: rgba(255, 255, 255, 0.5); /* semi-transparent white */
-        backdrop-filter: blur(10px);
-        pointer-events: none; /* Allows interaction with the map below */
-    }
-    </style>
-    <div class="blurred-overlay"></div>
-    """
-    iframe = IFrame(html, width="100%", height="100%")
-    popup = folium.Popup(iframe, max_width=1000)
-    folium.Marker(location=[map_center[0], map_center[1]], popup=popup).add_to(m)
-
-
 # Map
 def map(filtered_df, shapefile_path):
     try:
@@ -129,18 +107,18 @@ def map(filtered_df, shapefile_path):
                         location=[geom.y, geom.x], popup=f"Count: {row['women_count']}"
                     ).add_to(m)
 
-            # Add white rectangle to cover Xankendi
-            xankendi_bounds = [[39.6383, 46.5461], [40.3707, 47.1379]]
+            # Add white rectangle to cover
+            rec_bounds = [[39.6383, 46.5461], [40.3707, 47.1379]]
             folium.Rectangle(
-                bounds=xankendi_bounds,
-                color="white",
+                bounds=rec_bounds,
+                color= '#f2efe9',
                 fill=True,
-                fill_color="white",
+                fill_color='#f2efe9',
                 fill_opacity=1,
             ).add_to(m)
             m.fit_bounds([[bounds[1], bounds[0]], [bounds[3], bounds[2]]])
-            st_folium(m, width="100%", height=500, key="map_display")
+            st_folium(m, width="100%", height=700, key="map_display")
 
     except Exception as e:
         m = folium.Map(location=[40.0691, 45.0382], zoom_start=8)
-        st_folium(m, width="100%", height=500, key="map_error")
+        st_folium(m, width="100%", height=700, key="map_error")
