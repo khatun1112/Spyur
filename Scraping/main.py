@@ -9,21 +9,25 @@ import requests
 from bs4 import BeautifulSoup
 
 # Establish a connection to the MySQL database
-connection = pymysql.connect(user=database_config['user'],
-                             password=database_config['password'],
-                             host=database_config['host'],
-                             port=database_config['port'],
-                             database=database_config['database'])
+connection = pymysql.connect(
+    user=database_config["user"],
+    password=database_config["password"],
+    host=database_config["host"],
+    port=database_config["port"],
+    database=database_config["database"],
+)
+
 
 def save_to_csv(df, csv_path, append=False):
-    mode = 'a' if append else 'w'
+    mode = "a" if append else "w"
     header = not append
     df.to_csv(csv_path, index=False, mode=mode, header=header)
+
 
 if __name__ == "__main__":
     with open("Scraping/company_link.txt", "r") as file:
         urls = file.readlines()
-    urls = ['https://www.spyur.am' + url.strip() for url in urls]
+    urls = ["https://www.spyur.am" + url.strip() for url in urls]
 
     # Define paths for the CSV files
     company_csv = "company_table.csv"
@@ -38,9 +42,11 @@ if __name__ == "__main__":
             logging.info(f"Fetching data from: {url}")
             response = requests.get(url, proxies=proxy_config)
             if response.status_code == 200:
-                content = BeautifulSoup(response.content, 'html.parser')
+                content = BeautifulSoup(response.content, "html.parser")
             else:
-                logging.error(f"Failed to fetch data from {url}, status code: {response.status_code}")
+                logging.error(
+                    f"Failed to fetch data from {url}, status code: {response.status_code}"
+                )
                 continue
         except Exception as e:
             logging.error(f"An error occurred while fetching {url}: {e}")
@@ -53,14 +59,14 @@ if __name__ == "__main__":
             activity_table = get_company_activities(content, url)
 
             logging.info("Company data scraping completed successfully.")
-            save_to_mysql(company_table, 'company_table', connection)
-            save_to_mysql(executive_table, 'executive_table', connection)
+            save_to_mysql(company_table, "company_table", connection)
+            save_to_mysql(executive_table, "executive_table", connection)
 
             logging.info("Product data scraping completed successfully.")
-            save_to_mysql(product_table, 'product_table', connection)
+            save_to_mysql(product_table, "product_table", connection)
 
             logging.info("Activity data scraping completed successfully.")
-            save_to_mysql(activity_table, 'activity_table', connection)
+            save_to_mysql(activity_table, "activity_table", connection)
 
             # Save DataFrames to CSV files
             save_to_csv(company_table, company_csv, append)
@@ -80,7 +86,9 @@ if __name__ == "__main__":
         except Exception as e:
             tb = traceback.extract_tb(e.__traceback__)
             filename, line_number, func_name, text = tb[-1]
-            logging.error(f"An error occurred during the scraping process: {e}, line: {line_number}, function: {func_name}, filename: {filename}")
+            logging.error(
+                f"An error occurred during the scraping process: {e}, line: {line_number}, function: {func_name}, filename: {filename}"
+            )
 
     logging.info("Data scraping process completed. Check log file for details.")
     connection.close()
