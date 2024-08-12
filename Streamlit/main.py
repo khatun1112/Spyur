@@ -14,6 +14,7 @@ from utils import (
     act,
     prod,
     roles,
+    bar
 )
 from utils_style import (
     set_background,
@@ -86,13 +87,16 @@ elif menu_option == "Distribution":
     fig_pie, male_counts, female_counts = pie(
         gender_counts, male_percent, female_percent
     )
-    # fig_bar = bar(final_df, male_percent, female_percent)
+    fig_bar = bar(
+        final_df
+    )
+
 
     col1, col2, col3 = st.columns([1, 1, 1])
 
     with col1:
         st.plotly_chart(fig_pie)
-        # st.plotly_chart(fig_bar)
+        st.plotly_chart(fig_bar)
     with col2:
         dist_box(
             gender_counts, male_counts, male_percent, female_counts, female_percent

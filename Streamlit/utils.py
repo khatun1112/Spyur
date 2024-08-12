@@ -96,36 +96,49 @@ def pie(gender_counts, male_percent, female_percent):
 
 
 # Barplot
-# def bar(df, male_percent, female_percent):
-#     colors = {'Female': '#e22e1f', 'Male': '#4788c8'}
+def bar(df):
+    colors = {'Female': '#e22e1f', 'Male': '#4788c8'}
+    company_sizes = ['Up to 15', 'From 16 to 50', 'From 51 to 250', 'From 251 to 1000', 'From 1001 to 2000']
 
-#     company_sizes = ['Up to 15', 'From 16 to 50', 'From 51 to 250', 'From 251 to 1000', 'From 1001 to 2000']
-#     df_filtered = df[df['number_of_employees'].isin(company_sizes)]
+    df = df.drop_duplicates(subset="url_id")
+    df_filtered = df[df['number_of_employees'].isin(company_sizes)]
+    df_grouped = df_filtered.groupby(['number_of_employees', 'gender']).size().unstack(fill_value=0)
+    df_grouped = df_grouped.div(df_grouped.sum(axis=1), axis=0) * 100
+    df_grouped = df_grouped.sort_values(by='Female', ascending=False)
 
-#     # Barplot
-#     fig_bar = go.Figure()
+    fig_bar = go.Figure()
 
-#     for gender, percent in [('Male', male_percent), ('Female', female_percent)]:
-#         fig_bar.add_trace(go.Bar(
-#             x=df_filtered['number_of_employees'],
-#             y=[percent] * len(df_filtered),
-#             name=f'{gender} Percent',
-#             marker_color=colors[gender]
-#         ))
+    # Male Percent trace
+    fig_bar.add_trace(go.Bar(
+        x=df_grouped.index,
+        y=df_grouped['Male'],
+        name='Male Percent',
+        marker_color=colors['Male'],
+        hoverinfo='none' 
+    ))
 
-#     fig_bar.update_layout(
-#         barmode='group',
-#         template='plotly_white',
-#         height=400,
-#         width=600,
-#         title='Percentage of Male and Female Employees by Company Size',
-#         xaxis_title='Company Size',
-#         yaxis_title='',
-#         showlegend=True,
-#         yaxis=dict(showticklabels=False)
-#     )
+    # Female Percent trace
+    fig_bar.add_trace(go.Bar(
+        x=df_grouped.index,
+        y=df_grouped['Female'],
+        name='Female Percent',
+        marker_color=colors['Female'],
+        hoverinfo='none' 
+    ))
 
-#     return fig_bar
+    fig_bar.update_layout(
+        barmode='group',
+        template='plotly_white',
+        height=400,
+        width=600,
+        title='Percentage of Male and Female Employees by Company Size',
+        xaxis_title='Company Size',
+        yaxis_title='Percentage',
+        showlegend=True,
+        yaxis=dict(showticklabels=False)
+    )
+
+    return fig_bar
 
 
 # Timeseries

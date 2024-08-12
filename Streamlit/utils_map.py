@@ -70,6 +70,24 @@ def style_function(feature):
 def map(filtered_df, shapefile_path):
     try:
         gdf = map_df(filtered_df, shapefile_path)
+        state_names = {
+            0: "Aragatsotn",
+            1: "Ararat",
+            2: "Armavir",
+            3: "Vayots Dzor",
+            4: "Gegharquniq",
+            5: "Kotayq",
+            6: "Lory",
+            7: "Shirak",
+            8: "Syunik",
+            9: "Tavush",
+            10: "Yerevan"
+        }
+        state_names_df = pd.DataFrame(list(state_names.items()), columns=['index', 'state_name'])
+        gdf = gdf.reset_index()  # Ensure the index is a column
+        gdf = gdf.merge(state_names_df, left_on='index', right_on='index', how='left')
+
+
         if gdf.empty:
             pass
         else:
@@ -81,21 +99,21 @@ def map(filtered_df, shapefile_path):
                 gdf.geometry.centroid.y.mean(),
                 gdf.geometry.centroid.x.mean(),
             ]
-            # attr = (
-            #     '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> '
-            #     'contributors, &copy; <a href="https://cartodb.com/attributions">CartoDB</a>'
-            # )
-            # tiles = "https://{s}.basemaps.cartocdn.com/light_nolabels/{z}/{x}/{y}.png"
+            attr = (
+                '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> '
+                'contributors, &copy; <a href="https://cartodb.com/attributions">CartoDB</a>'
+            )
+            tiles = "https://{s}.basemaps.cartocdn.com/light_nolabels/{z}/{x}/{y}.png"
             m = folium.Map(
-                location=map_center, zoom_start=zoom_level
-            )  # attr=attr, tiles=tiles
+                location=map_center, zoom_start=zoom_level, attr=attr, tiles=tiles
+            )  
 
             folium.GeoJson(
                 gdf.__geo_interface__,
                 style_function=style_function,
                 tooltip=folium.GeoJsonTooltip(
-                    fields=["point_count", "women_perc"],
-                    aliases=["Total Count:", "Female Percentage:"],
+                    fields=["state_name", "point_count", "women_perc"],
+                    aliases=["Region Name:", "Total Count:", "Female Percentage:"],
                     localize=True,
                 ),
             ).add_to(m)
@@ -107,15 +125,6 @@ def map(filtered_df, shapefile_path):
                         location=[geom.y, geom.x], popup=f"Count: {row['women_count']}"
                     ).add_to(m)
 
-            # Add white rectangle to cover
-            rec_bounds = [[39.6383, 46.5461], [40.3707, 47.1379]]
-            folium.Rectangle(
-                bounds=rec_bounds,
-                color= '#f2efe9',
-                fill=True,
-                fill_color='#f2efe9',
-                fill_opacity=1,
-            ).add_to(m)
             m.fit_bounds([[bounds[1], bounds[0]], [bounds[3], bounds[2]]])
             st_folium(m, width="100%", height=700, key="map_display")
 
