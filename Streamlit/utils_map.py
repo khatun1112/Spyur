@@ -74,14 +74,14 @@ def map(filtered_df, shapefile_path):
             0: "Aragatsotn",
             1: "Ararat",
             2: "Armavir",
-            3: "Vayots Dzor",
+            3: "Yerevan",
             4: "Gegharquniq",
             5: "Kotayq",
             6: "Lory",
             7: "Shirak",
             8: "Syunik",
             9: "Tavush",
-            10: "Yerevan"
+            10: "Vayots Dzor"
         }
         state_names_df = pd.DataFrame(list(state_names.items()), columns=['index', 'state_name'])
         gdf = gdf.reset_index()  # Ensure the index is a column
